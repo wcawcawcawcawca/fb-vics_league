@@ -1,11 +1,12 @@
 name: Run Pennants Pipeline
 
-# Triggers whenever a new/updated unified JSON lands in data/, or manually
-# via the "Run workflow" button in the Actions tab.
+# Triggers whenever a new/updated unified JSON (zipped -- GitHub's browser
+# upload caps at 25 MiB, and the raw JSON runs ~44 MiB) lands in data/, or
+# manually via the "Run workflow" button in the Actions tab.
 on:
   push:
     paths:
-      - 'data/pennants_over_easy_unified.json'
+      - 'data/pennants_over_easy_unified.json.zip'
   workflow_dispatch: {}
 
 # Needed so the workflow can commit the generated outputs back to the repo.
@@ -26,6 +27,11 @@ jobs:
 
       - name: Install dependencies
         run: pip install openpyxl
+
+      # The JSON is uploaded zipped to stay under GitHub's 25 MiB browser
+      # upload limit. Unzip it back to the plain path ci_pipeline.py expects.
+      - name: Unzip data file
+        run: unzip -o data/pennants_over_easy_unified.json.zip -d data/
 
       # ci_pipeline.py wraps run_pipeline.py and exits non-zero if the
       # Step 4 IP reconciliation check fails -- this is what makes a bad
