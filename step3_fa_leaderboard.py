@@ -4,8 +4,11 @@ step3_fa_leaderboard.py
 Free agent CMD leaderboard -> cmd_free_agents.xlsx
 
 Same trailing-20-day, starts-only window and genuine-starter filter as
-Step 2. Qualification: 2+ starts AND 5+ IP in the window, excluding anyone
-rostered on any of the 12 teams.
+Step 2. Qualification: 1+ start AND 5+ IP in the window, excluding anyone
+rostered on any of the 12 teams. (Note: the league-wide absolute pool used
+for Score (Absolute)/Rank (Absolute) still requires 2+ starts -- only the
+FA-only leaderboard's inclusion and Score (Relative) pool were loosened to
+1+ start, per explicit user request.)
 
 Locked columns (NO ERA, NO K%/BB% -- these were removed from an earlier
 draft of this file and must not come back):
@@ -37,12 +40,20 @@ YELLOW = "FFEB9C"
 RED = "F7A6AC"
 HEADER_FILL_HEX = "2A4D3A"
 
+# FA leaderboard inclusion is intentionally looser than the league-wide
+# absolute pool (LEAGUE_MIN_STARTS=2, imported above and still used for
+# Score (Absolute)/Rank (Absolute)). Per explicit user request, single-start
+# genuine starters are included in the FA-only leaderboard/pool and its
+# relative scoring; IP floor stays at LEAGUE_MIN_IP.
+FA_MIN_STARTS = 1
+
 
 def build_fa_pool(pool):
-    """FA-only pool: not on any of the 12 rosters, meets league qualification
-    thresholds. Attaches ScoreRelative computed within the FA-only pool."""
+    """FA-only pool: not on any of the 12 rosters, meets FA qualification
+    thresholds (looser start-count floor than the league-wide absolute pool).
+    Attaches ScoreRelative computed within the FA-only pool."""
     fa_pool = {n: p for n, p in pool.items()
-               if p['team_id'] is None and p['Starts'] >= LEAGUE_MIN_STARTS and p['IP'] >= LEAGUE_MIN_IP}
+               if p['team_id'] is None and p['Starts'] >= FA_MIN_STARTS and p['IP'] >= LEAGUE_MIN_IP}
 
     cmd_vals = [p['CMD'] for p in fa_pool.values()]
     whip_vals = [p['ModelWHIP'] for p in fa_pool.values()]
@@ -133,6 +144,7 @@ def write_xlsx(fa_pool, out_path='cmd_free_agents.xlsx'):
         "BABIP approximated as (H-HR)/(BF-BB-K-HR); HBP and sac flies aren't broken out in the source gamelogs.",
         "Model WHIP = 1.290 - 2.208*K% + 4.402*BB% + 3.766*HR%, cross-validated regression, CV R^2 = 0.58. Actual WHIP is real (H+BB)/IP over the same window.",
         "Free agent status computed as of the roster snapshot date plus any subsequent add/drop/trade transactions in the file.",
+        "FA leaderboard inclusion floor is 1+ start (and 5+ IP) in the trailing 20-day window -- single-start genuine starters are included here. The league-wide absolute pool behind Score (Absolute)/Rank (Absolute) still requires 2+ starts, so a 1-start pitcher can appear here with a Score (Relative) but a blank Score (Absolute)/Rank (Absolute).",
     ]
     for j, note in enumerate(notes):
         cell = ws.cell(row=notes_row + j, column=2, value=note)
