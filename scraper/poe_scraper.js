@@ -1,5 +1,10 @@
 (async function () {
 const GAME_SCRAPER_VERSION = 26; // bump whenever game-parsing logic changes, so merges know to re-fetch stale games
+const GITHUB_OWNER = 'wcawcawcawcawca';
+const GITHUB_REPO = 'fb-vics_league';
+const GITHUB_BRANCH = 'main';
+const GITHUB_PATH = 'data/pennants_over_easy_unified.json.gz';
+const GITHUB_TOKEN_KEY = 'poe_github_pat';
 if (document.getElementById('poe-ui')) { alert('Scraper already running.'); return; }
 const LEAGUE = 137080;
 const SEASON = 2026;
@@ -14,9 +19,35 @@ const SWING_IDS  = new Set(['37']);
 const FOUL_IDS   = new Set(['21']);
 const INPLAY_IDS = new Set(['2','3','4','22','24','28','32','33']);
 const ALL_PITCH_IDS = new Set([...BALL_IDS,...CALLED_IDS,...SWING_IDS,...FOUL_IDS,...INPLAY_IDS]);
-function pickExistingFiles() {
+async function fetchExistingFromGitHub() {
+try {
+const url = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${GITHUB_PATH}?_cb=${Date.now()}`;
+const resp = await fetch(url);
+if (!resp.ok) {
+if (resp.status !== 404) console.warn('GitHub fetch failed:', resp.status);
+return null;
+}
+const compressed = await resp.arrayBuffer();
+const ds = new DecompressionStream('gzip');
+const writer = ds.writable.getWriter();
+writer.write(new Uint8Array(compressed));
+writer.close();
+const decompressed = await new Response(ds.readable).text();
+return JSON.parse(decompressed);
+} catch (e) {
+console.warn('GitHub fetch/decompress failed:', e.message);
+return null;
+}
+}
+async function loadExistingData() {
+const ghData = await fetchExistingFromGitHub();
+if (ghData) return [ghData];
+alert('Could not load existing data from GitHub -- falling back to local file picker.\n\n(Expected on the very first run, before anything has been uploaded yet. If this keeps happening on later runs, check your network connection or that the repo/path in GITHUB_OWNER/REPO/PATH are correct.)');
+return await pickLocalFiles();
+}
+function pickLocalFiles() {
 return new Promise(resolve => {
-const wantsMerge = confirm('Merge into existing data?\n\nOK = pick one or more existing JSON files (ctrl/cmd-click to select multiple -- e.g. your old combined.json AND your gamelog.json on a first run).\nCancel = start fresh.');
+const wantsMerge = confirm('Merge with local JSON file(s) instead?\n\nOK = pick one or more existing JSON files (ctrl/cmd-click to select multiple).\nCancel = start fresh (no merge).');
 if (!wantsMerge) { resolve([]); return; }
 const input = document.createElement('input');
 input.type = 'file';
@@ -51,7 +82,7 @@ function txKey(t) {
 const moveSig = (t.moves && t.moves.length) ? t.moves.map(m => m.raw).join('||') : (t.rawFallback || '');
 return `${t.date}|${t.time}|${t.activityType}|${moveSig}`;
 }
-const existingFiles = await pickExistingFiles();
+const existingFiles = await loadExistingData();
 let existingPeriodsList = [];
 let existingTxns = [];
 let existingGames = {};
@@ -748,11 +779,8 @@ document.body.appendChild(a); a.click(); document.body.removeChild(a);
 // pushes it to the repo's data/ folder via GitHub's Contents API. The repo's
 // GitHub Actions workflow watches that exact path and runs the analytics
 // pipeline automatically whenever it changes.
-const GITHUB_OWNER = 'wcawcawcawcawca';
-const GITHUB_REPO = 'fb-vics_league';
-const GITHUB_BRANCH = 'main';
-const GITHUB_PATH = 'data/pennants_over_easy_unified.json.gz';
-const GITHUB_TOKEN_KEY = 'poe_github_pat';
+// (GITHUB_OWNER/REPO/BRANCH/PATH/TOKEN_KEY now declared near the top of the
+// file, since loadExistingData() needs them too, before this section runs.)
 
 async function gzipToBase64(str) {
   const bytes = new TextEncoder().encode(str);
