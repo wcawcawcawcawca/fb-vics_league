@@ -19,6 +19,7 @@ import sys
 from datetime import datetime, timezone
 
 from run_pipeline import run
+from step4_heatmap import team_standings_order
 
 DATA_PATH = 'data/pennants_over_easy_unified.json'
 SUMMARY_PATH = 'latest_summary.json'
@@ -47,6 +48,11 @@ def build_summary(result):
         for k, v in result['heatmap_cells'].items()
     }
 
+    data = result['data']
+    teams = data['meta']['teams']  # {team_id: team_name}, static within a season
+    standings_order = team_standings_order(data)  # team_ids sorted by current roto total, best first
+    roto = data['periods'][-1]['roto']
+
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'reconciliation': {
@@ -62,6 +68,11 @@ def build_summary(result):
         'step2_no_data': result['step2_no_data'],
         'fa_pool_count': len(result['fa_pool']),
         'heatmap_cells': heatmap_cells,
+        'teams': teams,  # {team_id: team_name}
+        'standings_order': [
+            {'team_id': tid, 'team': teams[tid], 'roto_total': roto[tid]['total']}
+            for tid in standings_order
+        ],
     }
 
 
