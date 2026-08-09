@@ -61,6 +61,7 @@ def run(json_path):
     print("#" * 70)
 
     return {
+        'data': data,
         'roster': roster,
         'roster_flags': flags,
         'step2_rows': rows,
