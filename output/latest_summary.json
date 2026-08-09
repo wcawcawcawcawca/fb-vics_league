@@ -1,0 +1,587 @@
+{
+  "generated_at": "2026-08-09T18:25:47.799269+00:00",
+  "reconciliation": {
+    "passed": true,
+    "max_gap_ip": 3.6,
+    "gap_table": [
+      {
+        "team": "Skubal Diving",
+        "computed_ip": 1231.6,
+        "espn_ip": 1228,
+        "gap": 3.6
+      },
+      {
+        "team": "7th Floor Crew",
+        "computed_ip": 968.4,
+        "espn_ip": 965.2,
+        "gap": 3.2
+      },
+      {
+        "team": "Hwang out",
+        "computed_ip": 977.6,
+        "espn_ip": 975.1,
+        "gap": 2.5
+      },
+      {
+        "team": "Team T",
+        "computed_ip": 1200.3,
+        "espn_ip": 1198.1,
+        "gap": 2.2
+      },
+      {
+        "team": "Free State Freeloaders",
+        "computed_ip": 1345.4,
+        "espn_ip": 1344.1,
+        "gap": 1.3
+      },
+      {
+        "team": "Ma the Meatloaf Now",
+        "computed_ip": 1451.3,
+        "espn_ip": 1450.1,
+        "gap": 1.2
+      },
+      {
+        "team": "Dominic Toretto",
+        "computed_ip": 1251.1,
+        "espn_ip": 1250,
+        "gap": 1.1
+      },
+      {
+        "team": "Soy Boy",
+        "computed_ip": 1480.1,
+        "espn_ip": 1479.2,
+        "gap": 0.9
+      },
+      {
+        "team": "Little Creek Bonkers",
+        "computed_ip": 1379.4,
+        "espn_ip": 1379,
+        "gap": 0.4
+      },
+      {
+        "team": "Bottomless bangers",
+        "computed_ip": 1437.6,
+        "espn_ip": 1437.2,
+        "gap": 0.4
+      },
+      {
+        "team": "Three Days of the Kondor",
+        "computed_ip": 1359.4,
+        "espn_ip": 1359.1,
+        "gap": 0.3
+      },
+      {
+        "team": "Bilbo Ragans",
+        "computed_ip": 1276.0,
+        "espn_ip": 1276,
+        "gap": 0.0
+      }
+    ]
+  },
+  "roster_flags": [
+    "Team Three Days of the Kondor (id 2): removed 2 blank-name artifact pitcher slots.",
+    "Team Bilbo Ragans (id 15): removed 1 blank-name artifact pitcher slots."
+  ],
+  "step2_kondor_staff": [
+    {
+      "name": "Kyle Leahy",
+      "starts": 4,
+      "ip": 23.0,
+      "cmd_pct": 13.8,
+      "model_whip": 0.92,
+      "actual_whip": 1.087,
+      "babip": 0.333,
+      "score_relative": 0.7,
+      "score_absolute": 0.76,
+      "abs_rank": "22 of 149"
+    },
+    {
+      "name": "Jackson Jobe",
+      "starts": 1,
+      "ip": 5.0,
+      "cmd_pct": 14.5,
+      "model_whip": 0.995,
+      "actual_whip": 0.4,
+      "babip": 0.1,
+      "score_relative": 0.9,
+      "score_absolute": null,
+      "abs_rank": null
+    },
+    {
+      "name": "Robert Gasser",
+      "starts": 3,
+      "ip": 15.7,
+      "cmd_pct": 10.6,
+      "model_whip": 1.114,
+      "actual_whip": 1.277,
+      "babip": 0.348,
+      "score_relative": 0.3,
+      "score_absolute": 0.52,
+      "abs_rank": "51 of 149"
+    },
+    {
+      "name": "Gabriel Hughes",
+      "starts": 3,
+      "ip": 15.3,
+      "cmd_pct": 14.3,
+      "model_whip": 1.131,
+      "actual_whip": 1.239,
+      "babip": 0.341,
+      "score_relative": 0.7,
+      "score_absolute": 0.78,
+      "abs_rank": "19 of 149"
+    },
+    {
+      "name": "Anthony Kay",
+      "starts": 4,
+      "ip": 22.7,
+      "cmd_pct": 13.4,
+      "model_whip": 1.18,
+      "actual_whip": 1.235,
+      "babip": 0.309,
+      "score_relative": 0.6,
+      "score_absolute": 0.68,
+      "abs_rank": "32 of 149"
+    },
+    {
+      "name": "Matthew Liberatore",
+      "starts": 4,
+      "ip": 20.0,
+      "cmd_pct": 12.9,
+      "model_whip": 1.216,
+      "actual_whip": 1.7,
+      "babip": 0.436,
+      "score_relative": 0.5,
+      "score_absolute": 0.64,
+      "abs_rank": "37 of 149"
+    },
+    {
+      "name": "Rhett Lowder",
+      "starts": 3,
+      "ip": 17.0,
+      "cmd_pct": 10.9,
+      "model_whip": 1.269,
+      "actual_whip": 0.824,
+      "babip": 0.17,
+      "score_relative": 0.4,
+      "score_absolute": 0.56,
+      "abs_rank": "45 of 149"
+    },
+    {
+      "name": "Hayden Wesneski",
+      "starts": 2,
+      "ip": 11.7,
+      "cmd_pct": 9.7,
+      "model_whip": 1.289,
+      "actual_whip": 1.286,
+      "babip": 0.324,
+      "score_relative": 0.2,
+      "score_absolute": 0.47,
+      "abs_rank": "61 of 149"
+    },
+    {
+      "name": "Walbert Urena",
+      "starts": 4,
+      "ip": 20.3,
+      "cmd_pct": 15.2,
+      "model_whip": 1.307,
+      "actual_whip": 1.18,
+      "babip": 0.259,
+      "score_relative": 0.2,
+      "score_absolute": 0.53,
+      "abs_rank": "49 of 149"
+    },
+    {
+      "name": "Brandon Pfaadt",
+      "starts": 4,
+      "ip": 26.7,
+      "cmd_pct": 6.1,
+      "model_whip": 1.334,
+      "actual_whip": 0.975,
+      "babip": 0.244,
+      "score_relative": 0.1,
+      "score_absolute": 0.29,
+      "abs_rank": "90 of 149"
+    },
+    {
+      "name": "Clay Holmes",
+      "starts": 1,
+      "ip": 4.0,
+      "cmd_pct": 4.4,
+      "model_whip": 1.9,
+      "actual_whip": 2.0,
+      "babip": 0.385,
+      "score_relative": 0.0,
+      "score_absolute": null,
+      "abs_rank": null
+    }
+  ],
+  "step2_no_data": [
+    "Kade Anderson",
+    "Michael Soroka",
+    "Ryan Gusto"
+  ],
+  "fa_pool_count": 44,
+  "heatmap_cells": {
+    "15|Mar-Apr": {
+      "ip": 382.0,
+      "whip": 1.134,
+      "babip": 0.265,
+      "n_days": 35
+    },
+    "13|Mar-Apr": {
+      "ip": 364.7,
+      "whip": 1.349,
+      "babip": 0.301,
+      "n_days": 36
+    },
+    "3|Mar-Apr": {
+      "ip": 332.3,
+      "whip": 1.297,
+      "babip": 0.302,
+      "n_days": 34
+    },
+    "1|Mar-Apr": {
+      "ip": 396.7,
+      "whip": 1.263,
+      "babip": 0.287,
+      "n_days": 36
+    },
+    "11|Mar-Apr": {
+      "ip": 376.3,
+      "whip": 1.329,
+      "babip": 0.298,
+      "n_days": 35
+    },
+    "4|Mar-Apr": {
+      "ip": 363.3,
+      "whip": 1.283,
+      "babip": 0.286,
+      "n_days": 33
+    },
+    "9|Mar-Apr": {
+      "ip": 358.3,
+      "whip": 1.189,
+      "babip": 0.277,
+      "n_days": 35
+    },
+    "2|Mar-Apr": {
+      "ip": 351.7,
+      "whip": 1.459,
+      "babip": 0.313,
+      "n_days": 36
+    },
+    "16|Mar-Apr": {
+      "ip": 259.3,
+      "whip": 1.292,
+      "babip": 0.312,
+      "n_days": 30
+    },
+    "14|Mar-Apr": {
+      "ip": 310.3,
+      "whip": 1.279,
+      "babip": 0.28,
+      "n_days": 29
+    },
+    "12|Mar-Apr": {
+      "ip": 282.3,
+      "whip": 1.296,
+      "babip": 0.323,
+      "n_days": 33
+    },
+    "10|Mar-Apr": {
+      "ip": 302.3,
+      "whip": 1.118,
+      "babip": 0.305,
+      "n_days": 31
+    },
+    "10|May": {
+      "ip": 272.3,
+      "whip": 1.153,
+      "babip": 0.275,
+      "n_days": 29
+    },
+    "16|May": {
+      "ip": 238.7,
+      "whip": 1.219,
+      "babip": 0.307,
+      "n_days": 29
+    },
+    "12|May": {
+      "ip": 217.3,
+      "whip": 1.04,
+      "babip": 0.279,
+      "n_days": 27
+    },
+    "11|May": {
+      "ip": 316.3,
+      "whip": 1.315,
+      "babip": 0.297,
+      "n_days": 30
+    },
+    "3|May": {
+      "ip": 299.7,
+      "whip": 1.278,
+      "babip": 0.285,
+      "n_days": 28
+    },
+    "14|May": {
+      "ip": 310.0,
+      "whip": 1.119,
+      "babip": 0.283,
+      "n_days": 31
+    },
+    "9|May": {
+      "ip": 341.7,
+      "whip": 1.188,
+      "babip": 0.278,
+      "n_days": 30
+    },
+    "15|May": {
+      "ip": 308.0,
+      "whip": 1.221,
+      "babip": 0.297,
+      "n_days": 29
+    },
+    "2|May": {
+      "ip": 321.3,
+      "whip": 1.298,
+      "babip": 0.297,
+      "n_days": 31
+    },
+    "1|May": {
+      "ip": 342.0,
+      "whip": 1.094,
+      "babip": 0.261,
+      "n_days": 31
+    },
+    "13|May": {
+      "ip": 377.3,
+      "whip": 1.187,
+      "babip": 0.268,
+      "n_days": 31
+    },
+    "4|May": {
+      "ip": 290.7,
+      "whip": 1.263,
+      "babip": 0.302,
+      "n_days": 30
+    },
+    "12|Jun": {
+      "ip": 226.3,
+      "whip": 1.18,
+      "babip": 0.309,
+      "n_days": 27
+    },
+    "9|Jun": {
+      "ip": 292.0,
+      "whip": 1.192,
+      "babip": 0.288,
+      "n_days": 29
+    },
+    "2|Jun": {
+      "ip": 282.7,
+      "whip": 1.224,
+      "babip": 0.3,
+      "n_days": 30
+    },
+    "15|Jun": {
+      "ip": 258.3,
+      "whip": 1.068,
+      "babip": 0.265,
+      "n_days": 30
+    },
+    "14|Jun": {
+      "ip": 290.3,
+      "whip": 1.278,
+      "babip": 0.317,
+      "n_days": 29
+    },
+    "13|Jun": {
+      "ip": 313.3,
+      "whip": 1.28,
+      "babip": 0.314,
+      "n_days": 30
+    },
+    "3|Jun": {
+      "ip": 358.7,
+      "whip": 1.149,
+      "babip": 0.286,
+      "n_days": 30
+    },
+    "4|Jun": {
+      "ip": 274.7,
+      "whip": 1.391,
+      "babip": 0.286,
+      "n_days": 28
+    },
+    "10|Jun": {
+      "ip": 293.0,
+      "whip": 1.28,
+      "babip": 0.315,
+      "n_days": 29
+    },
+    "11|Jun": {
+      "ip": 320.3,
+      "whip": 1.299,
+      "babip": 0.275,
+      "n_days": 30
+    },
+    "1|Jun": {
+      "ip": 312.0,
+      "whip": 1.244,
+      "babip": 0.307,
+      "n_days": 28
+    },
+    "16|Jun": {
+      "ip": 209.7,
+      "whip": 1.235,
+      "babip": 0.325,
+      "n_days": 27
+    },
+    "1|Jul": {
+      "ip": 345.7,
+      "whip": 1.23,
+      "babip": 0.298,
+      "n_days": 29
+    },
+    "4|Jul": {
+      "ip": 247.7,
+      "whip": 1.276,
+      "babip": 0.289,
+      "n_days": 27
+    },
+    "12|Jul": {
+      "ip": 201.0,
+      "whip": 1.259,
+      "babip": 0.317,
+      "n_days": 24
+    },
+    "3|Jul": {
+      "ip": 263.7,
+      "whip": 1.399,
+      "babip": 0.32,
+      "n_days": 28
+    },
+    "13|Jul": {
+      "ip": 304.3,
+      "whip": 1.12,
+      "babip": 0.272,
+      "n_days": 28
+    },
+    "15|Jul": {
+      "ip": 250.0,
+      "whip": 1.28,
+      "babip": 0.298,
+      "n_days": 27
+    },
+    "9|Jul": {
+      "ip": 306.7,
+      "whip": 1.255,
+      "babip": 0.291,
+      "n_days": 27
+    },
+    "14|Jul": {
+      "ip": 216.7,
+      "whip": 1.232,
+      "babip": 0.32,
+      "n_days": 27
+    },
+    "10|Jul": {
+      "ip": 277.3,
+      "whip": 1.089,
+      "babip": 0.288,
+      "n_days": 28
+    },
+    "11|Jul": {
+      "ip": 326.7,
+      "whip": 1.191,
+      "babip": 0.283,
+      "n_days": 25
+    },
+    "2|Jul": {
+      "ip": 298.0,
+      "whip": 1.064,
+      "babip": 0.253,
+      "n_days": 24
+    },
+    "16|Jul": {
+      "ip": 210.0,
+      "whip": 1.1,
+      "babip": 0.302,
+      "n_days": 26
+    },
+    "3|Aug": {
+      "ip": 91.0,
+      "whip": 1.341,
+      "babip": 0.303,
+      "n_days": 8
+    },
+    "14|Aug": {
+      "ip": 73.0,
+      "whip": 1.466,
+      "babip": 0.357,
+      "n_days": 8
+    },
+    "13|Aug": {
+      "ip": 91.7,
+      "whip": 1.189,
+      "babip": 0.253,
+      "n_days": 7
+    },
+    "9|Aug": {
+      "ip": 80.7,
+      "whip": 1.079,
+      "babip": 0.259,
+      "n_days": 8
+    },
+    "16|Aug": {
+      "ip": 50.7,
+      "whip": 1.026,
+      "babip": 0.246,
+      "n_days": 8
+    },
+    "11|Aug": {
+      "ip": 98.0,
+      "whip": 1.296,
+      "babip": 0.284,
+      "n_days": 8
+    },
+    "1|Aug": {
+      "ip": 83.7,
+      "whip": 1.183,
+      "babip": 0.314,
+      "n_days": 8
+    },
+    "2|Aug": {
+      "ip": 105.7,
+      "whip": 1.363,
+      "babip": 0.306,
+      "n_days": 7
+    },
+    "4|Aug": {
+      "ip": 74.7,
+      "whip": 1.433,
+      "babip": 0.318,
+      "n_days": 7
+    },
+    "12|Aug": {
+      "ip": 50.7,
+      "whip": 1.105,
+      "babip": 0.268,
+      "n_days": 6
+    },
+    "10|Aug": {
+      "ip": 86.7,
+      "whip": 1.408,
+      "babip": 0.323,
+      "n_days": 8
+    },
+    "15|Aug": {
+      "ip": 77.7,
+      "whip": 1.094,
+      "babip": 0.284,
+      "n_days": 8
+    }
+  }
+}
