@@ -53,6 +53,19 @@ def build_summary(result):
     standings_order = team_standings_order(data)  # team_ids sorted by current roto total, best first
     roto = data['periods'][-1]['roto']
 
+    fa_pool_rows = [
+        {
+            'name': d['name'], 'starts': d['Starts'], 'ip': d['IP'],
+            'cmd_pct': round(d['CMD'] * 100, 1), 'model_whip': round(d['ModelWHIP'], 3),
+            'actual_whip': round(d['ActualWHIP'], 3) if d['ActualWHIP'] is not None else None,
+            'babip': round(d['BABIP'], 3) if d['BABIP'] is not None else None,
+            'score_relative': round(d['ScoreRelative'], 2),  # FA-only-pool relative score (matches the xlsx)
+            'score_absolute': round(d['ScoreAbsolute'], 2) if d['ScoreAbsolute'] is not None else None,
+            'abs_rank': d['AbsRankStr'],
+        }
+        for d in result['fa_pool'].values()
+    ]
+
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'reconciliation': {
@@ -67,6 +80,7 @@ def build_summary(result):
         'step2_kondor_staff': step2_rows,
         'step2_no_data': result['step2_no_data'],
         'fa_pool_count': len(result['fa_pool']),
+        'fa_pool': fa_pool_rows,  # full qualifying FA data, same shape as step2_kondor_staff -- needed for Step 5 scoring
         'heatmap_cells': heatmap_cells,
         'teams': teams,  # {team_id: team_name}
         'standings_order': [
