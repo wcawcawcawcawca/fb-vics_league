@@ -1,63 +1,92 @@
-name: Run Pennants Pipeline
+"""
+ci_pipeline.py
+===============
+CI entry point for GitHub Actions. Thin wrapper around run_pipeline.run()
+that turns a failed Step 4 IP reconciliation into a non-zero exit code, so
+the workflow shows a red X instead of silently committing bad numbers.
 
-# Triggers whenever a new/updated unified JSON (gzipped -- GitHub's browser
-# upload caps at 25 MiB, and the raw JSON runs ~44 MiB; the bookmarklet
-# auto-upload also produces gzip, since that's natively supported by browsers
-# via CompressionStream with no external library) lands in data/, or
-# manually via the "Run workflow" button in the Actions tab.
-on:
-  push:
-    paths:
-      - 'data/pennants_over_easy_unified.json.gz'
-  workflow_dispatch: {}
+Also writes ONE combined summary file (latest_summary.json) at a FIXED path,
+so a chat session only ever needs one raw GitHub URL -- given once -- to pull
+the latest results, instead of hunting down several separate output files'
+URLs by hand every single run. The path never changes; only the content does
+on each run, which is exactly what makes it reusable across conversations.
 
-# Needed so the workflow can commit the generated outputs back to the repo.
-permissions:
-  contents: write
+This intentionally does NOT modify run_pipeline.py -- it just calls the
+existing `run()` function and inspects/reshapes its return value.
+"""
+import json
+import sys
+from datetime import datetime, timezone
 
-jobs:
-  run-pipeline:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+from run_pipeline import run
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+DATA_PATH = 'data/pennants_over_easy_unified.json'
+SUMMARY_PATH = 'latest_summary.json'
 
-      - name: Install dependencies
-        run: pip install openpyxl
 
-      # The JSON is uploaded gzipped to stay under GitHub's 25 MiB browser
-      # upload limit. Decompress it back to the plain path ci_pipeline.py expects.
-      - name: Decompress data file
-        run: gunzip -k -f data/pennants_over_easy_unified.json.gz
+def build_summary(result):
+    gap_table, max_gap, passed = result['heatmap_reconciliation']
 
-      # ci_pipeline.py wraps run_pipeline.py and exits non-zero if the
-      # Step 4 IP reconciliation check fails -- this is what makes a bad
-      # run show up as a red X on the commit instead of silently landing.
-      - name: Run pipeline (Steps 1-4) with reconciliation gate
-        run: python ci_pipeline.py
+    step2_rows = [
+        {
+            'name': d['name'], 'starts': d['Starts'], 'ip': d['IP'],
+            'cmd_pct': round(d['CMD'] * 100, 1), 'model_whip': round(d['ModelWHIP'], 3),
+            'actual_whip': round(d['ActualWHIP'], 3) if d['ActualWHIP'] is not None else None,
+            'babip': round(d['BABIP'], 3) if d['BABIP'] is not None else None,
+            'score_relative': round(d['ScoreRelative'], 2),
+            'score_absolute': round(d['ScoreAbsolute'], 2) if d['ScoreAbsolute'] is not None else None,
+            'abs_rank': d['AbsRankStr'],
+        }
+        for d in result['step2_rows']
+    ]
 
-      - name: Organize outputs
-        run: |
-          mkdir -p output
-          for f in current_roster.json step2_pool.json step3_fa_pool.json cmd_free_agents.xlsx step4_cells.json latest_summary.json; do
-            if [ -f "$f" ]; then
-              mv -f "$f" "output/$f"
-            fi
-          done
+    heatmap_cells = {
+        f"{k[0]}|{k[1]}": {'ip': v['IP'], 'whip': round(v['WHIP'], 3) if v['WHIP'] is not None else None,
+            'babip': round(v['BABIP'], 3) if v['BABIP'] is not None else None,
+            'n_days': v['n_days']}
+        for k, v in result['heatmap_cells'].items()
+    }
 
-      - name: Commit results back to the repo
-        run: |
-          git config user.name "pennants-pipeline-bot"
-          git config user.email "actions@github.com"
-          git add output/
-          if git diff --cached --quiet; then
-            echo "No output changes to commit"
-          else
-            git commit -m "Auto-update pipeline outputs"
-            git push
-          fi
+    return {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'reconciliation': {
+            'passed': passed,
+            'max_gap_ip': round(max_gap, 1),
+            'gap_table': [
+                {'team': name, 'computed_ip': round(c, 1), 'espn_ip': round(e, 1), 'gap': round(g, 1)}
+                for name, c, e, g in gap_table
+            ],
+        },
+        'roster_flags': result['roster_flags'],
+        'step2_kondor_staff': step2_rows,
+        'step2_no_data': result['step2_no_data'],
+        'fa_pool_count': len(result['fa_pool']),
+        'heatmap_cells': heatmap_cells,
+    }
+
+
+def main():
+    result = run(DATA_PATH)
+    gap_table, max_gap, passed = result['heatmap_reconciliation']
+
+    if result['roster_flags']:
+        print("\n=== ROSTER RECONSTRUCTION FLAGS (informational) ===")
+        for f in result['roster_flags']:
+            print("-", f)
+
+    summary = build_summary(result)
+    with open(SUMMARY_PATH, 'w') as f:
+        json.dump(summary, f, indent=2)
+    print(f"\nWrote {SUMMARY_PATH}")
+
+    if not passed:
+        print(f"\nSTEP 4 RECONCILIATION FAILED: max gap {max_gap:.1f} IP "
+              f"exceeds threshold. Failing the build -- see gap table above.")
+        sys.exit(1)
+
+    print(f"\nStep 4 reconciliation passed: max gap {max_gap:.1f} IP across all 12 teams.")
+    sys.exit(0)
+
+
+if __name__ == '__main__':
+    main()
