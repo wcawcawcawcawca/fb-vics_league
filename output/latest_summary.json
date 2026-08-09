@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T23:54:11.659380+00:00",
+  "generated_at": "2026-08-09T23:58:25.671538+00:00",
   "reconciliation": {
     "passed": true,
     "max_gap_ip": 3.6,
@@ -12,9 +12,9 @@
       },
       {
         "team": "7th Floor Crew",
-        "computed_ip": 966.7,
-        "espn_ip": 964,
-        "gap": 2.7
+        "computed_ip": 968.4,
+        "espn_ip": 965.2,
+        "gap": 3.2
       },
       {
         "team": "Hwang out",
@@ -79,7 +79,6 @@
     ]
   },
   "roster_flags": [
-    "Team 7th Floor Crew (id 16): latest snapshot (August 8) was EMPTY for this team -- widened cutoff back to August 7 (20260807).",
     "Team Three Days of the Kondor (id 2): removed 2 blank-name artifact pitcher slots.",
     "Team Bilbo Ragans (id 15): removed 1 blank-name artifact pitcher slots."
   ],
@@ -1102,10 +1101,10 @@
       "n_days": 8
     },
     "16|Aug": {
-      "ip": 49.0,
-      "whip": 1.0,
-      "babip": 0.241,
-      "n_days": 7
+      "ip": 50.7,
+      "whip": 1.026,
+      "babip": 0.246,
+      "n_days": 8
     },
     "11|Aug": {
       "ip": 98.0,
@@ -1168,7 +1167,7 @@
     {
       "team_id": "1",
       "team": "Soy Boy",
-      "roto_total": 121
+      "roto_total": 121.5
     },
     {
       "team_id": "13",
@@ -1178,7 +1177,7 @@
     {
       "team_id": "9",
       "team": "Little Creek Bonkers",
-      "roto_total": 95
+      "roto_total": 94
     },
     {
       "team_id": "10",
@@ -1196,6 +1195,11 @@
       "roto_total": 74.5
     },
     {
+      "team_id": "16",
+      "team": "7th Floor Crew",
+      "roto_total": 72.5
+    },
+    {
       "team_id": "14",
       "team": "Team T",
       "roto_total": 72
@@ -1203,12 +1207,7 @@
     {
       "team_id": "11",
       "team": "Bottomless bangers",
-      "roto_total": 69.5
-    },
-    {
-      "team_id": "16",
-      "team": "7th Floor Crew",
-      "roto_total": 69
+      "roto_total": 68
     },
     {
       "team_id": "15",
@@ -1218,12 +1217,12 @@
     {
       "team_id": "4",
       "team": "Dominic Toretto",
-      "roto_total": 53
+      "roto_total": 52
     },
     {
       "team_id": "12",
       "team": "Hwang out",
-      "roto_total": 47
+      "roto_total": 46.5
     }
   ]
 }
