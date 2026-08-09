@@ -135,6 +135,14 @@ def diagnose_no_data_reason(name, appearances, genuine_starters, window_start, m
     return f"genuine starter, but last appeared {last} (outside the trailing window -- likely injured/inactive)"
 
 
+def _fmt(x, spec):
+    """Format a possibly-None numeric value. BABIP/ActualWHIP/ScoreAbsolute
+    can legitimately be None for pitchers with a small enough sample that the
+    stat is mathematically undefined (e.g. BF-K-BB-HR <= 0 for BABIP) -- this
+    is real data, not a bug, so print 'N/A' rather than crashing."""
+    return f"{x:{spec}}" if x is not None else "N/A"
+
+
 def main(json_path, roster_path='current_roster.json'):
     data = load_unified_json(json_path)
     with open(roster_path) as f:
@@ -149,9 +157,9 @@ def main(json_path, roster_path='current_roster.json'):
     print("\nKondor staff, sorted by Model WHIP:")
     for d in rows:
         print(f"  {d['name']}: Starts={d['Starts']} IP={d['IP']} CMD%={d['CMD']*100:.1f} "
-              f"ModelWHIP={d['ModelWHIP']:.3f} ActualWHIP={d['ActualWHIP']:.3f} "
-              f"BABIP={d['BABIP']:.3f} ScoreRel={d['ScoreRelative']:.2f} "
-              f"ScoreAbs={d['ScoreAbsolute']:.2f} AbsRank={d['AbsRankStr']}")
+              f"ModelWHIP={d['ModelWHIP']:.3f} ActualWHIP={_fmt(d['ActualWHIP'], '.3f')} "
+              f"BABIP={_fmt(d['BABIP'], '.3f')} ScoreRel={d['ScoreRelative']:.2f} "
+              f"ScoreAbs={_fmt(d['ScoreAbsolute'], '.2f')} AbsRank={d['AbsRankStr']}")
 
     print("\nNo qualifying data:")
     for n in no_data:
