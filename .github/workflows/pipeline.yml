@@ -44,7 +44,7 @@ jobs:
       - name: Organize outputs
         run: |
           mkdir -p output
-          for f in current_roster.json step2_pool.json step3_fa_pool.json cmd_free_agents.xlsx step4_cells.json; do
+          for f in current_roster.json step2_pool.json step3_fa_pool.json cmd_free_agents.xlsx step4_cells.json latest_summary.json; do
             if [ -f "$f" ]; then
               mv -f "$f" "output/$f"
             fi
