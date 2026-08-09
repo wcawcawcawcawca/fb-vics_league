@@ -810,7 +810,7 @@
     "ScoreAbsolute": 0.7635135135135135,
     "AbsRank": 22,
     "AbsRankStr": "22 of 149",
-    "ScoreRelative": 0.7
+    "ScoreRelative": 0.6666666666666666
   },
   "Jose Soriano": {
     "Starts": 3,
@@ -1123,7 +1123,7 @@
   "Luinder Avila": {
     "Starts": 3,
     "IP": 13.3,
-    "ER": 10,
+    "ER": 11,
     "BB": 8,
     "K": 11,
     "HR": 1,
@@ -1338,12 +1338,11 @@
     "ModelWHIP": 1.2157011494252872,
     "ActualWHIP": 1.7,
     "BABIP": 0.43636363636363634,
-    "team_id": "2",
+    "team_id": null,
     "name": "Matthew Liberatore",
     "ScoreAbsolute": 0.6418918918918919,
     "AbsRank": 37,
-    "AbsRankStr": "37 of 149",
-    "ScoreRelative": 0.5
+    "AbsRankStr": "37 of 149"
   },
   "Walbert Urena": {
     "Starts": 4,
@@ -1372,7 +1371,7 @@
     "ScoreAbsolute": 0.527027027027027,
     "AbsRank": 49,
     "AbsRankStr": "49 of 149",
-    "ScoreRelative": 0.2
+    "ScoreRelative": 0.2222222222222222
   },
   "Jack Perkins": {
     "Starts": 4,
@@ -1545,11 +1544,11 @@
   "Bubba Chandler": {
     "Starts": 4,
     "IP": 22.0,
-    "ER": 6,
+    "ER": 5,
     "BB": 7,
     "K": 18,
     "HR": 0,
-    "H": 17,
+    "H": 16,
     "BF": 86,
     "balls": 126,
     "pure": 166,
@@ -1562,8 +1561,8 @@
     "Ballpct": 0.3620689655172414,
     "CMD": 0.11494252873563215,
     "ModelWHIP": 1.1861627906976744,
-    "ActualWHIP": 1.0909090909090908,
-    "BABIP": 0.2786885245901639,
+    "ActualWHIP": 1.0454545454545454,
+    "BABIP": 0.26229508196721313,
     "team_id": "11",
     "name": "Bubba Chandler",
     "ScoreAbsolute": 0.6013513513513513,
@@ -1849,7 +1848,7 @@
     "ScoreAbsolute": 0.7837837837837838,
     "AbsRank": 19,
     "AbsRankStr": "19 of 149",
-    "ScoreRelative": 0.7
+    "ScoreRelative": 0.6666666666666666
   },
   "Gage Jump": {
     "Starts": 4,
@@ -1859,20 +1858,20 @@
     "K": 28,
     "HR": 3,
     "H": 21,
-    "BF": 91,
+    "BF": 90,
     "balls": 144,
-    "pure": 162,
+    "pure": 161,
     "inplay": 43,
-    "total_pitches": 349,
-    "Kpct": 0.3076923076923077,
-    "BBpct": 0.17582417582417584,
-    "HRpct": 0.03296703296703297,
-    "Purepct": 0.46418338108882523,
-    "Ballpct": 0.41260744985673353,
-    "CMD": 0.0515759312320917,
-    "ModelWHIP": 1.5087472527472527,
+    "total_pitches": 348,
+    "Kpct": 0.3111111111111111,
+    "BBpct": 0.17777777777777778,
+    "HRpct": 0.03333333333333333,
+    "Purepct": 0.46264367816091956,
+    "Ballpct": 0.41379310344827586,
+    "CMD": 0.0488505747126437,
+    "ModelWHIP": 1.5111777777777777,
     "ActualWHIP": 1.819672131147541,
-    "BABIP": 0.4090909090909091,
+    "BABIP": 0.4186046511627907,
     "team_id": null,
     "name": "Gage Jump",
     "ScoreAbsolute": 0.13513513513513514,
@@ -1910,25 +1909,25 @@
   "Brady Singer": {
     "Starts": 3,
     "IP": 17.0,
-    "ER": 6,
+    "ER": 10,
     "BB": 8,
     "K": 15,
     "HR": 0,
-    "H": 17,
+    "H": 18,
     "BF": 73,
     "balls": 115,
     "pure": 131,
-    "inplay": 46,
-    "total_pitches": 292,
+    "inplay": 47,
+    "total_pitches": 293,
     "Kpct": 0.2054794520547945,
     "BBpct": 0.1095890410958904,
     "HRpct": 0.0,
-    "Purepct": 0.4486301369863014,
-    "Ballpct": 0.3938356164383562,
-    "CMD": 0.0547945205479452,
+    "Purepct": 0.447098976109215,
+    "Ballpct": 0.3924914675767918,
+    "CMD": 0.05460750853242319,
     "ModelWHIP": 1.3187123287671234,
-    "ActualWHIP": 1.4705882352941178,
-    "BABIP": 0.34,
+    "ActualWHIP": 1.5294117647058822,
+    "BABIP": 0.36,
     "team_id": "3",
     "name": "Brady Singer",
     "ScoreAbsolute": 0.25675675675675674,
@@ -2298,7 +2297,7 @@
     "ScoreAbsolute": 0.6824324324324325,
     "AbsRank": 32,
     "AbsRankStr": "32 of 149",
-    "ScoreRelative": 0.6
+    "ScoreRelative": 0.5555555555555556
   },
   "Sandy Alcantara": {
     "Starts": 4,
@@ -2495,7 +2494,7 @@
     "ScoreAbsolute": 0.2905405405405405,
     "AbsRank": 90,
     "AbsRankStr": "90 of 149",
-    "ScoreRelative": 0.1
+    "ScoreRelative": 0.1111111111111111
   },
   "Michael McGreevy": {
     "Starts": 3,
@@ -3252,7 +3251,7 @@
     "ScoreAbsolute": 0.5608108108108109,
     "AbsRank": 45,
     "AbsRankStr": "45 of 149",
-    "ScoreRelative": 0.4
+    "ScoreRelative": 0.4444444444444444
   },
   "Dustin May": {
     "Starts": 3,
@@ -3673,7 +3672,7 @@
     "ScoreAbsolute": 0.5202702702702703,
     "AbsRank": 51,
     "AbsRankStr": "51 of 149",
-    "ScoreRelative": 0.3
+    "ScoreRelative": 0.3333333333333333
   },
   "Hunter Brown": {
     "Starts": 3,
@@ -4007,7 +4006,7 @@
     "BABIP": 0.20833333333333334,
     "team_id": "13",
     "name": "Logan Gilbert",
-    "ScoreAbsolute": 0.21621621621621623,
+    "ScoreAbsolute": 0.22297297297297297,
     "AbsRank": 100,
     "AbsRankStr": "100 of 149"
   },
@@ -4178,7 +4177,7 @@
     "ScoreAbsolute": 0.46621621621621623,
     "AbsRank": 61,
     "AbsRankStr": "61 of 149",
-    "ScoreRelative": 0.2
+    "ScoreRelative": 0.2222222222222222
   },
   "Noah Cameron": {
     "Starts": 2,
@@ -4656,6 +4655,6 @@
     "ScoreAbsolute": null,
     "AbsRank": null,
     "AbsRankStr": null,
-    "ScoreRelative": 0.9
+    "ScoreRelative": 0.8888888888888888
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T18:44:29.016239+00:00",
+  "generated_at": "2026-08-09T23:54:11.659380+00:00",
   "reconciliation": {
     "passed": true,
     "max_gap_ip": 3.6,
@@ -12,9 +12,9 @@
       },
       {
         "team": "7th Floor Crew",
-        "computed_ip": 968.4,
-        "espn_ip": 965.2,
-        "gap": 3.2
+        "computed_ip": 966.7,
+        "espn_ip": 964,
+        "gap": 2.7
       },
       {
         "team": "Hwang out",
@@ -79,6 +79,7 @@
     ]
   },
   "roster_flags": [
+    "Team 7th Floor Crew (id 16): latest snapshot (August 8) was EMPTY for this team -- widened cutoff back to August 7 (20260807).",
     "Team Three Days of the Kondor (id 2): removed 2 blank-name artifact pitcher slots.",
     "Team Bilbo Ragans (id 15): removed 1 blank-name artifact pitcher slots."
   ],
@@ -91,7 +92,7 @@
       "model_whip": 0.92,
       "actual_whip": 1.087,
       "babip": 0.333,
-      "score_relative": 0.7,
+      "score_relative": 0.67,
       "score_absolute": 0.76,
       "abs_rank": "22 of 149"
     },
@@ -103,7 +104,7 @@
       "model_whip": 0.995,
       "actual_whip": 0.4,
       "babip": 0.1,
-      "score_relative": 0.9,
+      "score_relative": 0.89,
       "score_absolute": null,
       "abs_rank": null
     },
@@ -115,7 +116,7 @@
       "model_whip": 1.114,
       "actual_whip": 1.277,
       "babip": 0.348,
-      "score_relative": 0.3,
+      "score_relative": 0.33,
       "score_absolute": 0.52,
       "abs_rank": "51 of 149"
     },
@@ -127,7 +128,7 @@
       "model_whip": 1.131,
       "actual_whip": 1.239,
       "babip": 0.341,
-      "score_relative": 0.7,
+      "score_relative": 0.67,
       "score_absolute": 0.78,
       "abs_rank": "19 of 149"
     },
@@ -139,21 +140,9 @@
       "model_whip": 1.18,
       "actual_whip": 1.235,
       "babip": 0.309,
-      "score_relative": 0.6,
+      "score_relative": 0.56,
       "score_absolute": 0.68,
       "abs_rank": "32 of 149"
-    },
-    {
-      "name": "Matthew Liberatore",
-      "starts": 4,
-      "ip": 20.0,
-      "cmd_pct": 12.9,
-      "model_whip": 1.216,
-      "actual_whip": 1.7,
-      "babip": 0.436,
-      "score_relative": 0.5,
-      "score_absolute": 0.64,
-      "abs_rank": "37 of 149"
     },
     {
       "name": "Rhett Lowder",
@@ -163,7 +152,7 @@
       "model_whip": 1.269,
       "actual_whip": 0.824,
       "babip": 0.17,
-      "score_relative": 0.4,
+      "score_relative": 0.44,
       "score_absolute": 0.56,
       "abs_rank": "45 of 149"
     },
@@ -175,7 +164,7 @@
       "model_whip": 1.289,
       "actual_whip": 1.286,
       "babip": 0.324,
-      "score_relative": 0.2,
+      "score_relative": 0.22,
       "score_absolute": 0.47,
       "abs_rank": "61 of 149"
     },
@@ -187,7 +176,7 @@
       "model_whip": 1.307,
       "actual_whip": 1.18,
       "babip": 0.259,
-      "score_relative": 0.2,
+      "score_relative": 0.22,
       "score_absolute": 0.53,
       "abs_rank": "49 of 149"
     },
@@ -199,7 +188,7 @@
       "model_whip": 1.334,
       "actual_whip": 0.975,
       "babip": 0.244,
-      "score_relative": 0.1,
+      "score_relative": 0.11,
       "score_absolute": 0.29,
       "abs_rank": "90 of 149"
     },
@@ -218,10 +207,9 @@
   ],
   "step2_no_data": [
     "Kade Anderson",
-    "Michael Soroka",
-    "Ryan Gusto"
+    "Michael Soroka"
   ],
-  "fa_pool_count": 44,
+  "fa_pool_count": 48,
   "fa_pool": [
     {
       "name": "Emmet Sheehan",
@@ -231,7 +219,7 @@
       "model_whip": 1.345,
       "actual_whip": 1.615,
       "babip": 0.333,
-      "score_relative": 0.65,
+      "score_relative": 0.62,
       "score_absolute": 0.43,
       "abs_rank": "68 of 149"
     },
@@ -243,7 +231,7 @@
       "model_whip": 1.136,
       "actual_whip": 1.05,
       "babip": 0.267,
-      "score_relative": 0.33,
+      "score_relative": 0.3,
       "score_absolute": 0.19,
       "abs_rank": "105 of 149"
     },
@@ -255,7 +243,7 @@
       "model_whip": 1.384,
       "actual_whip": 1.56,
       "babip": 0.347,
-      "score_relative": 0.53,
+      "score_relative": 0.51,
       "score_absolute": 0.32,
       "abs_rank": "85 of 149"
     },
@@ -267,7 +255,7 @@
       "model_whip": 1.461,
       "actual_whip": 1.188,
       "babip": 0.25,
-      "score_relative": 0.3,
+      "score_relative": 0.28,
       "score_absolute": 0.18,
       "abs_rank": "106 of 149"
     },
@@ -279,7 +267,7 @@
       "model_whip": 1.379,
       "actual_whip": 1.257,
       "babip": 0.274,
-      "score_relative": 0.58,
+      "score_relative": 0.55,
       "score_absolute": 0.35,
       "abs_rank": "81 of 149"
     },
@@ -303,7 +291,7 @@
       "model_whip": 1.613,
       "actual_whip": 1.477,
       "babip": 0.291,
-      "score_relative": 0.12,
+      "score_relative": 0.11,
       "score_absolute": 0.05,
       "abs_rank": "136 of 149"
     },
@@ -327,7 +315,7 @@
       "model_whip": 1.261,
       "actual_whip": 1.8,
       "babip": 0.429,
-      "score_relative": 0.19,
+      "score_relative": 0.17,
       "score_absolute": 0.14,
       "abs_rank": "113 of 149"
     },
@@ -339,7 +327,7 @@
       "model_whip": 1.438,
       "actual_whip": 1.182,
       "babip": 0.288,
-      "score_relative": 0.42,
+      "score_relative": 0.4,
       "score_absolute": 0.24,
       "abs_rank": "97 of 149"
     },
@@ -363,7 +351,7 @@
       "model_whip": 1.096,
       "actual_whip": 1.015,
       "babip": 0.264,
-      "score_relative": 0.67,
+      "score_relative": 0.64,
       "score_absolute": 0.43,
       "abs_rank": "66 of 149"
     },
@@ -387,7 +375,7 @@
       "model_whip": 1.226,
       "actual_whip": 1.014,
       "babip": 0.246,
-      "score_relative": 0.51,
+      "score_relative": 0.47,
       "score_absolute": 0.3,
       "abs_rank": "88 of 149"
     },
@@ -399,7 +387,7 @@
       "model_whip": 1.313,
       "actual_whip": 1.255,
       "babip": 0.283,
-      "score_relative": 0.74,
+      "score_relative": 0.7,
       "score_absolute": 0.51,
       "abs_rank": "53 of 149"
     },
@@ -411,9 +399,21 @@
       "model_whip": 1.609,
       "actual_whip": 2.531,
       "babip": 0.463,
-      "score_relative": 0.14,
+      "score_relative": 0.13,
       "score_absolute": 0.05,
       "abs_rank": "134 of 149"
+    },
+    {
+      "name": "Matthew Liberatore",
+      "starts": 4,
+      "ip": 20.0,
+      "cmd_pct": 12.9,
+      "model_whip": 1.216,
+      "actual_whip": 1.7,
+      "babip": 0.436,
+      "score_relative": 0.87,
+      "score_absolute": 0.64,
+      "abs_rank": "37 of 149"
     },
     {
       "name": "Jack Perkins",
@@ -423,7 +423,7 @@
       "model_whip": 1.408,
       "actual_whip": 1.474,
       "babip": 0.294,
-      "score_relative": 0.49,
+      "score_relative": 0.47,
       "score_absolute": 0.28,
       "abs_rank": "92 of 149"
     },
@@ -435,7 +435,7 @@
       "model_whip": 1.413,
       "actual_whip": 1.56,
       "babip": 0.333,
-      "score_relative": 0.07,
+      "score_relative": 0.06,
       "score_absolute": 0.03,
       "abs_rank": "142 of 149"
     },
@@ -459,7 +459,7 @@
       "model_whip": 1.496,
       "actual_whip": 1.667,
       "babip": 0.356,
-      "score_relative": 0.21,
+      "score_relative": 0.19,
       "score_absolute": 0.14,
       "abs_rank": "112 of 149"
     },
@@ -471,7 +471,7 @@
       "model_whip": 1.446,
       "actual_whip": 1.208,
       "babip": 0.265,
-      "score_relative": 0.16,
+      "score_relative": 0.15,
       "score_absolute": 0.13,
       "abs_rank": "116 of 149"
     },
@@ -479,10 +479,10 @@
       "name": "Gage Jump",
       "starts": 4,
       "ip": 20.3,
-      "cmd_pct": 5.2,
-      "model_whip": 1.509,
+      "cmd_pct": 4.9,
+      "model_whip": 1.511,
       "actual_whip": 1.82,
-      "babip": 0.409,
+      "babip": 0.419,
       "score_relative": 0.28,
       "score_absolute": 0.14,
       "abs_rank": "114 of 149"
@@ -495,7 +495,7 @@
       "model_whip": 1.308,
       "actual_whip": 1.054,
       "babip": 0.235,
-      "score_relative": 0.58,
+      "score_relative": 0.53,
       "score_absolute": 0.39,
       "abs_rank": "73 of 149"
     },
@@ -507,7 +507,7 @@
       "model_whip": 1.318,
       "actual_whip": 1.174,
       "babip": 0.255,
-      "score_relative": 0.72,
+      "score_relative": 0.68,
       "score_absolute": 0.49,
       "abs_rank": "57 of 149"
     },
@@ -519,7 +519,7 @@
       "model_whip": 1.596,
       "actual_whip": 2.16,
       "babip": 0.367,
-      "score_relative": 0.16,
+      "score_relative": 0.15,
       "score_absolute": 0.06,
       "abs_rank": "132 of 149"
     },
@@ -531,7 +531,7 @@
       "model_whip": 1.34,
       "actual_whip": 0.947,
       "babip": 0.188,
-      "score_relative": 0.4,
+      "score_relative": 0.36,
       "score_absolute": 0.24,
       "abs_rank": "98 of 149"
     },
@@ -543,7 +543,7 @@
       "model_whip": 1.26,
       "actual_whip": 1.0,
       "babip": 0.222,
-      "score_relative": 0.88,
+      "score_relative": 0.83,
       "score_absolute": 0.6,
       "abs_rank": "40 of 149"
     },
@@ -567,7 +567,7 @@
       "model_whip": 1.307,
       "actual_whip": 1.026,
       "babip": 0.214,
-      "score_relative": 0.7,
+      "score_relative": 0.66,
       "score_absolute": 0.44,
       "abs_rank": "65 of 149"
     },
@@ -579,7 +579,7 @@
       "model_whip": 1.436,
       "actual_whip": 1.636,
       "babip": 0.341,
-      "score_relative": 0.44,
+      "score_relative": 0.43,
       "score_absolute": 0.24,
       "abs_rank": "96 of 149"
     },
@@ -591,7 +591,7 @@
       "model_whip": 1.158,
       "actual_whip": 1.239,
       "babip": 0.323,
-      "score_relative": 0.84,
+      "score_relative": 0.79,
       "score_absolute": 0.55,
       "abs_rank": "46 of 149"
     },
@@ -603,7 +603,7 @@
       "model_whip": 1.368,
       "actual_whip": 1.312,
       "babip": 0.279,
-      "score_relative": 0.23,
+      "score_relative": 0.21,
       "score_absolute": 0.15,
       "abs_rank": "111 of 149"
     },
@@ -615,7 +615,7 @@
       "model_whip": 1.352,
       "actual_whip": 1.188,
       "babip": 0.25,
-      "score_relative": 0.63,
+      "score_relative": 0.6,
       "score_absolute": 0.42,
       "abs_rank": "70 of 149"
     },
@@ -639,7 +639,7 @@
       "model_whip": 1.669,
       "actual_whip": 0.692,
       "babip": 0.12,
-      "score_relative": 0.07,
+      "score_relative": 0.06,
       "score_absolute": 0.03,
       "abs_rank": "143 of 149"
     },
@@ -651,7 +651,7 @@
       "model_whip": 1.404,
       "actual_whip": 1.676,
       "babip": 0.35,
-      "score_relative": 0.51,
+      "score_relative": 0.49,
       "score_absolute": 0.29,
       "abs_rank": "91 of 149"
     },
@@ -663,7 +663,7 @@
       "model_whip": 1.59,
       "actual_whip": 1.867,
       "babip": 0.351,
-      "score_relative": 0.12,
+      "score_relative": 0.11,
       "score_absolute": 0.05,
       "abs_rank": "135 of 149"
     },
@@ -687,7 +687,7 @@
       "model_whip": 1.017,
       "actual_whip": 0.706,
       "babip": 0.172,
-      "score_relative": 0.81,
+      "score_relative": 0.77,
       "score_absolute": 0.53,
       "abs_rank": "50 of 149"
     },
@@ -699,7 +699,7 @@
       "model_whip": 1.327,
       "actual_whip": 1.4,
       "babip": 0.333,
-      "score_relative": 0.7,
+      "score_relative": 0.66,
       "score_absolute": 0.47,
       "abs_rank": "59 of 149"
     },
@@ -711,7 +711,7 @@
       "model_whip": 1.805,
       "actual_whip": 0.968,
       "babip": 0.107,
-      "score_relative": 0.05,
+      "score_relative": 0.04,
       "score_absolute": 0.01,
       "abs_rank": "146 of 149"
     },
@@ -723,7 +723,7 @@
       "model_whip": 1.295,
       "actual_whip": 1.393,
       "babip": 0.286,
-      "score_relative": 0.14,
+      "score_relative": 0.13,
       "score_absolute": 0.12,
       "abs_rank": "118 of 149"
     },
@@ -735,9 +735,21 @@
       "model_whip": 1.272,
       "actual_whip": 1.0,
       "babip": 0.2,
-      "score_relative": 0.65,
+      "score_relative": 0.62,
       "score_absolute": 0.43,
       "abs_rank": "69 of 149"
+    },
+    {
+      "name": "Quinn Mathews",
+      "starts": 1,
+      "ip": 5.0,
+      "cmd_pct": 12.0,
+      "model_whip": 1.589,
+      "actual_whip": 1.8,
+      "babip": 0.375,
+      "score_relative": 0.19,
+      "score_absolute": null,
+      "abs_rank": null
     },
     {
       "name": "Robert Stock",
@@ -747,9 +759,33 @@
       "model_whip": 1.493,
       "actual_whip": 2.125,
       "babip": 0.423,
-      "score_relative": 0.35,
+      "score_relative": 0.34,
       "score_absolute": 0.16,
       "abs_rank": "110 of 149"
+    },
+    {
+      "name": "Cade Povich",
+      "starts": 1,
+      "ip": 6.0,
+      "cmd_pct": 19.5,
+      "model_whip": 0.788,
+      "actual_whip": 1.333,
+      "babip": 0.5,
+      "score_relative": 0.98,
+      "score_absolute": null,
+      "abs_rank": null
+    },
+    {
+      "name": "Blade Tidwell",
+      "starts": 1,
+      "ip": 5.0,
+      "cmd_pct": 8.3,
+      "model_whip": 1.184,
+      "actual_whip": 1.4,
+      "babip": 0.353,
+      "score_relative": 0.6,
+      "score_absolute": null,
+      "abs_rank": null
     }
   ],
   "heatmap_cells": {
@@ -989,8 +1025,8 @@
     },
     "3|Jul": {
       "ip": 263.7,
-      "whip": 1.399,
-      "babip": 0.32,
+      "whip": 1.403,
+      "babip": 0.322,
       "n_days": 28
     },
     "13|Jul": {
@@ -1025,8 +1061,8 @@
     },
     "11|Jul": {
       "ip": 326.7,
-      "whip": 1.191,
-      "babip": 0.283,
+      "whip": 1.188,
+      "babip": 0.282,
       "n_days": 25
     },
     "2|Jul": {
@@ -1044,7 +1080,7 @@
     "3|Aug": {
       "ip": 91.0,
       "whip": 1.341,
-      "babip": 0.303,
+      "babip": 0.304,
       "n_days": 8
     },
     "14|Aug": {
@@ -1066,10 +1102,10 @@
       "n_days": 8
     },
     "16|Aug": {
-      "ip": 50.7,
-      "whip": 1.026,
-      "babip": 0.246,
-      "n_days": 8
+      "ip": 49.0,
+      "whip": 1.0,
+      "babip": 0.241,
+      "n_days": 7
     },
     "11|Aug": {
       "ip": 98.0,
@@ -1132,7 +1168,7 @@
     {
       "team_id": "1",
       "team": "Soy Boy",
-      "roto_total": 121.5
+      "roto_total": 121
     },
     {
       "team_id": "13",
@@ -1142,7 +1178,7 @@
     {
       "team_id": "9",
       "team": "Little Creek Bonkers",
-      "roto_total": 94
+      "roto_total": 95
     },
     {
       "team_id": "10",
@@ -1160,11 +1196,6 @@
       "roto_total": 74.5
     },
     {
-      "team_id": "16",
-      "team": "7th Floor Crew",
-      "roto_total": 72.5
-    },
-    {
       "team_id": "14",
       "team": "Team T",
       "roto_total": 72
@@ -1172,7 +1203,12 @@
     {
       "team_id": "11",
       "team": "Bottomless bangers",
-      "roto_total": 68
+      "roto_total": 69.5
+    },
+    {
+      "team_id": "16",
+      "team": "7th Floor Crew",
+      "roto_total": 69
     },
     {
       "team_id": "15",
@@ -1182,12 +1218,12 @@
     {
       "team_id": "4",
       "team": "Dominic Toretto",
-      "roto_total": 52
+      "roto_total": 53
     },
     {
       "team_id": "12",
       "team": "Hwang out",
-      "roto_total": 46.5
+      "roto_total": 47
     }
   ]
 }
