@@ -24,6 +24,7 @@ import step1_roster
 import step2_kondor_staff
 import step3_fa_leaderboard
 import step4_heatmap
+import step6_start_score
 from pipeline_common import load_unified_json
 
 
@@ -60,6 +61,11 @@ def run(json_path):
     print("See step5_probables.py for how to supply it.")
     print("#" * 70)
 
+    print("\n" + "#" * 70)
+    print("STEP 6: Start Score (composite streaming score, regression-fit + backtested)")
+    print("#" * 70)
+    step6_result = step6_start_score.main(json_path)
+
     return {
         'data': data,
         'roster': roster,
@@ -69,6 +75,7 @@ def run(json_path):
         'fa_pool': fa_pool,
         'heatmap_cells': cells,
         'heatmap_reconciliation': (gap_table, max_gap, passed),
+        'start_score': step6_result,
     }
 
 
