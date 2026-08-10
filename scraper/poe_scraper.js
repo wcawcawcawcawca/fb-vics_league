@@ -1,5 +1,5 @@
 (async function () {
-const GAME_SCRAPER_VERSION = 26; // bump whenever game-parsing logic changes, so merges know to re-fetch stale games
+const GAME_SCRAPER_VERSION = 27; // bump whenever game-parsing logic changes, so merges know to re-fetch stale games
 const GITHUB_OWNER = 'wcawcawcawcawca';
 const GITHUB_REPO = 'fb-vics_league';
 const GITHUB_BRANCH = 'main';
@@ -468,11 +468,11 @@ const before = idx === 0 ? ' ' : normDisplay[idx - 1];
 if (!/[\s;,]/.test(before)) { searchFrom = idx + candidate.length; continue; }
 const afterIdx = idx + candidate.length;
 const rest = displayValue.slice(afterIdx);
-const m = rest.match(/^\.?\s*(\d+)?\s*\(/);
+const m = rest.match(/^\.?\s*(\d+)?\s*(?:\(|,|;|$)/);
 if (m) {
 const count = m[1] ? parseInt(m[1]) : 1;
 results[name] = (results[name] || 0) + count;
-searchFrom = afterIdx + m[0].length;
+searchFrom = afterIdx + (m[0].endsWith('(') ? m[0].length : Math.max(1, m[0].length));
 matched = true;
 } else { searchFrom = afterIdx; }
 }
@@ -486,20 +486,35 @@ if (!group) return null;
 const stat = (group.stats || []).find(s => s.name === statName);
 return stat ? stat.displayValue : null;
 }
+const boxTeamAbbrs = (bs.teams || []).map(t => (t.team || {}).abbreviation).filter(Boolean);
 for (const team of (bs.teams || [])) {
 const teamAbbr = (team.team || {}).abbreviation || '';
-const knownNames = Object.keys(batting[teamAbbr] || {});
+const oppAbbr = boxTeamAbbrs.find(a => a !== teamAbbr) || teamAbbr;
+const ownNames = Object.keys(batting[teamAbbr] || {});
+const oppNames = Object.keys(batting[oppAbbr] || {});
+// "whose" = which team's batters this detail group actually names.
+// battingDetails describes a team's OWN batters (their doubles, their sac
+// flies, etc). pitchingDetails describes what that team's PITCHERS did TO
+// THE OPPONENT -- e.g. team X's hitByPitch names a batter on the OTHER
+// team who X's pitcher hit, never X's own batter. Confirmed via a live
+// BAL@PIT box score: BAL's pitchingDetails.hitByPitch displayValue was
+// "Griffin (by Baz)" -- Baz pitches for BAL, so Griffin is the PIT batter
+// who got hit, not a BAL player. Searching teamAbbr's own knownNames for
+// pitchingDetails stats silently matched nothing for nearly the entire
+// season -- this is the dominant reason HBP was almost never captured.
 const fieldMap = [
-['battingDetails', 'doubles', '2B'], ['battingDetails', 'triples', '3B'],
-['pitchingDetails', 'hitByPitch', 'HBP'], ['battingDetails', 'sacFly', 'SF'],
-['baserunningDetails', 'caughtStealing', 'CS'],
+['battingDetails', 'doubles', '2B', 'own'], ['battingDetails', 'triples', '3B', 'own'],
+['pitchingDetails', 'hitByPitch', 'HBP', 'opp'], ['battingDetails', 'sacFly', 'SF', 'own'],
+['baserunningDetails', 'caughtStealing', 'CS', 'own'],
 ];
-for (const [groupName, statName, outKey] of fieldMap) {
+for (const [groupName, statName, outKey, whose] of fieldMap) {
 const displayValue = findDetailStat(team, groupName, statName);
 if (!displayValue) continue;
-const counts = parseNameCountPairs(displayValue, knownNames);
+const targetAbbr = whose === 'opp' ? oppAbbr : teamAbbr;
+const targetNames = whose === 'opp' ? oppNames : ownNames;
+const counts = parseNameCountPairs(displayValue, targetNames);
 for (const [name, count] of Object.entries(counts)) {
-if (batting[teamAbbr][name]) batting[teamAbbr][name][outKey] = count;
+if (batting[targetAbbr] && batting[targetAbbr][name]) batting[targetAbbr][name][outKey] = count;
 }
 }
 }
