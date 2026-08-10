@@ -217,7 +217,7 @@
     "ModelWHIP": 1.438125,
     "ActualWHIP": 1.1818181818181819,
     "BABIP": 0.288135593220339,
-    "team_id": null,
+    "team_id": "3",
     "name": "Zac Thornton",
     "ScoreAbsolute": 0.24,
     "AbsRank": 98,
@@ -273,7 +273,7 @@
     "ModelWHIP": 1.0962758620689657,
     "ActualWHIP": 1.0147058823529411,
     "BABIP": 0.2641509433962264,
-    "team_id": null,
+    "team_id": "3",
     "name": "Tyler Mahle",
     "ScoreAbsolute": 0.46,
     "AbsRank": 67,
@@ -530,7 +530,7 @@
     "ScoreAbsolute": 0.49333333333333335,
     "AbsRank": 59,
     "AbsRankStr": "59 of 151",
-    "ScoreRelative": 0.14285714285714285
+    "ScoreRelative": 0.2
   },
   "Jack Perkins": {
     "Starts": 4,
@@ -1007,7 +1007,7 @@
     "ScoreAbsolute": 0.7666666666666667,
     "AbsRank": 22,
     "AbsRankStr": "22 of 151",
-    "ScoreRelative": 0.7142857142857143
+    "ScoreRelative": 0.7
   },
   "Gage Jump": {
     "Starts": 4,
@@ -1087,7 +1087,7 @@
     "ModelWHIP": 1.3267676767676768,
     "ActualWHIP": 1.5217391304347827,
     "BABIP": 0.352112676056338,
-    "team_id": "3",
+    "team_id": null,
     "name": "Brady Singer",
     "ScoreAbsolute": 0.37333333333333335,
     "AbsRank": 79,
@@ -1143,7 +1143,7 @@
     "ModelWHIP": 1.3080416666666665,
     "ActualWHIP": 1.054054054054054,
     "BABIP": 0.23529411764705882,
-    "team_id": null,
+    "team_id": "15",
     "name": "Hunter Dobbins",
     "ScoreAbsolute": 0.4,
     "AbsRank": 73,
@@ -1199,11 +1199,12 @@
     "ModelWHIP": 1.3183809523809524,
     "ActualWHIP": 1.1739130434782608,
     "BABIP": 0.2553191489361702,
-    "team_id": null,
+    "team_id": "2",
     "name": "Eric Lauer",
     "ScoreAbsolute": 0.46,
     "AbsRank": 68,
-    "AbsRankStr": "68 of 151"
+    "AbsRankStr": "68 of 151",
+    "ScoreRelative": 0.1
   },
   "Aaron Nola": {
     "Starts": 4,
@@ -1227,7 +1228,7 @@
     "ModelWHIP": 1.4143913043478262,
     "ActualWHIP": 1.4545454545454546,
     "BABIP": 0.3157894736842105,
-    "team_id": "10",
+    "team_id": null,
     "name": "Aaron Nola",
     "ScoreAbsolute": 0.10666666666666667,
     "AbsRank": 126,
@@ -1367,7 +1368,7 @@
     "ModelWHIP": 1.3400547945205479,
     "ActualWHIP": 0.9473684210526315,
     "BABIP": 0.1875,
-    "team_id": null,
+    "team_id": "1",
     "name": "Martin Perez",
     "ScoreAbsolute": 0.24666666666666667,
     "AbsRank": 96,
@@ -1456,7 +1457,7 @@
     "ScoreAbsolute": 0.6866666666666666,
     "AbsRank": 32,
     "AbsRankStr": "32 of 151",
-    "ScoreRelative": 0.42857142857142855
+    "ScoreRelative": 0.4
   },
   "Sandy Alcantara": {
     "Starts": 4,
@@ -1620,7 +1621,7 @@
     "ModelWHIP": 1.6183132530120483,
     "ActualWHIP": 1.5789473684210527,
     "BABIP": 0.2982456140350877,
-    "team_id": "15",
+    "team_id": null,
     "name": "Shane Bieber",
     "ScoreAbsolute": 0.0,
     "AbsRank": 150,
@@ -1789,7 +1790,7 @@
     "ModelWHIP": 1.3563188405797102,
     "ActualWHIP": 1.5294117647058822,
     "BABIP": 0.38095238095238093,
-    "team_id": "1",
+    "team_id": null,
     "name": "Shane Drohan",
     "ScoreAbsolute": 0.12,
     "AbsRank": 122,
@@ -1985,7 +1986,7 @@
     "ModelWHIP": 1.3717349397590362,
     "ActualWHIP": 1.2,
     "BABIP": 0.2807017543859649,
-    "team_id": "3",
+    "team_id": null,
     "name": "Grant Holmes",
     "ScoreAbsolute": 0.2866666666666667,
     "AbsRank": 91,
@@ -2209,7 +2210,7 @@
     "ModelWHIP": 1.4358787878787878,
     "ActualWHIP": 1.6363636363636365,
     "BABIP": 0.34146341463414637,
-    "team_id": null,
+    "team_id": "3",
     "name": "Patrick Sandoval",
     "ScoreAbsolute": 0.25333333333333335,
     "AbsRank": 95,
@@ -2349,7 +2350,7 @@
     "ModelWHIP": 1.1584918032786886,
     "ActualWHIP": 1.2391304347826086,
     "BABIP": 0.3225806451612903,
-    "team_id": null,
+    "team_id": "10",
     "name": "Jacob Lopez",
     "ScoreAbsolute": 0.56,
     "AbsRank": 47,
@@ -2410,7 +2411,7 @@
     "ScoreAbsolute": 0.5533333333333333,
     "AbsRank": 49,
     "AbsRankStr": "49 of 151",
-    "ScoreRelative": 0.2857142857142857
+    "ScoreRelative": 0.2
   },
   "Dustin May": {
     "Starts": 3,
@@ -3470,11 +3471,12 @@
     "ModelWHIP": 1.1519622641509435,
     "ActualWHIP": 1.4210526315789473,
     "BABIP": 0.3684210526315789,
-    "team_id": null,
+    "team_id": "2",
     "name": "Janson Junk",
     "ScoreAbsolute": 0.74,
     "AbsRank": 26,
-    "AbsRankStr": "26 of 151"
+    "AbsRankStr": "26 of 151",
+    "ScoreRelative": 0.5
   },
   "Jeffrey Springs": {
     "Starts": 2,
@@ -3526,7 +3528,7 @@
     "ModelWHIP": 1.365016393442623,
     "ActualWHIP": 1.125,
     "BABIP": 0.23529411764705882,
-    "team_id": "3",
+    "team_id": null,
     "name": "Connor Prielipp",
     "ScoreAbsolute": 0.35333333333333333,
     "AbsRank": 83,
@@ -3610,7 +3612,7 @@
     "ModelWHIP": 1.8142758620689654,
     "ActualWHIP": 1.4318181818181819,
     "BABIP": 0.24324324324324326,
-    "team_id": "9",
+    "team_id": null,
     "name": "Ronel Blanco",
     "ScoreAbsolute": 0.013333333333333334,
     "AbsRank": 148,
@@ -3699,7 +3701,7 @@
     "ScoreAbsolute": 0.76,
     "AbsRank": 23,
     "AbsRankStr": "23 of 151",
-    "ScoreRelative": 0.5714285714285714
+    "ScoreRelative": 0.6
   },
   "Logan Gilbert": {
     "Starts": 3,
@@ -4064,7 +4066,7 @@
     "ScoreAbsolute": 0.48,
     "AbsRank": 62,
     "AbsRankStr": "62 of 151",
-    "ScoreRelative": 0.14285714285714285
+    "ScoreRelative": 0.1
   },
   "Noah Cameron": {
     "Starts": 2,
@@ -4228,7 +4230,7 @@
     "ModelWHIP": 1.2723499999999999,
     "ActualWHIP": 1.0,
     "BABIP": 0.2,
-    "team_id": null,
+    "team_id": "9",
     "name": "Andrew Painter",
     "ScoreAbsolute": 0.44,
     "AbsRank": 71,
@@ -4480,11 +4482,12 @@
     "ModelWHIP": 1.1782,
     "ActualWHIP": 1.6153846153846154,
     "BABIP": 0.38461538461538464,
-    "team_id": null,
+    "team_id": "2",
     "name": "Cody Bradford",
     "ScoreAbsolute": null,
     "AbsRank": null,
-    "AbsRankStr": null
+    "AbsRankStr": null,
+    "ScoreRelative": 0.6
   },
   "Kyle Harrison": {
     "Starts": 1,
@@ -4597,6 +4600,6 @@
     "ScoreAbsolute": null,
     "AbsRank": null,
     "AbsRankStr": null,
-    "ScoreRelative": 0.8571428571428571
+    "ScoreRelative": 0.8
   }
 }
