@@ -28,7 +28,9 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install openpyxl
+        # numpy is for step6_start_score.py's OLS fit (np.linalg.lstsq) --
+        # everything else in the pipeline is pure stdlib + openpyxl.
+        run: pip install openpyxl numpy
 
       # The JSON is uploaded gzipped to stay under GitHub's 25 MiB browser
       # upload limit. Decompress it back to the plain path ci_pipeline.py expects.
@@ -38,13 +40,15 @@ jobs:
       # ci_pipeline.py wraps run_pipeline.py and exits non-zero if the
       # Step 4 IP reconciliation check fails -- this is what makes a bad
       # run show up as a red X on the commit instead of silently landing.
-      - name: Run pipeline (Steps 1-4) with reconciliation gate
+      # Step 6 (start score) also runs here and gets folded into
+      # latest_summary.json, plus its own raw output file below.
+      - name: Run pipeline (Steps 1-4, 6) with reconciliation gate
         run: python ci_pipeline.py
 
       - name: Organize outputs
         run: |
           mkdir -p output
-          for f in current_roster.json step2_pool.json step3_fa_pool.json cmd_free_agents.xlsx step4_cells.json latest_summary.json; do
+          for f in current_roster.json step2_pool.json step3_fa_pool.json cmd_free_agents.xlsx step4_cells.json step6_start_score.json latest_summary.json; do
             if [ -f "$f" ]; then
               mv -f "$f" "output/$f"
             fi
