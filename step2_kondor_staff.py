@@ -1,7 +1,7 @@
 """
 step2_kondor_staff.py
 ======================
-Kondor pitching staff table: trailing 20-day, STARTS-ONLY analysis.
+Kondor pitching staff table: trailing 30-day, STARTS-ONLY analysis.
 
 Locked columns (do not add/remove/reorder without explicit user request):
   Pitcher, Starts, IP, CMD%, Model WHIP, Actual WHIP, BABIP,
@@ -17,7 +17,7 @@ Score (Absolute): same min-of-two-percentiles formula, but against the
 Abs. Rank: literal rank position within that league-wide pool, shown as
            "N of POOL_SIZE".
 
-Pitchers with no qualifying trailing-20-day data show dashes and are listed
+Pitchers with no qualifying trailing-30-day data show dashes and are listed
 separately with the reason (never appeared, hasn't started recently, doesn't
 clear the season-wide genuine-starter IP threshold, etc.) -- don't just drop
 them silently.
@@ -34,7 +34,7 @@ LEAGUE_MIN_STARTS = 2
 LEAGUE_MIN_IP = 5.0
 
 
-def build_pool(data, roster, window_days=20):
+def build_pool(data, roster, window_days=30):
     """
     Build the trailing-N-day starts-only aggregate for every pitcher who
     qualifies (genuine starter, >=1 start in window), tagged with their
@@ -152,7 +152,7 @@ def main(json_path, roster_path='current_roster.json'):
     pool, league_pool = score_pool(pool)
     rows, no_data = kondor_staff_table(pool, roster)
 
-    print(f"Trailing 20-day window: {window_start} to {max_date}")
+    print(f"Trailing 30-day window: {window_start} to {max_date}")
     print(f"League-wide qualifying pool size: {len(league_pool)}")
     print("\nKondor staff, sorted by Model WHIP:")
     for d in rows:
