@@ -105,9 +105,41 @@ const dMidnight = new Date(d.getFullYear(), d.getMonth(), d.getDate());
 const diffDays = Math.round((dMidnight - SEASON_START) / (1000*60*60*24));
 return diffDays + 1;
 }
+async function fetchScoreboardEvents(dateStr) {
+try {
+const url = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${dateStr}`;
+const resp = await fetch(url);
+if (!resp.ok) return null;
+const data = await resp.json();
+return data.events || [];
+} catch (e) { return null; }
+}
+function allGamesFinal(events) {
+// No games that date (off day) -- don't treat as "final", just fall back.
+if (!events || events.length === 0) return false;
+return events.every(e => {
+const t = (e && e.status && e.status.type) || (e && e.competitions && e.competitions[0] && e.competitions[0].status && e.competitions[0].status.type);
+return !!(t && t.completed === true);
+});
+}
+async function computeSuggestedEndDate() {
+// Default heuristic used to be "yesterday" (today's games are usually
+// still in progress). That's wrong for late-night runs: if you scrape
+// after today's games have already gone final, "yesterday" silently
+// drops a full day of completed games from the trailing window. Instead,
+// check today's ESPN scoreboard: if every game today is marked
+// status.type.completed === true, today is safe to include. Otherwise
+// (games in progress, scheduled, or postponed) fall back to yesterday.
+const today = new Date();
+const todayYMD = `${today.getFullYear()}${String(today.getMonth()+1).padStart(2,'0')}${String(today.getDate()).padStart(2,'0')}`;
+const todayEvents = await fetchScoreboardEvents(todayYMD);
+if (allGamesFinal(todayEvents)) return today;
 const yesterday = new Date();
 yesterday.setDate(yesterday.getDate() - 1);
-const suggestedEndPeriod = dateToPeriod(yesterday);
+return yesterday;
+}
+const suggestedEndDate = await computeSuggestedEndDate();
+const suggestedEndPeriod = dateToPeriod(suggestedEndDate);
 const suggestedStartPeriod = existingPeriodsList.length ? Math.max(1, suggestedEndPeriod - 6) : 1;
 const todayStr = (() => {
 const d = new Date();
@@ -120,7 +152,7 @@ return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.ge
 })();
 function fmtTimestampPrefix(d) { return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}_${String(d.getHours()).padStart(2,'0')}${String(d.getMinutes()).padStart(2,'0')}`; }
 const startPeriod = parseInt(prompt('[Rosters] Start period (defaults to 7 periods back, to catch any MLB stat corrections):', String(suggestedStartPeriod)) || String(suggestedStartPeriod));
-const endPeriod   = parseInt(prompt('[Rosters] End period (defaults to yesterday -- today\'s games are usually still in progress):', String(suggestedEndPeriod)) || String(suggestedEndPeriod));
+const endPeriod   = parseInt(prompt('[Rosters] End period (defaults to today if today\'s games are all final per ESPN, else yesterday):', String(suggestedEndPeriod)) || String(suggestedEndPeriod));
 const txStartDate = prompt('[Transactions] Start date (YYYYMMDD, defaults to 7 days back):', txDefaultStartStr);
 const txEndDate   = prompt('[Transactions] End date (YYYYMMDD):', todayStr);
 const txMaxPages  = parseInt(prompt('[Transactions] Max pages to check (auto-stops early):', '60') || '60');
