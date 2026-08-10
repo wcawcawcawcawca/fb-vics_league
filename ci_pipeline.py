@@ -66,6 +66,19 @@ def build_summary(result):
         for d in result['fa_pool'].values()
     ]
 
+    start_score = result['start_score']
+    start_score_current = [
+        {
+            'name': name, 'cmd_pct': round(v['cmd_pct'], 1), 'model_whip': round(v['model_whip'], 3),
+            'score_relative': round(v['score_relative'], 2) if v['score_relative'] is not None else None,
+            'score_absolute': round(v['score_absolute'], 2) if v['score_absolute'] is not None else None,
+            'predicted_whip_neutral_opp': round(v['predicted_whip_neutral_opp'], 3),
+            'start_score': round(v['start_score'], 3),
+            'is_kondor': v['is_kondor'],
+        }
+        for name, v in start_score['current_scores'].items()
+    ]
+
     return {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'reconciliation': {
@@ -87,6 +100,13 @@ def build_summary(result):
             {'team_id': tid, 'team': teams[tid], 'roto_total': roto[tid]['total']}
             for tid in standings_order
         ],
+        'start_score': {
+            'coefficients': start_score['coefficients'],
+            'fit_diagnostics': start_score['fit_diagnostics'],
+            'quintile_backtest': start_score['quintile_backtest'],
+            'league_avg_trailing_ops': round(start_score['league_avg_trailing_ops'], 3),
+            'current_scores': start_score_current,  # Kondor's qualifying pitchers + FA pool, combined
+        },
     }
 
 
