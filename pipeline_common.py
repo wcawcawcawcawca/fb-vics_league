@@ -176,7 +176,7 @@ def aggregate_appearances(recs):
     }
 
 
-def trailing_window_dates(appearances, window_days=20):
+def trailing_window_dates(appearances, window_days=30):
     """Return (window_start_ymd, max_date_ymd) for the trailing N-day window,
     anchored on the most recent dateET present in the appearances list."""
     max_date = max(a['dateET'] for a in appearances)
