@@ -590,7 +590,18 @@ for (const g of dayGames) {
 const existing = games[g.id];
 const hasBattingData = existing && Object.values(existing.batting || {}).some(team => Object.keys(team).length > 0);
 const isCurrentVersion = existing && existing.scraperVersion === GAME_SCRAPER_VERSION;
-if (hasBattingData && isCurrentVersion) { skippedCount++; continue; }
+// Confirmed-postponed games never get a box score at this game ID -- MLB/ESPN
+// always reschedule a rainout under a brand-new game ID on the actual makeup
+// date (or as a separate game in a same-day doubleheader), rather than
+// resolving the original ID from postponed to final. So once we've recorded
+// a game as postponed, retrying it is pure wasted work: it will show up
+// again here every single run for the rest of the season, never gaining
+// batting data. Treat it as settled instead. (If MLB/ESPN ever did flip an
+// existing ID from postponed to final in place, this would miss picking up
+// that box score -- flagging here in case that assumption ever needs revisiting.)
+const isConfirmedPostponed = existing && existing.gameStatusDiagnostic && existing.gameStatusDiagnostic.type === 'STATUS_POSTPONED';
+const isSettled = (hasBattingData || isConfirmedPostponed) && isCurrentVersion;
+if (isSettled) { skippedCount++; continue; }
 setUI(`[Games] Day ${dayIdx}/${sortedNeededDates.length}: game ${g.id}...`, (dayIdx/sortedNeededDates.length)*100, `${fetchedCount} fetched, ${skippedCount} already had`);
 const boxscore = await fetchGameBoxscore(g.id, dateStr);
 if (boxscore) { games[g.id] = boxscore; fetchedCount++; } else { failedCount++; }
