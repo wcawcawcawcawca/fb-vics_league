@@ -810,7 +810,7 @@
     "ScoreAbsolute": 0.7635135135135135,
     "AbsRank": 22,
     "AbsRankStr": "22 of 149",
-    "ScoreRelative": 0.6666666666666666
+    "ScoreRelative": 0.5714285714285714
   },
   "Jose Soriano": {
     "Starts": 3,
@@ -1371,7 +1371,7 @@
     "ScoreAbsolute": 0.527027027027027,
     "AbsRank": 49,
     "AbsRankStr": "49 of 149",
-    "ScoreRelative": 0.2222222222222222
+    "ScoreRelative": 0.14285714285714285
   },
   "Jack Perkins": {
     "Starts": 4,
@@ -1848,7 +1848,7 @@
     "ScoreAbsolute": 0.7837837837837838,
     "AbsRank": 19,
     "AbsRankStr": "19 of 149",
-    "ScoreRelative": 0.6666666666666666
+    "ScoreRelative": 0.7142857142857143
   },
   "Gage Jump": {
     "Starts": 4,
@@ -2297,7 +2297,7 @@
     "ScoreAbsolute": 0.6824324324324325,
     "AbsRank": 32,
     "AbsRankStr": "32 of 149",
-    "ScoreRelative": 0.5555555555555556
+    "ScoreRelative": 0.42857142857142855
   },
   "Sandy Alcantara": {
     "Starts": 4,
@@ -2494,7 +2494,7 @@
     "ScoreAbsolute": 0.2905405405405405,
     "AbsRank": 90,
     "AbsRankStr": "90 of 149",
-    "ScoreRelative": 0.1111111111111111
+    "ScoreRelative": 0.0
   },
   "Michael McGreevy": {
     "Starts": 3,
@@ -3251,7 +3251,7 @@
     "ScoreAbsolute": 0.5608108108108109,
     "AbsRank": 45,
     "AbsRankStr": "45 of 149",
-    "ScoreRelative": 0.4444444444444444
+    "ScoreRelative": 0.2857142857142857
   },
   "Dustin May": {
     "Starts": 3,
@@ -3667,12 +3667,11 @@
     "ModelWHIP": 1.113873015873016,
     "ActualWHIP": 1.2765957446808511,
     "BABIP": 0.34782608695652173,
-    "team_id": "2",
+    "team_id": null,
     "name": "Robert Gasser",
     "ScoreAbsolute": 0.5202702702702703,
     "AbsRank": 51,
-    "AbsRankStr": "51 of 149",
-    "ScoreRelative": 0.3333333333333333
+    "AbsRankStr": "51 of 149"
   },
   "Hunter Brown": {
     "Starts": 3,
@@ -4177,7 +4176,7 @@
     "ScoreAbsolute": 0.46621621621621623,
     "AbsRank": 61,
     "AbsRankStr": "61 of 149",
-    "ScoreRelative": 0.2222222222222222
+    "ScoreRelative": 0.14285714285714285
   },
   "Noah Cameron": {
     "Starts": 2,
@@ -4621,12 +4620,11 @@
     "ModelWHIP": 1.899529411764706,
     "ActualWHIP": 2.0,
     "BABIP": 0.38461538461538464,
-    "team_id": "2",
+    "team_id": null,
     "name": "Clay Holmes",
     "ScoreAbsolute": null,
     "AbsRank": null,
-    "AbsRankStr": null,
-    "ScoreRelative": 0.0
+    "AbsRankStr": null
   },
   "Jackson Jobe": {
     "Starts": 1,
@@ -4655,6 +4653,6 @@
     "ScoreAbsolute": null,
     "AbsRank": null,
     "AbsRankStr": null,
-    "ScoreRelative": 0.8888888888888888
+    "ScoreRelative": 0.8571428571428571
   }
 }

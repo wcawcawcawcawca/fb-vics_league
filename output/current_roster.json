@@ -356,27 +356,9 @@
     "pitchers": [
       {
         "slot": "P",
-        "name": "Robert Gasser",
-        "team": "MIL",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
         "name": "Brandon Pfaadt",
         "team": "ARI",
         "pos": "SP, RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Clay Holmes",
-        "team": "CHC",
-        "pos": "SP",
         "active": true,
         "W": 0,
         "SVHD": 0
