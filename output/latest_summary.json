@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T23:58:25.671538+00:00",
+  "generated_at": "2026-08-10T00:45:03.021430+00:00",
   "reconciliation": {
     "passed": true,
     "max_gap_ip": 3.6,
@@ -1197,7 +1197,7 @@
     {
       "team_id": "16",
       "team": "7th Floor Crew",
-      "roto_total": 72.5
+      "roto_total": 73.5
     },
     {
       "team_id": "14",
@@ -1222,7 +1222,7 @@
     {
       "team_id": "12",
       "team": "Hwang out",
-      "roto_total": 46.5
+      "roto_total": 45.5
     }
   ]
 }
