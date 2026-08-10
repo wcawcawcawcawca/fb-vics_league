@@ -13,10 +13,22 @@ validation run):
   strictly before that start's date, so there's no lookahead / no
   hindsight leakage into the fit.
 - Target: actual game WHIP = (H + BB) / IP for that specific start.
-- Pitcher features: CMD% and Model WHIP, trailing 20 days ending the day
-  before the start (falls back to season-to-date if the 20-day window has
+- Pitcher features: CMD% and Model WHIP, trailing 30 days ending the day
+  before the start (falls back to season-to-date if the 30-day window has
   zero prior starts; a pitcher's literal first start of the season is
-  dropped from the fit -- nothing to predict from).
+  dropped from the fit -- nothing to predict from). 30 days was chosen
+  over the pipeline's original 20-day convention after an explicit
+  window-length backtest (10/15/20/25/30/40/60/90/season-to-date all
+  tested): R^2 and quintile spread both climb from 10 through 30 days,
+  then plateau essentially flat all the way out to a full season. 30 days
+  is the shortest window at the top of that plateau -- i.e. the least
+  amount of recency traded away for the same predictive power. Below ~20
+  days there's too little data per estimate (avg. ~2-3 prior starts);
+  above ~30 there's no measurable gain, just staler data diluting recent
+  form. This constant is now shared with Steps 2/3/5 via
+  pipeline_common.trailing_window_dates() and step2_kondor_staff.build_pool()
+  -- all changed together, so "Model WHIP" means the same trailing window
+  everywhere in the pipeline's output, not just here.
 - Opponent feature: trailing team OPS over the last 15 team games ending
   the day before the start. Trailing runs/game was also tested and
   dropped -- it's ~0.86 correlated with trailing OPS (redundant) and
@@ -26,17 +38,20 @@ validation run):
   and have outsized leverage on a linear fit). They're still scored
   normally wherever this module scores current/live pitchers.
 
-Backtest result at introduction (3,033 fit rows): R^2 = 0.017,
-correlation(predicted, actual) = 0.13. Low, and that's expected --
+Backtest result at introduction (3,033 fit rows, 20-day window): R^2 = 0.017,
+correlation(predicted, actual) = 0.13. Backtest result after the window-
+length experiment (same 3,033 fit rows, 30-day window): R^2 = 0.020,
+correlation = 0.141, quintile spread (Q5 mean actual WHIP minus Q1) widened
+from 0.243 to 0.260. Both are low in absolute terms, and that's expected --
 a single MLB start is ~15-25 batters, dominated by randomness no model
 can capture. Quintile-bucketed validation showed a clean monotonic
-gradient (best-predicted quintile averaged 1.21 actual WHIP vs. 1.46 for
-worst-predicted), so the model has real, if modest, ability to separate
-better matchups from worse ones ON AVERAGE -- it cannot tell you what any
-ONE start will do. Re-run quintile_backtest() each season to confirm this
-holds as more data accumulates; if it stops separating cleanly, that's a
-sign the model needs revisiting, not that streaming decisions should
-lean on it harder.
+gradient at both window lengths (best-predicted quintile beats worst-
+predicted by a real margin), so the model has real, if modest, ability to
+separate better matchups from worse ones ON AVERAGE -- it cannot tell you
+what any ONE start will do. Re-run quintile_backtest() each season to
+confirm this holds as more data accumulates; if it stops separating
+cleanly, that's a sign the model needs revisiting, not that streaming
+decisions should lean on it harder.
 
 Score (Relative)/Score (Absolute) from Steps 2/3/5 are NOT fed into the
 regression as separate inputs -- they're percentile transforms of
@@ -68,7 +83,7 @@ import numpy as np
 from pipeline_common import load_unified_json, percentile_rank
 
 MIN_IP_FOR_FIT = 2.0
-TRAILING_WINDOW_DAYS = 20
+TRAILING_WINDOW_DAYS = 30
 OPP_TRAILING_GAMES = 15
 MIN_AVG_IP_GENUINE_STARTER = 4.0
 
@@ -307,6 +322,73 @@ def predict_whip(coefs, cmd_pct, model_whip, opp_trailing_ops):
     return (coefs['const'] + coefs['cmd_pct'] * cmd_pct
             + coefs['model_whip'] * model_whip
             + coefs['opp_trailing_ops'] * opp_trailing_ops)
+
+
+# ---------------------------------------------------------------------------
+# Real-matchup scoring (for Step 5 probables and Step 3's "next start" column)
+# ---------------------------------------------------------------------------
+
+# ESPN's boxscore team abbreviations (what by_team is keyed on) sometimes
+# differ from the 3-letter codes used by FanGraphs/RotoWire probables grids
+# or typed in by hand. Map common variants to the ESPN form here rather
+# than in every caller.
+TEAM_ABBR_ALIASES = {
+    'SFG': 'SF', 'TBR': 'TB', 'KCR': 'KC', 'WSN': 'WSH', 'SDP': 'SD',
+    'CWS': 'CHW', 'OAK': 'ATH', 'AZ': 'ARI',
+}
+
+
+def normalize_team_abbr(abbr):
+    abbr = (abbr or '').strip().upper()
+    return TEAM_ABBR_ALIASES.get(abbr, abbr)
+
+
+def build_team_offense_index(data):
+    """Public helper so Step 5/Step 3 can look up a specific opponent's
+    trailing offense without reaching into this module's private
+    extraction pipeline. Returns (by_team, max_date) where by_team is
+    {team_abbr: [game_row, ...]} sorted chronologically and max_date is
+    the latest dateET present in the data (a datetime)."""
+    _, team_game_batting = extract_starts_and_batting(data)
+    for t in team_game_batting:
+        t['_date'] = _to_date(t['date'])
+    team_game_batting.sort(key=lambda t: (t['_date'], t['gameId']))
+    by_team = defaultdict(list)
+    for t in team_game_batting:
+        by_team[t['team']].append(t)
+    max_date = _to_date(max(t['date'] for t in team_game_batting))
+    return by_team, max_date
+
+
+def matchup_start_score(coefs, cmd_pct, model_whip, opp_abbr, by_team, as_of_date=None):
+    """
+    Predicted WHIP + Start Score for a SPECIFIC upcoming opponent, instead
+    of the neutral league-average placeholder. as_of_date defaults to "use
+    every game in by_team" (i.e. the day after the latest date present) --
+    pass an explicit datetime if scoring a start further in the future
+    where you want the trailing window anchored to today rather than to
+    whatever the last scraped date happens to be (in practice these are
+    usually within days of each other so it rarely matters).
+
+    Returns None if the opponent abbreviation doesn't resolve to any team
+    with trailing data (bad/unrecognized abbreviation, or a team with zero
+    games yet) -- callers should show a dash rather than a fabricated
+    neutral score in that case.
+    """
+    abbr = normalize_team_abbr(opp_abbr)
+    if abbr not in by_team:
+        return None
+    if as_of_date is None:
+        as_of_date = max(t['_date'] for t in by_team[abbr]) + timedelta(days=1)
+    of = opponent_trailing_offense(by_team, abbr, as_of_date)
+    if of is None:
+        return None
+    predicted_whip = predict_whip(coefs, cmd_pct, model_whip, of['opp_trailing_ops'])
+    return {
+        'predicted_whip': predicted_whip,
+        'opp_trailing_ops': of['opp_trailing_ops'],
+        'opp_abbr_resolved': abbr,
+    }
 
 
 def quintile_backtest(rows, coefs, min_ip=MIN_IP_FOR_FIT):
