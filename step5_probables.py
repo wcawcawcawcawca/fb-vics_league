@@ -28,13 +28,24 @@ If the opponent abbreviation from the grid doesn't resolve (see
 step6_start_score.TEAM_ABBR_ALIASES), Start Score shows a dash rather than
 a fabricated neutral estimate.
 
-Grouped by date, header row per date section. THIS IS THE ONLY TABLE THAT
-GETS FULL-ROW STOPLIGHT SHADING (Steps 2 and 3 shade differently -- don't
-homogenize the formats). Within each date: sort by tier (green -> yellow ->
-red -> no-data), then Score (Relative) descending within tier. (Start Score
-is shown as an additional column, not used for sorting/shading -- Score
-(Relative) stays the sort key so this doesn't silently change existing
-behavior.)
+Grouped by date, header row per date section. COLOR FORMAT (locked
+2026-08-11, supersedes the earlier full-row-shading version): tier is shown
+as a SLIM SWATCH in its own leftmost column (an 8px-wide, 16px-tall rounded
+div inside a narrow <td>) -- NOT full-row background shading and NOT
+cell-level shading on other columns. All text sits on a plain background.
+Swatch/legend colors are GREEN #5FCB6C / YELLOW #F2C744 / RED #E8697D --
+note these are a DIFFERENT hex set from the F7A6AC/FFEB9C/9BE39B used in
+Steps 2/3; don't reuse those here. Legend labels are "Strong / Middling /
+Weak", not "high/med/low" or score-range language. Column order is
+Pitcher, Start Score, Matchup, CMD%, Model WHIP, Score (Rel.), Score
+(Abs.), Abs. Rank -- Start Score sits right after Pitcher, not at the far
+right. Use render_html() below to generate this -- don't hand-type the
+HTML fresh each session, that's how the format drifts/breaks.
+
+Within each date: sort by tier (green -> yellow -> red -> no-data), then
+Score (Relative) descending within tier. (Start Score is shown as an
+additional column, not used for sorting/shading -- Score (Relative) stays
+the sort key so this doesn't silently change existing behavior.)
 
 Kondor pitchers get a star marker after their name and are integrated into
 the same unified ranking/shading as everyone else (not a separate section).
@@ -180,6 +191,92 @@ def build_by_date_rows(probables, scored, roster, no_data_kondor_names, data, co
         by_date[key].sort(key=lambda r: (TIER_ORDER[r['tier']], -(r['ScoreRelative'] or -1)))
 
     return dict(by_date)
+
+
+GREEN = "#5FCB6C"
+YELLOW = "#F2C744"
+RED = "#E8697D"
+_TIER_COLOR = {'green': GREEN, 'yellow': YELLOW, 'red': RED, 'nodata': None}
+
+
+def render_html(by_date, dates_order=None):
+    """
+    Render the locked swatch-column HTML for Step 5 (see module docstring
+    for the exact spec). `by_date` is the {(date_sort, date_label): [row,...]}
+    output of build_by_date_rows(). Returns a single HTML string suitable
+    for show_widget.
+
+    This exists specifically so the format doesn't have to be hand-typed
+    fresh each session -- call this function and pass its output straight
+    to show_widget's widget_code parameter.
+    """
+    by_label = {}
+    for (date_sort, label), rows in by_date.items():
+        by_label[label] = rows
+
+    if dates_order is None:
+        dates_order = [label for _, label in sorted(by_date.keys(), key=lambda k: k[0])]
+
+    html_parts = ['<div style="overflow-x:auto;">']
+    for label in dates_order:
+        entries = by_label.get(label, [])
+        if not entries:
+            continue
+        html_parts.append(
+            f'<div style="margin-top:16px; margin-bottom:4px; font-size:13px; '
+            f'font-weight:500; color:var(--text-secondary);">{label}</div>'
+        )
+        html_parts.append('<table style="border-collapse: collapse; width:100%; '
+                           'min-width:560px; margin-bottom:8px;">')
+        html_parts.append('<thead><tr style="border-bottom:0.5px solid var(--border-strong);">')
+        headers = ["", "Pitcher", "Start Score", "Matchup", "CMD%", "Model WHIP",
+                   "Score (Rel.)", "Score (Abs.)", "Abs. Rank"]
+        for h in headers:
+            align = "left" if h in ("", "Pitcher", "Matchup") else "right"
+            w = "width:6px; padding:5px 2px;" if h == "" else "padding:5px 8px;"
+            html_parts.append(
+                f'<th style="text-align:{align}; {w} font-size:11px; font-weight:500; '
+                f'color:var(--text-secondary);">{h}</th>'
+            )
+        html_parts.append('</tr></thead><tbody>')
+        for r in entries:
+            t = _TIER_COLOR.get(r['tier'])
+            swatch = (f'<div style="width:8px; height:16px; border-radius:2px; '
+                      f'background:{t};"></div>') if t else ''
+            name_disp = r['name'] + (' \u2605' if r['is_kondor'] else '')
+            if r['CMD'] is None:
+                cmd_s = whip_s = rel_s = abs_s = rank_s = ss_s = '\u2014'
+            else:
+                cmd_s = f"{r['CMD']*100:.1f}"
+                whip_s = f"{r['ModelWHIP']:.3f}"
+                rel_s = f"{r['ScoreRelative']:.2f}"
+                abs_s = f"{r['ScoreAbsolute']:.2f}" if r['ScoreAbsolute'] is not None else '\u2014'
+                rank_s = r['AbsRankStr'] if r['AbsRankStr'] else '\u2014'
+                ss_s = f"{r['StartScore']:.2f}" if r.get('StartScore') is not None else '\u2014'
+            html_parts.append(
+                '<tr style="border-bottom:0.5px solid var(--border);">'
+                f'<td style="padding:5px 2px; text-align:center;">{swatch}</td>'
+                f'<td style="padding:5px 8px; font-size:12px;">{name_disp}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px; font-weight:600;">{ss_s}</td>'
+                f'<td style="padding:5px 8px; font-size:12px;">{r["matchup"]}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px;">{cmd_s}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px;">{whip_s}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px;">{rel_s}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px;">{abs_s}</td>'
+                f'<td style="text-align:right; padding:5px 8px; font-size:12px;">{rank_s}</td>'
+                '</tr>'
+            )
+        html_parts.append('</tbody></table>')
+    html_parts.append('</div>')
+
+    legend = f'''<div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:10px; font-size:11px; color:var(--text-secondary); align-items:center;">
+<span style="display:flex; align-items:center; gap:4px;"><span style="width:8px;height:14px;border-radius:2px;background:{GREEN};"></span>Strong</span>
+<span style="display:flex; align-items:center; gap:4px;"><span style="width:8px;height:14px;border-radius:2px;background:{YELLOW};"></span>Middling</span>
+<span style="display:flex; align-items:center; gap:4px;"><span style="width:8px;height:14px;border-radius:2px;background:{RED};"></span>Weak</span>
+<span>&#9733; = Kondor pitcher &middot; Start Score = Step 6 prediction vs. the ACTUAL opponent shown, percentile-ranked within this table</span>
+</div>'''
+
+    return ''.join(html_parts) + legend
 
 
 def main(json_path, roster_path='current_roster.json', probables=None):
