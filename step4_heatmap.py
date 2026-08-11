@@ -161,6 +161,95 @@ def flag_small_samples(cells, min_ip=15.0):
     return [(k, v) for k, v in cells.items() if v['IP'] < min_ip]
 
 
+TEAL_LO = (159, 225, 203)   # teal-100 #9FE1CB
+TEAL_HI = (29, 158, 117)    # teal-400 #1D9E75
+CORAL_LO = (245, 196, 179)  # coral-100 #F5C4B3
+CORAL_HI = (216, 90, 48)    # coral-400 #D85A30
+
+
+def _lerp(a, b, t):
+    return tuple(round(a[i] + (b[i] - a[i]) * t) for i in range(3))
+
+
+def _color_for_whip(whip, vmin, vmax):
+    """Teal (low/good) -> coral (high/bad), scaled to this run's actual
+    min/max WHIP across all cells. Returns (bg_hex, text_hex)."""
+    t = (whip - vmin) / (vmax - vmin) if vmax > vmin else 0.5
+    if t <= 0.5:
+        rgb = _lerp(TEAL_HI, TEAL_LO, t / 0.5)
+        text = "#085041"
+    else:
+        rgb = _lerp(CORAL_LO, CORAL_HI, (t - 0.5) / 0.5)
+        text = "#712B13"
+    return '#%02X%02X%02X' % rgb, text
+
+
+def render_html(cells, standings_order, team_names, months=None, small_sample_min_ip=15.0):
+    """
+    Render the locked teal-to-coral heatmap (see module docstring for the
+    attribution methodology). Returns a single HTML string for show_widget.
+
+    cells: {(team_id, month_bucket): {'IP':..,'WHIP':..,'BABIP':..}} --
+           build_heatmap_cells()'s output.
+    standings_order: team_ids ordered best-to-worst (team_standings_order()).
+    team_names: {team_id: team_name} (data['meta']['teams']).
+    months: column order; defaults to MONTH_ORDER from pipeline_common.
+    """
+    if months is None:
+        months = MONTH_ORDER
+
+    all_whips = [v['WHIP'] for v in cells.values() if v is not None]
+    vmin, vmax = (min(all_whips), max(all_whips)) if all_whips else (0, 1)
+
+    header_cells = ''.join(
+        f'<th style="text-align:center; padding:6px 8px; font-weight:500; font-size:12px;">{m}</th>'
+        for m in months
+    )
+
+    rows_html = []
+    small_flags = []
+    for tid in standings_order:
+        team = team_names.get(tid, tid)
+        cells_html = []
+        for m in months:
+            c = cells.get((tid, m))
+            if c is None:
+                cells_html.append('<td style="text-align:center; padding:6px 8px; color:var(--text-secondary);">\u2014</td>')
+                continue
+            bg, text = _color_for_whip(c['WHIP'], vmin, vmax)
+            flag = ''
+            if c['IP'] < small_sample_min_ip:
+                flag = ' *'
+                small_flags.append(f"{team} {m} ({c['IP']:.1f} IP)")
+            cells_html.append(
+                f'<td style="text-align:center; padding:6px 8px; background:{bg}; color:{text};">'
+                f'<div style="font-size:13px; font-weight:500;">{c["WHIP"]:.3f}{flag}</div>'
+                f'<div style="font-size:10px; opacity:0.85;">{c["BABIP"]:.3f}</div>'
+                f'</td>'
+            )
+        rows_html.append(
+            f'<tr><td style="padding:6px 8px; font-size:13px; white-space:nowrap;">{team}</td>{"".join(cells_html)}</tr>'
+        )
+
+    html = (
+        '<h2 class="sr-only">Monthly WHIP and BABIP heatmap by team, ordered by current roto standings</h2>'
+        '<table style="width:100%; border-collapse:collapse;">'
+        f'<thead><tr><th style="text-align:left; padding:6px 8px; font-weight:500; font-size:12px;">Team</th>{header_cells}</tr></thead>'
+        f'<tbody>{"".join(rows_html)}</tbody></table>'
+        '<div style="display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:12px; font-size:12px; color:var(--text-secondary);">'
+        f'<span style="display:flex; align-items:center; gap:6px;"><span style="width:14px; height:14px; border-radius:3px; background:{"#1D9E75"};"></span>Lower WHIP</span>'
+        f'<span style="display:flex; align-items:center; gap:6px;"><span style="width:14px; height:14px; border-radius:3px; background:{"#D85A30"};"></span>Higher WHIP</span>'
+        '<span>Bold number = WHIP, small number = BABIP</span>'
+        '</div>'
+    )
+    if small_flags:
+        html += (
+            '<p style="font-size:12px; color:var(--text-secondary); margin-top:6px;">'
+            f'* small sample (&lt;{small_sample_min_ip:.0f} IP): {"; ".join(small_flags)}</p>'
+        )
+    return html
+
+
 def main(json_path):
     data = load_unified_json(json_path)
     appearances = build_appearances(data)
