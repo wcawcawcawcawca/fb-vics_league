@@ -122,6 +122,70 @@ def kondor_staff_table(pool, roster, kondor_team_id='2'):
     return rows, no_data
 
 
+def render_html(rows, no_data, appearances=None, genuine_starters=None,
+                 window_start=None, max_date=None):
+    """
+    Render the locked plain/uncolored Step 2 table (see module docstring
+    for the exact spec: no stoplight shading, this is what distinguishes
+    it from Steps 3 and 5). Returns a single HTML string for show_widget.
+
+    `rows`/`no_data` are kondor_staff_table()'s output. If the appearance/
+    genuine-starter/window args are supplied, no-data pitchers get a real
+    diagnostic reason via diagnose_no_data_reason(); otherwise they're
+    just listed by name.
+    """
+
+    def fmt(x, spec='.3f'):
+        return f"{x:{spec}}" if x is not None else '\u2014'
+
+    trs = []
+    for d in rows:
+        trs.append(
+            '<tr style="border-bottom:0.5px solid var(--border);">'
+            f'<td style="padding:6px 8px;">{d["name"]}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{d["Starts"]}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["IP"], ".1f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["CMD"]*100, ".1f")}%</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ModelWHIP"], ".3f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ActualWHIP"], ".3f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["BABIP"], ".3f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ScoreRelative"], ".2f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ScoreAbsolute"], ".2f")}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{d["AbsRankStr"] or "\u2014"}</td>'
+            '</tr>'
+        )
+
+    headers = ["Pitcher", "Starts", "IP", "CMD%", "Model WHIP", "Actual WHIP",
+               "BABIP", "Score (Rel.)", "Score (Abs.)", "Abs. Rank"]
+    thead_cells = ''.join(
+        f'<th style="text-align:{"left" if h == "Pitcher" else "center"}; padding:8px 6px; '
+        f'font-weight:500;">{h}</th>' for h in headers
+    )
+
+    html = (
+        '<h2 class="sr-only">Three Days of the Kondor pitching staff, '
+        'trailing 30-day CMD table</h2>'
+        '<table style="width:100%; border-collapse:collapse; font-size:14px;">'
+        f'<thead><tr style="border-bottom:0.5px solid var(--border-strong);">{thead_cells}</tr></thead>'
+        f'<tbody>{"".join(trs)}</tbody></table>'
+    )
+
+    if no_data:
+        lines = []
+        for n in no_data:
+            if appearances is not None and genuine_starters is not None:
+                reason = diagnose_no_data_reason(n, appearances, genuine_starters, window_start, max_date)
+                lines.append(f"{n} ({reason})")
+            else:
+                lines.append(n)
+        html += (
+            '<p style="font-size:12px; color:var(--text-secondary); margin-top:10px;">'
+            f'No qualifying trailing-30-day data: {"; ".join(lines)}.</p>'
+        )
+
+    return html
+
+
 def diagnose_no_data_reason(name, appearances, genuine_starters, window_start, max_date):
     """Human-readable reason a pitcher has no qualifying trailing-window data."""
     if name not in genuine_starters:
