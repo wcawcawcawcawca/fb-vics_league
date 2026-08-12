@@ -135,8 +135,10 @@ def render_html(rows, no_data, appearances=None, genuine_starters=None,
     just listed by name.
     """
 
+    EM_DASH = '\u2014'
+
     def fmt(x, spec='.3f'):
-        return f"{x:{spec}}" if x is not None else '\u2014'
+        return f"{x:{spec}}" if x is not None else EM_DASH
 
     trs = []
     for d in rows:
@@ -151,7 +153,7 @@ def render_html(rows, no_data, appearances=None, genuine_starters=None,
             f'<td style="text-align:center; padding:6px 8px;">{fmt(d["BABIP"], ".3f")}</td>'
             f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ScoreRelative"], ".2f")}</td>'
             f'<td style="text-align:center; padding:6px 8px;">{fmt(d["ScoreAbsolute"], ".2f")}</td>'
-            f'<td style="text-align:center; padding:6px 8px;">{d["AbsRankStr"] or "\u2014"}</td>'
+            f'<td style="text-align:center; padding:6px 8px;">{d["AbsRankStr"] or EM_DASH}</td>'
             '</tr>'
         )
 
