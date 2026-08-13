@@ -105,21 +105,111 @@ def build_combined_pool(pool, fa_pool, roster, kondor_team_id='2'):
     return scored
 
 
-def parse_probables_grid(raw_text):
+def parse_probables_grid(raw_text, year=None):
     """
-    STUB -- fill in per-run. The FanGraphs grid layout varies enough (team
-    groupings, accented names, column order) that this is best done as a
-    guided manual transcription each run rather than a brittle regex parser.
-    Normalize accents (Ureña, Márquez, Pérez, López, etc.) when matching
-    against pool names.
+    Parses the pipe-delimited markdown table returned by web_fetch on
+    https://www.fangraphs.com/roster-resource/probables-grid (the page is a
+    real markdown table -- 'Team' header row, then division header rows
+    whose cells are actual dates like 'Wed 8/12', then one row per team with
+    up to 10 date-column cells). Each cell is either 'OFF', empty, or an
+    opponent prefix ('@ ABBR' for road, 'ABBR' for home, optionally with
+    '(2)' for a doubleheader or 'OP:'/'PP:' labels for a bullet game) followed
+    by one or more '[Name (H)](url)' markdown links -- multiple links in one
+    cell (doubleheader or opener/primary-pitcher) all share that cell's date
+    and opponent.
 
-    Expected output format:
+    Names are matched to the pool via unicode normalization by the caller
+    (build_by_date_rows/build_combined_pool use exact-name dict lookups);
+    this parser preserves FanGraphs' own accented spelling (Ureña, Márquez,
+    Pérez, López, etc.) in the returned names, so callers doing pool lookups
+    against ASCII-normalized names should normalize on both sides.
+
+    year: calendar year to stamp onto date_sort (YYYYMMDD). Defaults to the
+    current year. Does not attempt to handle a Dec->Jan rollover within a
+    single 10-day grid; that only matters for runs made in very late December.
+
+    Returns:
         {pitcher_name: [(date_label, date_sort_YYYYMMDD, matchup, hand), ...]}
     """
-    raise NotImplementedError(
-        "Paste/transcribe the FanGraphs grid manually into this structure each run -- "
-        "see the docstring for the expected format."
-    )
+    import re
+    import datetime
+
+    if year is None:
+        year = datetime.datetime.now().year
+
+    date_cell_re = re.compile(r'^(Wed|Thu|Fri|Sat|Sun|Mon|Tue)\s+(\d{1,2})/(\d{1,2})$')
+    team_row_re = re.compile(r'^[A-Z]{2,4}$')
+    prefix_re = re.compile(r'^(@\s*)?([A-Z]{2,4})\b')
+    pitcher_re = re.compile(r'\[([^\]]+?)\s*\((R|L)\)\]\(')
+
+    result = {}
+    seen = set()  # (name, date_sort, matchup) -- dedupe repeated/sticky-header table renders
+    current_dates = None  # list of (date_label, date_sort) for the 10 date columns
+
+    for raw_line in raw_text.split('\n'):
+        line = raw_line.strip()
+        if not line.startswith('|'):
+            continue
+        # skip markdown separator rows like "| --- | --- |"
+        if re.match(r'^\|[\s\-:|]+\|?$', line):
+            continue
+
+        cells = [c.strip() for c in line.strip('|').split('|')]
+        if not cells:
+            continue
+        first = cells[0].strip()
+
+        if first == 'Team' or first == '':
+            continue
+
+        # Division header row: cells[1] is an actual date like "Wed 8/12"
+        if len(cells) > 1 and date_cell_re.match(cells[1].replace('\u00a0', ' ').strip()):
+            current_dates = []
+            for c in cells[1:11]:
+                c_norm = c.replace('\u00a0', ' ').strip()
+                m = date_cell_re.match(c_norm)
+                if m:
+                    dow, mm, dd = m.groups()
+                    mm, dd = int(mm), int(dd)
+                    date_label = f"{dow} {mm}/{dd}"
+                    date_sort = f"{year}{mm:02d}{dd:02d}"
+                    current_dates.append((date_label, date_sort))
+                else:
+                    current_dates.append((None, None))
+            continue
+
+        # Team data row -- needs a preceding division header to know dates
+        if current_dates is None or not team_row_re.match(first):
+            continue
+
+        for i, cell in enumerate(cells[1:11]):
+            if i >= len(current_dates):
+                break
+            date_label, date_sort = current_dates[i]
+            if date_label is None:
+                continue
+            cell_norm = cell.replace('\u00a0', ' ').strip()
+            if not cell_norm or cell_norm.upper() == 'OFF':
+                continue
+
+            bracket_idx = cell_norm.find('[')
+            prefix = cell_norm[:bracket_idx] if bracket_idx != -1 else cell_norm
+            m = prefix_re.search(prefix)
+            if not m:
+                continue
+            is_away = bool(m.group(1))
+            opp = m.group(2)
+            matchup = ('@ ' if is_away else 'vs ') + opp
+
+            for name, hand in pitcher_re.findall(cell_norm):
+                name = name.strip()
+                key = (name, date_sort, matchup)
+                if key in seen:
+                    continue
+                seen.add(key)
+                result.setdefault(name, []).append((date_label, date_sort, matchup, hand))
+
+    return result
 
 
 def build_by_date_rows(probables, scored, roster, no_data_kondor_names, data, coefs,
