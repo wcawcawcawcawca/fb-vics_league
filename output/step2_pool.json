@@ -1,60 +1,4 @@
 {
-  "Dylan Cease": {
-    "Starts": 6,
-    "IP": 34.0,
-    "ER": 7,
-    "BB": 13,
-    "K": 46,
-    "HR": 4,
-    "H": 18,
-    "BF": 132,
-    "balls": 200,
-    "pure": 272,
-    "inplay": 65,
-    "total_pitches": 537,
-    "Kpct": 0.3484848484848485,
-    "BBpct": 0.09848484848484848,
-    "HRpct": 0.030303030303030304,
-    "Purepct": 0.5065176908752328,
-    "Ballpct": 0.37243947858473,
-    "CMD": 0.13407821229050282,
-    "ModelWHIP": 1.0681969696969695,
-    "ActualWHIP": 0.9117647058823529,
-    "BABIP": 0.2028985507246377,
-    "team_id": "16",
-    "name": "Dylan Cease",
-    "ScoreAbsolute": 0.7468354430379747,
-    "AbsRank": 27,
-    "AbsRankStr": "27 of 159"
-  },
-  "Cristopher Sanchez": {
-    "Starts": 6,
-    "IP": 29.3,
-    "ER": 10,
-    "BB": 12,
-    "K": 39,
-    "HR": 1,
-    "H": 28,
-    "BF": 125,
-    "balls": 202,
-    "pure": 236,
-    "inplay": 63,
-    "total_pitches": 501,
-    "Kpct": 0.312,
-    "BBpct": 0.096,
-    "HRpct": 0.008,
-    "Purepct": 0.47105788423153694,
-    "Ballpct": 0.4031936127744511,
-    "CMD": 0.06786427145708585,
-    "ModelWHIP": 1.0538239999999999,
-    "ActualWHIP": 1.3636363636363638,
-    "BABIP": 0.3698630136986301,
-    "team_id": "12",
-    "name": "Cristopher Sanchez",
-    "ScoreAbsolute": 0.3037974683544304,
-    "AbsRank": 97,
-    "AbsRankStr": "97 of 159"
-  },
   "Christian Scott": {
     "Starts": 5,
     "IP": 24.3,
@@ -79,37 +23,37 @@
     "BABIP": 0.390625,
     "team_id": "1",
     "name": "Christian Scott",
-    "ScoreAbsolute": 0.9240506329113924,
-    "AbsRank": 8,
-    "AbsRankStr": "8 of 159"
+    "ScoreAbsolute": 0.9367088607594937,
+    "AbsRank": 6,
+    "AbsRankStr": "6 of 159"
   },
   "Aaron Nola": {
-    "Starts": 5,
-    "IP": 28.0,
-    "ER": 14,
-    "BB": 12,
-    "K": 27,
-    "HR": 9,
-    "H": 30,
-    "BF": 118,
-    "balls": 182,
-    "pure": 202,
-    "inplay": 75,
-    "total_pitches": 459,
-    "Kpct": 0.2288135593220339,
-    "BBpct": 0.1016949152542373,
-    "HRpct": 0.07627118644067797,
-    "Purepct": 0.4400871459694989,
-    "Ballpct": 0.39651416122004357,
-    "CMD": 0.04357298474945531,
-    "ModelWHIP": 1.5196779661016953,
-    "ActualWHIP": 1.5,
-    "BABIP": 0.3,
+    "Starts": 6,
+    "IP": 33.0,
+    "ER": 15,
+    "BB": 15,
+    "K": 36,
+    "HR": 10,
+    "H": 35,
+    "BF": 140,
+    "balls": 221,
+    "pure": 249,
+    "inplay": 84,
+    "total_pitches": 554,
+    "Kpct": 0.2571428571428571,
+    "BBpct": 0.10714285714285714,
+    "HRpct": 0.07142857142857142,
+    "Purepct": 0.44945848375451264,
+    "Ballpct": 0.3989169675090253,
+    "CMD": 0.05054151624548736,
+    "ModelWHIP": 1.4628714285714286,
+    "ActualWHIP": 1.5151515151515151,
+    "BABIP": 0.31645569620253167,
     "team_id": null,
     "name": "Aaron Nola",
-    "ScoreAbsolute": 0.12025316455696203,
-    "AbsRank": 129,
-    "AbsRankStr": "129 of 159"
+    "ScoreAbsolute": 0.18354430379746836,
+    "AbsRank": 115,
+    "AbsRankStr": "115 of 159"
   },
   "Griffin Jax": {
     "Starts": 4,
@@ -135,9 +79,9 @@
     "BABIP": 0.36,
     "team_id": "12",
     "name": "Griffin Jax",
-    "ScoreAbsolute": 0.9177215189873418,
-    "AbsRank": 10,
-    "AbsRankStr": "10 of 159"
+    "ScoreAbsolute": 0.930379746835443,
+    "AbsRank": 7,
+    "AbsRankStr": "7 of 159"
   },
   "Jake Bennett": {
     "Starts": 5,
@@ -163,9 +107,9 @@
     "BABIP": 0.29069767441860467,
     "team_id": "13",
     "name": "Jake Bennett",
-    "ScoreAbsolute": 0.5189873417721519,
-    "AbsRank": 55,
-    "AbsRankStr": "55 of 159"
+    "ScoreAbsolute": 0.5063291139240507,
+    "AbsRank": 57,
+    "AbsRankStr": "57 of 159"
   },
   "Mason Englert": {
     "Starts": 1,
@@ -196,32 +140,32 @@
     "AbsRankStr": null
   },
   "Roki Sasaki": {
-    "Starts": 4,
-    "IP": 24.0,
-    "ER": 5,
-    "BB": 7,
-    "K": 26,
+    "Starts": 5,
+    "IP": 30.0,
+    "ER": 7,
+    "BB": 12,
+    "K": 28,
     "HR": 2,
-    "H": 17,
-    "BF": 93,
-    "balls": 123,
-    "pure": 175,
-    "inplay": 59,
-    "total_pitches": 357,
-    "Kpct": 0.27956989247311825,
-    "BBpct": 0.07526881720430108,
-    "HRpct": 0.021505376344086023,
-    "Purepct": 0.49019607843137253,
-    "Ballpct": 0.3445378151260504,
-    "CMD": 0.1456582633053221,
-    "ModelWHIP": 1.0850322580645162,
-    "ActualWHIP": 1.0,
-    "BABIP": 0.25862068965517243,
+    "H": 21,
+    "BF": 119,
+    "balls": 169,
+    "pure": 211,
+    "inplay": 74,
+    "total_pitches": 454,
+    "Kpct": 0.23529411764705882,
+    "BBpct": 0.10084033613445378,
+    "HRpct": 0.01680672268907563,
+    "Purepct": 0.4647577092511013,
+    "Ballpct": 0.3722466960352423,
+    "CMD": 0.09251101321585903,
+    "ModelWHIP": 1.2776638655462185,
+    "ActualWHIP": 1.1,
+    "BABIP": 0.24675324675324675,
     "team_id": "9",
     "name": "Roki Sasaki",
-    "ScoreAbsolute": 0.810126582278481,
-    "AbsRank": 21,
-    "AbsRankStr": "21 of 159"
+    "ScoreAbsolute": 0.4810126582278481,
+    "AbsRank": 63,
+    "AbsRankStr": "63 of 159"
   },
   "Gerrit Cole": {
     "Starts": 5,
@@ -248,8 +192,8 @@
     "team_id": "10",
     "name": "Gerrit Cole",
     "ScoreAbsolute": 0.8670886075949367,
-    "AbsRank": 16,
-    "AbsRankStr": "16 of 159"
+    "AbsRank": 14,
+    "AbsRankStr": "14 of 159"
   },
   "Anthony Kay": {
     "Starts": 5,
@@ -275,10 +219,10 @@
     "BABIP": 0.2857142857142857,
     "team_id": "2",
     "name": "Anthony Kay",
-    "ScoreAbsolute": 0.5822784810126582,
+    "ScoreAbsolute": 0.5886075949367089,
     "AbsRank": 46,
     "AbsRankStr": "46 of 159",
-    "ScoreRelative": 0.4444444444444444
+    "ScoreRelative": 0.36363636363636365
   },
   "Cal Quantrill": {
     "Starts": 4,
@@ -304,9 +248,9 @@
     "BABIP": 0.3103448275862069,
     "team_id": null,
     "name": "Cal Quantrill",
-    "ScoreAbsolute": 0.5,
-    "AbsRank": 58,
-    "AbsRankStr": "58 of 159"
+    "ScoreAbsolute": 0.5189873417721519,
+    "AbsRank": 56,
+    "AbsRankStr": "56 of 159"
   },
   "Chris Sale": {
     "Starts": 4,
@@ -360,9 +304,9 @@
     "BABIP": 0.21348314606741572,
     "team_id": "9",
     "name": "Sandy Alcantara",
-    "ScoreAbsolute": 0.41139240506329117,
-    "AbsRank": 73,
-    "AbsRankStr": "73 of 159"
+    "ScoreAbsolute": 0.43037974683544306,
+    "AbsRank": 72,
+    "AbsRankStr": "72 of 159"
   },
   "Logan Henderson": {
     "Starts": 5,
@@ -388,9 +332,9 @@
     "BABIP": 0.2222222222222222,
     "team_id": "13",
     "name": "Logan Henderson",
-    "ScoreAbsolute": 0.9050632911392406,
-    "AbsRank": 12,
-    "AbsRankStr": "12 of 159"
+    "ScoreAbsolute": 0.9177215189873418,
+    "AbsRank": 11,
+    "AbsRankStr": "11 of 159"
   },
   "Bailey Ober": {
     "Starts": 5,
@@ -416,9 +360,9 @@
     "BABIP": 0.313953488372093,
     "team_id": "4",
     "name": "Bailey Ober",
-    "ScoreAbsolute": 0.21518987341772153,
-    "AbsRank": 111,
-    "AbsRankStr": "111 of 159"
+    "ScoreAbsolute": 0.22151898734177214,
+    "AbsRank": 109,
+    "AbsRankStr": "109 of 159"
   },
   "Colin Rea": {
     "Starts": 4,
@@ -444,7 +388,7 @@
     "BABIP": 0.22950819672131148,
     "team_id": null,
     "name": "Colin Rea",
-    "ScoreAbsolute": 0.6075949367088608,
+    "ScoreAbsolute": 0.6139240506329114,
     "AbsRank": 42,
     "AbsRankStr": "42 of 159"
   },
@@ -500,9 +444,9 @@
     "BABIP": 0.3108108108108108,
     "team_id": "3",
     "name": "Peter Lambert",
-    "ScoreAbsolute": 0.6265822784810127,
-    "AbsRank": 41,
-    "AbsRankStr": "41 of 159"
+    "ScoreAbsolute": 0.6392405063291139,
+    "AbsRank": 39,
+    "AbsRankStr": "39 of 159"
   },
   "Michael King": {
     "Starts": 5,
@@ -528,9 +472,9 @@
     "BABIP": 0.2571428571428571,
     "team_id": "11",
     "name": "Michael King",
-    "ScoreAbsolute": 0.33544303797468356,
-    "AbsRank": 89,
-    "AbsRankStr": "89 of 159"
+    "ScoreAbsolute": 0.34810126582278483,
+    "AbsRank": 86,
+    "AbsRankStr": "86 of 159"
   },
   "Seth Lugo": {
     "Starts": 5,
@@ -554,7 +498,7 @@
     "ModelWHIP": 1.4352241379310344,
     "ActualWHIP": 1.1666666666666667,
     "BABIP": 0.25882352941176473,
-    "team_id": null,
+    "team_id": "3",
     "name": "Seth Lugo",
     "ScoreAbsolute": 0.17721518987341772,
     "AbsRank": 117,
@@ -585,8 +529,8 @@
     "team_id": null,
     "name": "Brady Singer",
     "ScoreAbsolute": 0.34810126582278483,
-    "AbsRank": 85,
-    "AbsRankStr": "85 of 159"
+    "AbsRank": 87,
+    "AbsRankStr": "87 of 159"
   },
   "Gabriel Hughes": {
     "Starts": 5,
@@ -612,9 +556,9 @@
     "BABIP": 0.3382352941176471,
     "team_id": null,
     "name": "Gabriel Hughes",
-    "ScoreAbsolute": 0.4810126582278481,
-    "AbsRank": 61,
-    "AbsRankStr": "61 of 159"
+    "ScoreAbsolute": 0.5,
+    "AbsRank": 59,
+    "AbsRankStr": "59 of 159"
   },
   "Troy Melton": {
     "Starts": 5,
@@ -640,9 +584,9 @@
     "BABIP": 0.24324324324324326,
     "team_id": "15",
     "name": "Troy Melton",
-    "ScoreAbsolute": 0.5126582278481012,
-    "AbsRank": 56,
-    "AbsRankStr": "56 of 159"
+    "ScoreAbsolute": 0.4936708860759494,
+    "AbsRank": 61,
+    "AbsRankStr": "61 of 159"
   },
   "Reid Detmers": {
     "Starts": 5,
@@ -668,9 +612,9 @@
     "BABIP": 0.2222222222222222,
     "team_id": "3",
     "name": "Reid Detmers",
-    "ScoreAbsolute": 0.8164556962025317,
-    "AbsRank": 20,
-    "AbsRankStr": "20 of 159"
+    "ScoreAbsolute": 0.8227848101265823,
+    "AbsRank": 18,
+    "AbsRankStr": "18 of 159"
   },
   "Michael McGreevy": {
     "Starts": 5,
@@ -729,32 +673,32 @@
     "AbsRankStr": "127 of 159"
   },
   "Cade Cavalli": {
-    "Starts": 5,
-    "IP": 30.0,
+    "Starts": 6,
+    "IP": 38.0,
     "ER": 9,
-    "BB": 7,
-    "K": 31,
+    "BB": 9,
+    "K": 41,
     "HR": 7,
-    "H": 27,
-    "BF": 115,
-    "balls": 161,
-    "pure": 219,
-    "inplay": 77,
-    "total_pitches": 457,
-    "Kpct": 0.26956521739130435,
-    "BBpct": 0.06086956521739131,
-    "HRpct": 0.06086956521739131,
-    "Purepct": 0.47921225382932164,
-    "Ballpct": 0.3522975929978118,
-    "CMD": 0.12691466083150982,
-    "ModelWHIP": 1.1919826086956522,
-    "ActualWHIP": 1.1333333333333333,
-    "BABIP": 0.2857142857142857,
+    "H": 28,
+    "BF": 140,
+    "balls": 201,
+    "pure": 267,
+    "inplay": 89,
+    "total_pitches": 557,
+    "Kpct": 0.29285714285714287,
+    "BBpct": 0.06428571428571428,
+    "HRpct": 0.05,
+    "Purepct": 0.4793536804308797,
+    "Ballpct": 0.3608617594254937,
+    "CMD": 0.11849192100538603,
+    "ModelWHIP": 1.1146571428571428,
+    "ActualWHIP": 0.9736842105263158,
+    "BABIP": 0.25301204819277107,
     "team_id": "11",
     "name": "Cade Cavalli",
-    "ScoreAbsolute": 0.6835443037974683,
-    "AbsRank": 35,
-    "AbsRankStr": "35 of 159"
+    "ScoreAbsolute": 0.6329113924050633,
+    "AbsRank": 41,
+    "AbsRankStr": "41 of 159"
   },
   "Gage Jump": {
     "Starts": 5,
@@ -778,11 +722,11 @@
     "ModelWHIP": 1.393233644859813,
     "ActualWHIP": 1.7916666666666667,
     "BABIP": 0.44,
-    "team_id": null,
+    "team_id": "3",
     "name": "Gage Jump",
-    "ScoreAbsolute": 0.2911392405063291,
-    "AbsRank": 99,
-    "AbsRankStr": "99 of 159"
+    "ScoreAbsolute": 0.2974683544303797,
+    "AbsRank": 98,
+    "AbsRankStr": "98 of 159"
   },
   "Landen Roupp": {
     "Starts": 5,
@@ -836,9 +780,9 @@
     "BABIP": 0.2804878048780488,
     "team_id": "14",
     "name": "Bryce Miller",
-    "ScoreAbsolute": 0.3037974683544304,
-    "AbsRank": 98,
-    "AbsRankStr": "98 of 159"
+    "ScoreAbsolute": 0.310126582278481,
+    "AbsRank": 95,
+    "AbsRankStr": "95 of 159"
   },
   "Jared Jones": {
     "Starts": 5,
@@ -864,9 +808,9 @@
     "BABIP": 0.2857142857142857,
     "team_id": "9",
     "name": "Jared Jones",
-    "ScoreAbsolute": 0.569620253164557,
-    "AbsRank": 47,
-    "AbsRankStr": "47 of 159"
+    "ScoreAbsolute": 0.5632911392405063,
+    "AbsRank": 50,
+    "AbsRankStr": "50 of 159"
   },
   "Gavin Williams": {
     "Starts": 5,
@@ -892,37 +836,37 @@
     "BABIP": 0.22,
     "team_id": "11",
     "name": "Gavin Williams",
-    "ScoreAbsolute": 0.9873417721518988,
+    "ScoreAbsolute": 0.9936708860759493,
     "AbsRank": 2,
     "AbsRankStr": "2 of 159"
   },
   "Taj Bradley": {
-    "Starts": 5,
-    "IP": 29.0,
-    "ER": 14,
-    "BB": 15,
-    "K": 30,
-    "HR": 2,
-    "H": 24,
-    "BF": 121,
-    "balls": 178,
-    "pure": 232,
-    "inplay": 73,
-    "total_pitches": 483,
-    "Kpct": 0.24793388429752067,
-    "BBpct": 0.12396694214876033,
-    "HRpct": 0.01652892561983471,
-    "Purepct": 0.4803312629399586,
-    "Ballpct": 0.36853002070393376,
-    "CMD": 0.11180124223602483,
-    "ModelWHIP": 1.350512396694215,
-    "ActualWHIP": 1.3448275862068966,
-    "BABIP": 0.2972972972972973,
+    "Starts": 6,
+    "IP": 33.0,
+    "ER": 19,
+    "BB": 19,
+    "K": 33,
+    "HR": 4,
+    "H": 31,
+    "BF": 144,
+    "balls": 219,
+    "pure": 264,
+    "inplay": 89,
+    "total_pitches": 572,
+    "Kpct": 0.22916666666666666,
+    "BBpct": 0.13194444444444445,
+    "HRpct": 0.027777777777777776,
+    "Purepct": 0.46153846153846156,
+    "Ballpct": 0.38286713286713286,
+    "CMD": 0.0786713286713287,
+    "ModelWHIP": 1.4694305555555558,
+    "ActualWHIP": 1.5151515151515151,
+    "BABIP": 0.3068181818181818,
     "team_id": "4",
     "name": "Taj Bradley",
-    "ScoreAbsolute": 0.3670886075949367,
-    "AbsRank": 80,
-    "AbsRankStr": "80 of 159"
+    "ScoreAbsolute": 0.18354430379746836,
+    "AbsRank": 116,
+    "AbsRankStr": "116 of 159"
   },
   "Matthew Boyd": {
     "Starts": 5,
@@ -948,9 +892,9 @@
     "BABIP": 0.25263157894736843,
     "team_id": "1",
     "name": "Matthew Boyd",
-    "ScoreAbsolute": 0.22151898734177214,
-    "AbsRank": 110,
-    "AbsRankStr": "110 of 159"
+    "ScoreAbsolute": 0.23417721518987342,
+    "AbsRank": 108,
+    "AbsRankStr": "108 of 159"
   },
   "Sean Manaea": {
     "Starts": 5,
@@ -976,9 +920,9 @@
     "BABIP": 0.3287671232876712,
     "team_id": "1",
     "name": "Sean Manaea",
-    "ScoreAbsolute": 0.6455696202531646,
-    "AbsRank": 38,
-    "AbsRankStr": "38 of 159"
+    "ScoreAbsolute": 0.6392405063291139,
+    "AbsRank": 40,
+    "AbsRankStr": "40 of 159"
   },
   "Jesus Luzardo": {
     "Starts": 5,
@@ -1005,36 +949,36 @@
     "team_id": "12",
     "name": "Jesus Luzardo",
     "ScoreAbsolute": 0.8607594936708861,
-    "AbsRank": 17,
-    "AbsRankStr": "17 of 159"
+    "AbsRank": 16,
+    "AbsRankStr": "16 of 159"
   },
   "Davis Martin": {
-    "Starts": 5,
-    "IP": 22.7,
-    "ER": 19,
-    "BB": 7,
-    "K": 16,
-    "HR": 4,
-    "H": 27,
-    "BF": 100,
-    "balls": 141,
-    "pure": 166,
-    "inplay": 72,
-    "total_pitches": 379,
-    "Kpct": 0.16,
-    "BBpct": 0.07,
-    "HRpct": 0.04,
-    "Purepct": 0.43799472295514513,
-    "Ballpct": 0.3720316622691293,
-    "CMD": 0.06596306068601582,
-    "ModelWHIP": 1.3955000000000002,
+    "Starts": 6,
+    "IP": 24.7,
+    "ER": 22,
+    "BB": 8,
+    "K": 19,
+    "HR": 6,
+    "H": 29,
+    "BF": 109,
+    "balls": 152,
+    "pure": 179,
+    "inplay": 77,
+    "total_pitches": 408,
+    "Kpct": 0.1743119266055046,
+    "BBpct": 0.07339449541284404,
+    "HRpct": 0.05504587155963303,
+    "Purepct": 0.4387254901960784,
+    "Ballpct": 0.37254901960784315,
+    "CMD": 0.06617647058823528,
+    "ModelWHIP": 1.4355045871559633,
     "ActualWHIP": 1.5,
-    "BABIP": 0.3150684931506849,
+    "BABIP": 0.3026315789473684,
     "team_id": "12",
     "name": "Davis Martin",
-    "ScoreAbsolute": 0.27848101265822783,
-    "AbsRank": 101,
-    "AbsRankStr": "101 of 159"
+    "ScoreAbsolute": 0.22151898734177214,
+    "AbsRank": 110,
+    "AbsRankStr": "110 of 159"
   },
   "Shane Bieber": {
     "Starts": 5,
@@ -1058,7 +1002,7 @@
     "ModelWHIP": 1.5072,
     "ActualWHIP": 1.4,
     "BABIP": 0.28169014084507044,
-    "team_id": null,
+    "team_id": "15",
     "name": "Shane Bieber",
     "ScoreAbsolute": 0.006329113924050633,
     "AbsRank": 156,
@@ -1088,10 +1032,10 @@
     "BABIP": 0.31645569620253167,
     "team_id": "2",
     "name": "Rhett Lowder",
-    "ScoreAbsolute": 0.5253164556962026,
-    "AbsRank": 54,
-    "AbsRankStr": "54 of 159",
-    "ScoreRelative": 0.3333333333333333
+    "ScoreAbsolute": 0.5443037974683544,
+    "AbsRank": 53,
+    "AbsRankStr": "53 of 159",
+    "ScoreRelative": 0.2727272727272727
   },
   "Tomoyuki Sugano": {
     "Starts": 5,
@@ -1145,7 +1089,7 @@
     "BABIP": 0.3055555555555556,
     "team_id": "1",
     "name": "Ian Seymour",
-    "ScoreAbsolute": 0.8734177215189873,
+    "ScoreAbsolute": 0.8670886075949367,
     "AbsRank": 15,
     "AbsRankStr": "15 of 159"
   },
@@ -1171,11 +1115,11 @@
     "ModelWHIP": 1.3867826086956523,
     "ActualWHIP": 1.7532467532467533,
     "BABIP": 0.39473684210526316,
-    "team_id": "3",
+    "team_id": null,
     "name": "Patrick Sandoval",
     "ScoreAbsolute": 0.2468354430379747,
-    "AbsRank": 106,
-    "AbsRankStr": "106 of 159"
+    "AbsRank": 105,
+    "AbsRankStr": "105 of 159"
   },
   "MacKenzie Gore": {
     "Starts": 5,
@@ -1201,9 +1145,9 @@
     "BABIP": 0.2571428571428571,
     "team_id": "12",
     "name": "MacKenzie Gore",
-    "ScoreAbsolute": 0.8037974683544303,
-    "AbsRank": 23,
-    "AbsRankStr": "23 of 159"
+    "ScoreAbsolute": 0.810126582278481,
+    "AbsRank": 20,
+    "AbsRankStr": "20 of 159"
   },
   "Trevor Rogers": {
     "Starts": 5,
@@ -1229,9 +1173,9 @@
     "BABIP": 0.325,
     "team_id": "9",
     "name": "Trevor Rogers",
-    "ScoreAbsolute": 0.9556962025316456,
-    "AbsRank": 6,
-    "AbsRankStr": "6 of 159"
+    "ScoreAbsolute": 0.9683544303797469,
+    "AbsRank": 4,
+    "AbsRankStr": "4 of 159"
   },
   "Spencer Arrighetti": {
     "Starts": 2,
@@ -1290,32 +1234,32 @@
     "AbsRankStr": null
   },
   "Shane Drohan": {
-    "Starts": 4,
-    "IP": 23.0,
-    "ER": 16,
-    "BB": 8,
-    "K": 26,
+    "Starts": 5,
+    "IP": 28.3,
+    "ER": 19,
+    "BB": 11,
+    "K": 31,
     "HR": 3,
-    "H": 24,
-    "BF": 89,
-    "balls": 132,
-    "pure": 154,
-    "inplay": 54,
-    "total_pitches": 340,
-    "Kpct": 0.29213483146067415,
-    "BBpct": 0.0898876404494382,
-    "HRpct": 0.033707865168539325,
-    "Purepct": 0.45294117647058824,
-    "Ballpct": 0.38823529411764707,
-    "CMD": 0.06470588235294117,
-    "ModelWHIP": 1.1675955056179774,
-    "ActualWHIP": 1.391304347826087,
-    "BABIP": 0.40384615384615385,
+    "H": 27,
+    "BF": 111,
+    "balls": 163,
+    "pure": 193,
+    "inplay": 67,
+    "total_pitches": 423,
+    "Kpct": 0.27927927927927926,
+    "BBpct": 0.0990990990990991,
+    "HRpct": 0.02702702702702703,
+    "Purepct": 0.4562647754137116,
+    "Ballpct": 0.38534278959810875,
+    "CMD": 0.07092198581560283,
+    "ModelWHIP": 1.2113693693693695,
+    "ActualWHIP": 1.3411764705882354,
+    "BABIP": 0.36363636363636365,
     "team_id": null,
     "name": "Shane Drohan",
-    "ScoreAbsolute": 0.2721518987341772,
-    "AbsRank": 103,
-    "AbsRankStr": "103 of 159"
+    "ScoreAbsolute": 0.3227848101265823,
+    "AbsRank": 94,
+    "AbsRankStr": "94 of 159"
   },
   "Griffin Canning": {
     "Starts": 1,
@@ -1369,9 +1313,9 @@
     "BABIP": 0.27586206896551724,
     "team_id": "16",
     "name": "Randy Dobnak",
-    "ScoreAbsolute": 0.22784810126582278,
-    "AbsRank": 109,
-    "AbsRankStr": "109 of 159"
+    "ScoreAbsolute": 0.24050632911392406,
+    "AbsRank": 106,
+    "AbsRankStr": "106 of 159"
   },
   "Dustin May": {
     "Starts": 5,
@@ -1397,9 +1341,9 @@
     "BABIP": 0.28378378378378377,
     "team_id": "15",
     "name": "Dustin May",
-    "ScoreAbsolute": 0.4620253164556962,
-    "AbsRank": 63,
-    "AbsRankStr": "63 of 159"
+    "ScoreAbsolute": 0.47468354430379744,
+    "AbsRank": 64,
+    "AbsRankStr": "64 of 159"
   },
   "Brandon Pfaadt": {
     "Starts": 5,
@@ -1425,10 +1369,10 @@
     "BABIP": 0.26,
     "team_id": "2",
     "name": "Brandon Pfaadt",
-    "ScoreAbsolute": 0.27848101265822783,
-    "AbsRank": 102,
-    "AbsRankStr": "102 of 159",
-    "ScoreRelative": 0.1111111111111111
+    "ScoreAbsolute": 0.2721518987341772,
+    "AbsRank": 101,
+    "AbsRankStr": "101 of 159",
+    "ScoreRelative": 0.09090909090909091
   },
   "Logan Webb": {
     "Starts": 5,
@@ -1454,9 +1398,9 @@
     "BABIP": 0.22826086956521738,
     "team_id": "3",
     "name": "Logan Webb",
-    "ScoreAbsolute": 0.6329113924050633,
-    "AbsRank": 40,
-    "AbsRankStr": "40 of 159"
+    "ScoreAbsolute": 0.6455696202531646,
+    "AbsRank": 38,
+    "AbsRankStr": "38 of 159"
   },
   "Bryan Woo": {
     "Starts": 5,
@@ -1482,9 +1426,9 @@
     "BABIP": 0.3108108108108108,
     "team_id": "16",
     "name": "Bryan Woo",
-    "ScoreAbsolute": 0.759493670886076,
-    "AbsRank": 26,
-    "AbsRankStr": "26 of 159"
+    "ScoreAbsolute": 0.7658227848101266,
+    "AbsRank": 23,
+    "AbsRankStr": "23 of 159"
   },
   "Zack Littell": {
     "Starts": 2,
@@ -1567,8 +1511,8 @@
     "team_id": "10",
     "name": "Tarik Skubal",
     "ScoreAbsolute": 0.9177215189873418,
-    "AbsRank": 11,
-    "AbsRankStr": "11 of 159"
+    "AbsRank": 12,
+    "AbsRankStr": "12 of 159"
   },
   "Grayson Rodriguez": {
     "Starts": 5,
@@ -1595,8 +1539,8 @@
     "team_id": null,
     "name": "Grayson Rodriguez",
     "ScoreAbsolute": 0.3987341772151899,
-    "AbsRank": 76,
-    "AbsRankStr": "76 of 159"
+    "AbsRank": 77,
+    "AbsRankStr": "77 of 159"
   },
   "Sean Burke": {
     "Starts": 5,
@@ -1650,9 +1594,9 @@
     "BABIP": 0.2631578947368421,
     "team_id": null,
     "name": "Trey Yesavage",
-    "ScoreAbsolute": 0.7088607594936709,
-    "AbsRank": 31,
-    "AbsRankStr": "31 of 159"
+    "ScoreAbsolute": 0.7025316455696202,
+    "AbsRank": 33,
+    "AbsRankStr": "33 of 159"
   },
   "Yoshinobu Yamamoto": {
     "Starts": 4,
@@ -1678,7 +1622,7 @@
     "BABIP": 0.18055555555555555,
     "team_id": "4",
     "name": "Yoshinobu Yamamoto",
-    "ScoreAbsolute": 0.43037974683544306,
+    "ScoreAbsolute": 0.4430379746835443,
     "AbsRank": 69,
     "AbsRankStr": "69 of 159"
   },
@@ -1735,8 +1679,8 @@
     "team_id": "9",
     "name": "Nolan McLean",
     "ScoreAbsolute": 0.37341772151898733,
-    "AbsRank": 79,
-    "AbsRankStr": "79 of 159"
+    "AbsRank": 80,
+    "AbsRankStr": "80 of 159"
   },
   "Shane McClanahan": {
     "Starts": 3,
@@ -1790,9 +1734,9 @@
     "BABIP": 0.32558139534883723,
     "team_id": "13",
     "name": "Sonny Gray",
-    "ScoreAbsolute": 0.20253164556962025,
-    "AbsRank": 113,
-    "AbsRankStr": "113 of 159"
+    "ScoreAbsolute": 0.2088607594936709,
+    "AbsRank": 112,
+    "AbsRankStr": "112 of 159"
   },
   "Nathan Eovaldi": {
     "Starts": 4,
@@ -1816,11 +1760,11 @@
     "ModelWHIP": 1.375622222222222,
     "ActualWHIP": 1.359375,
     "BABIP": 0.2903225806451613,
-    "team_id": "13",
+    "team_id": null,
     "name": "Nathan Eovaldi",
-    "ScoreAbsolute": 0.3291139240506329,
-    "AbsRank": 91,
-    "AbsRankStr": "91 of 159"
+    "ScoreAbsolute": 0.34177215189873417,
+    "AbsRank": 88,
+    "AbsRankStr": "88 of 159"
   },
   "Grant Holmes": {
     "Starts": 5,
@@ -1847,8 +1791,8 @@
     "team_id": null,
     "name": "Grant Holmes",
     "ScoreAbsolute": 0.25316455696202533,
-    "AbsRank": 105,
-    "AbsRankStr": "105 of 159"
+    "AbsRank": 104,
+    "AbsRankStr": "104 of 159"
   },
   "Paul Skenes": {
     "Starts": 5,
@@ -1874,7 +1818,7 @@
     "BABIP": 0.42105263157894735,
     "team_id": "1",
     "name": "Paul Skenes",
-    "ScoreAbsolute": 0.7278481012658228,
+    "ScoreAbsolute": 0.7215189873417721,
     "AbsRank": 28,
     "AbsRankStr": "28 of 159"
   },
@@ -1902,9 +1846,9 @@
     "BABIP": 0.49056603773584906,
     "team_id": "3",
     "name": "Joey Cantillo",
-    "ScoreAbsolute": 0.4873417721518987,
-    "AbsRank": 59,
-    "AbsRankStr": "59 of 159"
+    "ScoreAbsolute": 0.5063291139240507,
+    "AbsRank": 58,
+    "AbsRankStr": "58 of 159"
   },
   "Brandon Young": {
     "Starts": 5,
@@ -1930,9 +1874,9 @@
     "BABIP": 0.2804878048780488,
     "team_id": "11",
     "name": "Brandon Young",
-    "ScoreAbsolute": 0.5379746835443038,
-    "AbsRank": 53,
-    "AbsRankStr": "53 of 159"
+    "ScoreAbsolute": 0.5316455696202531,
+    "AbsRank": 55,
+    "AbsRankStr": "55 of 159"
   },
   "Hunter Brown": {
     "Starts": 5,
@@ -1959,8 +1903,8 @@
     "team_id": "3",
     "name": "Hunter Brown",
     "ScoreAbsolute": 0.25949367088607594,
-    "AbsRank": 104,
-    "AbsRankStr": "104 of 159"
+    "AbsRank": 102,
+    "AbsRankStr": "102 of 159"
   },
   "Eury Perez": {
     "Starts": 5,
@@ -1986,9 +1930,9 @@
     "BABIP": 0.2916666666666667,
     "team_id": "13",
     "name": "Eury Perez",
-    "ScoreAbsolute": 0.879746835443038,
-    "AbsRank": 14,
-    "AbsRankStr": "14 of 159"
+    "ScoreAbsolute": 0.8734177215189873,
+    "AbsRank": 13,
+    "AbsRankStr": "13 of 159"
   },
   "Robert Gasser": {
     "Starts": 4,
@@ -2012,11 +1956,12 @@
     "ModelWHIP": 1.0603749999999998,
     "ActualWHIP": 1.1129032258064515,
     "BABIP": 0.3157894736842105,
-    "team_id": null,
+    "team_id": "2",
     "name": "Robert Gasser",
-    "ScoreAbsolute": 0.5949367088607594,
-    "AbsRank": 44,
-    "AbsRankStr": "44 of 159"
+    "ScoreAbsolute": 0.6012658227848101,
+    "AbsRank": 43,
+    "AbsRankStr": "43 of 159",
+    "ScoreRelative": 0.45454545454545453
   },
   "German Marquez": {
     "Starts": 2,
@@ -2042,9 +1987,9 @@
     "BABIP": 0.4,
     "team_id": null,
     "name": "German Marquez",
-    "ScoreAbsolute": 0.12658227848101267,
-    "AbsRank": 128,
-    "AbsRankStr": "128 of 159"
+    "ScoreAbsolute": 0.12025316455696203,
+    "AbsRank": 129,
+    "AbsRankStr": "129 of 159"
   },
   "Noah Cameron": {
     "Starts": 4,
@@ -2070,9 +2015,9 @@
     "BABIP": 0.25,
     "team_id": "13",
     "name": "Noah Cameron",
-    "ScoreAbsolute": 0.31645569620253167,
-    "AbsRank": 94,
-    "AbsRankStr": "94 of 159"
+    "ScoreAbsolute": 0.310126582278481,
+    "AbsRank": 96,
+    "AbsRankStr": "96 of 159"
   },
   "Zebby Matthews": {
     "Starts": 5,
@@ -2098,9 +2043,9 @@
     "BABIP": 0.373134328358209,
     "team_id": null,
     "name": "Zebby Matthews",
-    "ScoreAbsolute": 0.20253164556962025,
-    "AbsRank": 114,
-    "AbsRankStr": "114 of 159"
+    "ScoreAbsolute": 0.2088607594936709,
+    "AbsRank": 113,
+    "AbsRankStr": "113 of 159"
   },
   "Shota Imanaga": {
     "Starts": 5,
@@ -2126,9 +2071,9 @@
     "BABIP": 0.2716049382716049,
     "team_id": "11",
     "name": "Shota Imanaga",
-    "ScoreAbsolute": 0.569620253164557,
-    "AbsRank": 48,
-    "AbsRankStr": "48 of 159"
+    "ScoreAbsolute": 0.5759493670886076,
+    "AbsRank": 47,
+    "AbsRankStr": "47 of 159"
   },
   "Hunter Greene": {
     "Starts": 3,
@@ -2154,9 +2099,9 @@
     "BABIP": 0.3076923076923077,
     "team_id": null,
     "name": "Hunter Greene",
-    "ScoreAbsolute": 0.5506329113924051,
-    "AbsRank": 50,
-    "AbsRankStr": "50 of 159"
+    "ScoreAbsolute": 0.5443037974683544,
+    "AbsRank": 54,
+    "AbsRankStr": "54 of 159"
   },
   "Ryan Feltner": {
     "Starts": 5,
@@ -2211,8 +2156,8 @@
     "team_id": "14",
     "name": "Foster Griffin",
     "ScoreAbsolute": 0.24050632911392406,
-    "AbsRank": 108,
-    "AbsRankStr": "108 of 159"
+    "AbsRank": 107,
+    "AbsRankStr": "107 of 159"
   },
   "Jacob Lopez": {
     "Starts": 5,
@@ -2238,9 +2183,9 @@
     "BABIP": 0.2711864406779661,
     "team_id": "10",
     "name": "Jacob Lopez",
-    "ScoreAbsolute": 0.7088607594936709,
-    "AbsRank": 32,
-    "AbsRankStr": "32 of 159"
+    "ScoreAbsolute": 0.7215189873417721,
+    "AbsRank": 29,
+    "AbsRankStr": "29 of 159"
   },
   "Casey Mize": {
     "Starts": 4,
@@ -2266,9 +2211,9 @@
     "BABIP": 0.3389830508474576,
     "team_id": "10",
     "name": "Casey Mize",
-    "ScoreAbsolute": 0.44936708860759494,
-    "AbsRank": 66,
-    "AbsRankStr": "66 of 159"
+    "ScoreAbsolute": 0.45569620253164556,
+    "AbsRank": 67,
+    "AbsRankStr": "67 of 159"
   },
   "Ryan Johnson": {
     "Starts": 5,
@@ -2322,37 +2267,37 @@
     "BABIP": 0.352112676056338,
     "team_id": "11",
     "name": "Robbie Ray",
-    "ScoreAbsolute": 0.18354430379746836,
-    "AbsRank": 115,
-    "AbsRankStr": "115 of 159"
+    "ScoreAbsolute": 0.189873417721519,
+    "AbsRank": 114,
+    "AbsRankStr": "114 of 159"
   },
   "Logan Gilbert": {
-    "Starts": 4,
-    "IP": 25.3,
+    "Starts": 5,
+    "IP": 31.3,
     "ER": 11,
-    "BB": 8,
-    "K": 26,
+    "BB": 9,
+    "K": 33,
     "HR": 5,
-    "H": 18,
-    "BF": 96,
-    "balls": 138,
-    "pure": 170,
-    "inplay": 61,
-    "total_pitches": 369,
-    "Kpct": 0.2708333333333333,
-    "BBpct": 0.08333333333333333,
-    "HRpct": 0.052083333333333336,
-    "Purepct": 0.46070460704607047,
-    "Ballpct": 0.37398373983739835,
-    "CMD": 0.08672086720867211,
-    "ModelWHIP": 1.2549791666666668,
-    "ActualWHIP": 1.0263157894736843,
-    "BABIP": 0.22807017543859648,
+    "H": 22,
+    "BF": 117,
+    "balls": 173,
+    "pure": 211,
+    "inplay": 74,
+    "total_pitches": 458,
+    "Kpct": 0.28205128205128205,
+    "BBpct": 0.07692307692307693,
+    "HRpct": 0.042735042735042736,
+    "Purepct": 0.4606986899563319,
+    "Ballpct": 0.3777292576419214,
+    "CMD": 0.08296943231441051,
+    "ModelWHIP": 1.1667863247863248,
+    "ActualWHIP": 0.9893617021276596,
+    "BABIP": 0.24285714285714285,
     "team_id": "13",
     "name": "Logan Gilbert",
-    "ScoreAbsolute": 0.4240506329113924,
-    "AbsRank": 70,
-    "AbsRankStr": "70 of 159"
+    "ScoreAbsolute": 0.41139240506329117,
+    "AbsRank": 74,
+    "AbsRankStr": "74 of 159"
   },
   "Andre Pallante": {
     "Starts": 5,
@@ -2406,9 +2351,9 @@
     "BABIP": 0.3655913978494624,
     "team_id": "14",
     "name": "Eduardo Rodriguez",
-    "ScoreAbsolute": 0.6645569620253164,
-    "AbsRank": 37,
-    "AbsRankStr": "37 of 159"
+    "ScoreAbsolute": 0.6772151898734177,
+    "AbsRank": 35,
+    "AbsRankStr": "35 of 159"
   },
   "Joe Ryan": {
     "Starts": 3,
@@ -2434,9 +2379,9 @@
     "BABIP": 0.34615384615384615,
     "team_id": "14",
     "name": "Joe Ryan",
-    "ScoreAbsolute": 0.18354430379746836,
-    "AbsRank": 116,
-    "AbsRankStr": "116 of 159"
+    "ScoreAbsolute": 0.17721518987341772,
+    "AbsRank": 118,
+    "AbsRankStr": "118 of 159"
   },
   "Tanner Bibee": {
     "Starts": 5,
@@ -2462,9 +2407,9 @@
     "BABIP": 0.2891566265060241,
     "team_id": "15",
     "name": "Tanner Bibee",
-    "ScoreAbsolute": 0.810126582278481,
-    "AbsRank": 22,
-    "AbsRankStr": "22 of 159"
+    "ScoreAbsolute": 0.8164556962025317,
+    "AbsRank": 19,
+    "AbsRankStr": "19 of 159"
   },
   "Emmet Sheehan": {
     "Starts": 3,
@@ -2494,33 +2439,61 @@
     "AbsRank": 78,
     "AbsRankStr": "78 of 159"
   },
+  "Cristopher Sanchez": {
+    "Starts": 5,
+    "IP": 28.3,
+    "ER": 7,
+    "BB": 10,
+    "K": 37,
+    "HR": 1,
+    "H": 25,
+    "BF": 117,
+    "balls": 186,
+    "pure": 222,
+    "inplay": 59,
+    "total_pitches": 467,
+    "Kpct": 0.3162393162393162,
+    "BBpct": 0.08547008547008547,
+    "HRpct": 0.008547008547008548,
+    "Purepct": 0.4753747323340471,
+    "Ballpct": 0.39828693790149894,
+    "CMD": 0.07708779443254815,
+    "ModelWHIP": 1.0001709401709402,
+    "ActualWHIP": 1.2352941176470589,
+    "BABIP": 0.34782608695652173,
+    "team_id": "12",
+    "name": "Cristopher Sanchez",
+    "ScoreAbsolute": 0.379746835443038,
+    "AbsRank": 79,
+    "AbsRankStr": "79 of 159"
+  },
   "Braxton Ashcraft": {
-    "Starts": 4,
-    "IP": 19.0,
-    "ER": 16,
-    "BB": 5,
-    "K": 17,
-    "HR": 5,
-    "H": 22,
-    "BF": 80,
-    "balls": 94,
-    "pure": 157,
-    "inplay": 56,
-    "total_pitches": 307,
-    "Kpct": 0.2125,
-    "BBpct": 0.0625,
-    "HRpct": 0.0625,
-    "Purepct": 0.511400651465798,
-    "Ballpct": 0.30618892508143325,
-    "CMD": 0.2052117263843648,
-    "ModelWHIP": 1.3313000000000001,
-    "ActualWHIP": 1.4210526315789473,
-    "BABIP": 0.32075471698113206,
+    "Starts": 5,
+    "IP": 28.0,
+    "ER": 17,
+    "BB": 6,
+    "K": 27,
+    "HR": 6,
+    "H": 25,
+    "BF": 106,
+    "balls": 114,
+    "pure": 200,
+    "inplay": 71,
+    "total_pitches": 385,
+    "Kpct": 0.25471698113207547,
+    "BBpct": 0.05660377358490566,
+    "HRpct": 0.05660377358490566,
+    "Purepct": 0.5194805194805194,
+    "Ballpct": 0.2961038961038961,
+    "CMD": 0.22337662337662334,
+    "ModelWHIP": 1.1899245283018869,
+    "ActualWHIP": 1.1071428571428572,
+    "BABIP": 0.2835820895522388,
     "team_id": "1",
     "name": "Braxton Ashcraft",
-    "ScoreAbsolute": 0.41139240506329117,
-    "AbsRank": 74,
-    "AbsRankStr": "74 of 159"
+    "ScoreAbsolute": 0.7151898734177216,
+    "AbsRank": 30,
+    "AbsRankStr": "30 of 159"
   },
   "Ryan Weathers": {
     "Starts": 5,
@@ -2574,9 +2547,37 @@
     "BABIP": 0.26,
     "team_id": "4",
     "name": "Nick Martinez",
-    "ScoreAbsolute": 0.7215189873417721,
-    "AbsRank": 29,
-    "AbsRankStr": "29 of 159"
+    "ScoreAbsolute": 0.7088607594936709,
+    "AbsRank": 31,
+    "AbsRankStr": "31 of 159"
+  },
+  "Dylan Cease": {
+    "Starts": 5,
+    "IP": 33.0,
+    "ER": 7,
+    "BB": 12,
+    "K": 43,
+    "HR": 4,
+    "H": 18,
+    "BF": 128,
+    "balls": 192,
+    "pure": 255,
+    "inplay": 65,
+    "total_pitches": 512,
+    "Kpct": 0.3359375,
+    "BBpct": 0.09375,
+    "HRpct": 0.03125,
+    "Purepct": 0.498046875,
+    "Ballpct": 0.375,
+    "CMD": 0.123046875,
+    "ModelWHIP": 1.078625,
+    "ActualWHIP": 0.9090909090909091,
+    "BABIP": 0.2028985507246377,
+    "team_id": "16",
+    "name": "Dylan Cease",
+    "ScoreAbsolute": 0.6835443037974683,
+    "AbsRank": 34,
+    "AbsRankStr": "34 of 159"
   },
   "Shane Baz": {
     "Starts": 5,
@@ -2602,37 +2603,37 @@
     "BABIP": 0.35802469135802467,
     "team_id": "10",
     "name": "Shane Baz",
-    "ScoreAbsolute": 0.7974683544303798,
-    "AbsRank": 24,
-    "AbsRankStr": "24 of 159"
+    "ScoreAbsolute": 0.810126582278481,
+    "AbsRank": 21,
+    "AbsRankStr": "21 of 159"
   },
   "Payton Tolle": {
-    "Starts": 4,
-    "IP": 23.0,
+    "Starts": 5,
+    "IP": 31.0,
     "ER": 9,
-    "BB": 4,
-    "K": 37,
+    "BB": 6,
+    "K": 41,
     "HR": 5,
-    "H": 24,
-    "BF": 92,
-    "balls": 100,
-    "pure": 195,
-    "inplay": 47,
-    "total_pitches": 342,
-    "Kpct": 0.40217391304347827,
-    "BBpct": 0.043478260869565216,
-    "HRpct": 0.05434782608695652,
-    "Purepct": 0.5701754385964912,
-    "Ballpct": 0.29239766081871343,
-    "CMD": 0.2777777777777778,
-    "ModelWHIP": 0.7980652173913043,
-    "ActualWHIP": 1.2173913043478262,
-    "BABIP": 0.41304347826086957,
+    "H": 26,
+    "BF": 117,
+    "balls": 130,
+    "pure": 236,
+    "inplay": 62,
+    "total_pitches": 428,
+    "Kpct": 0.3504273504273504,
+    "BBpct": 0.05128205128205128,
+    "HRpct": 0.042735042735042736,
+    "Purepct": 0.5514018691588785,
+    "Ballpct": 0.3037383177570093,
+    "CMD": 0.24766355140186913,
+    "ModelWHIP": 0.902940170940171,
+    "ActualWHIP": 1.032258064516129,
+    "BABIP": 0.3230769230769231,
     "team_id": "1",
     "name": "Payton Tolle",
-    "ScoreAbsolute": 0.9746835443037974,
-    "AbsRank": 4,
-    "AbsRankStr": "4 of 159"
+    "ScoreAbsolute": 0.9240506329113924,
+    "AbsRank": 10,
+    "AbsRankStr": "10 of 159"
   },
   "JP Sears": {
     "Starts": 2,
@@ -2659,8 +2660,8 @@
     "team_id": "4",
     "name": "JP Sears",
     "ScoreAbsolute": 0.35443037974683544,
-    "AbsRank": 83,
-    "AbsRankStr": "83 of 159"
+    "AbsRank": 84,
+    "AbsRankStr": "84 of 159"
   },
   "Bryce Elder": {
     "Starts": 5,
@@ -2714,9 +2715,9 @@
     "BABIP": 0.4,
     "team_id": "4",
     "name": "Freddy Peralta",
-    "ScoreAbsolute": 0.3227848101265823,
-    "AbsRank": 93,
-    "AbsRankStr": "93 of 159"
+    "ScoreAbsolute": 0.33544303797468356,
+    "AbsRank": 91,
+    "AbsRankStr": "91 of 159"
   },
   "Jacob Misiorowski": {
     "Starts": 4,
@@ -2798,9 +2799,9 @@
     "BABIP": 0.21978021978021978,
     "team_id": "13",
     "name": "Michael Wacha",
-    "ScoreAbsolute": 0.4430379746835443,
-    "AbsRank": 67,
-    "AbsRankStr": "67 of 159"
+    "ScoreAbsolute": 0.45569620253164556,
+    "AbsRank": 68,
+    "AbsRankStr": "68 of 159"
   },
   "Erick Fedde": {
     "Starts": 3,
@@ -2827,36 +2828,36 @@
     "team_id": null,
     "name": "Erick Fedde",
     "ScoreAbsolute": 0.14556962025316456,
-    "AbsRank": 122,
-    "AbsRankStr": "122 of 159"
+    "AbsRank": 123,
+    "AbsRankStr": "123 of 159"
   },
   "Jacob deGrom": {
-    "Starts": 4,
-    "IP": 18.0,
-    "ER": 12,
-    "BB": 8,
-    "K": 22,
+    "Starts": 5,
+    "IP": 20.0,
+    "ER": 14,
+    "BB": 9,
+    "K": 25,
     "HR": 1,
-    "H": 24,
-    "BF": 82,
-    "balls": 130,
-    "pure": 176,
-    "inplay": 49,
-    "total_pitches": 355,
-    "Kpct": 0.2682926829268293,
-    "BBpct": 0.0975609756097561,
-    "HRpct": 0.012195121951219513,
-    "Purepct": 0.49577464788732395,
-    "Ballpct": 0.36619718309859156,
-    "CMD": 0.1295774647887324,
-    "ModelWHIP": 1.1729999999999998,
-    "ActualWHIP": 1.7777777777777777,
-    "BABIP": 0.45098039215686275,
+    "H": 30,
+    "BF": 93,
+    "balls": 148,
+    "pure": 202,
+    "inplay": 57,
+    "total_pitches": 407,
+    "Kpct": 0.26881720430107525,
+    "BBpct": 0.0967741935483871,
+    "HRpct": 0.010752688172043012,
+    "Purepct": 0.4963144963144963,
+    "Ballpct": 0.36363636363636365,
+    "CMD": 0.13267813267813267,
+    "ModelWHIP": 1.1629462365591399,
+    "ActualWHIP": 1.95,
+    "BABIP": 0.5,
     "team_id": "15",
     "name": "Jacob deGrom",
-    "ScoreAbsolute": 0.7215189873417721,
-    "AbsRank": 30,
-    "AbsRankStr": "30 of 159"
+    "ScoreAbsolute": 0.7468354430379747,
+    "AbsRank": 27,
+    "AbsRankStr": "27 of 159"
   },
   "Jack Flaherty": {
     "Starts": 1,
@@ -2938,10 +2939,10 @@
     "BABIP": 0.30434782608695654,
     "team_id": "2",
     "name": "Janson Junk",
-    "ScoreAbsolute": 0.34810126582278483,
-    "AbsRank": 86,
-    "AbsRankStr": "86 of 159",
-    "ScoreRelative": 0.2222222222222222
+    "ScoreAbsolute": 0.36075949367088606,
+    "AbsRank": 82,
+    "AbsRankStr": "82 of 159",
+    "ScoreRelative": 0.18181818181818182
   },
   "Ronel Blanco": {
     "Starts": 4,
@@ -2995,9 +2996,9 @@
     "BABIP": 0.25,
     "team_id": null,
     "name": "Andrew Alvarez",
-    "ScoreAbsolute": 0.13291139240506328,
-    "AbsRank": 125,
-    "AbsRankStr": "125 of 159"
+    "ScoreAbsolute": 0.12658227848101267,
+    "AbsRank": 128,
+    "AbsRankStr": "128 of 159"
   },
   "Kyle Freeland": {
     "Starts": 4,
@@ -3023,9 +3024,9 @@
     "BABIP": 0.273972602739726,
     "team_id": null,
     "name": "Kyle Freeland",
-    "ScoreAbsolute": 0.31645569620253167,
-    "AbsRank": 95,
-    "AbsRankStr": "95 of 159"
+    "ScoreAbsolute": 0.3291139240506329,
+    "AbsRank": 92,
+    "AbsRankStr": "92 of 159"
   },
   "Jeffrey Springs": {
     "Starts": 3,
@@ -3084,27 +3085,27 @@
     "AbsRankStr": "126 of 159"
   },
   "Andrew Abbott": {
-    "Starts": 4,
-    "IP": 23.7,
-    "ER": 8,
-    "BB": 13,
-    "K": 15,
+    "Starts": 5,
+    "IP": 28.0,
+    "ER": 13,
+    "BB": 16,
+    "K": 18,
     "HR": 1,
-    "H": 17,
-    "BF": 95,
-    "balls": 144,
-    "pure": 165,
-    "inplay": 59,
-    "total_pitches": 368,
-    "Kpct": 0.15789473684210525,
-    "BBpct": 0.1368421052631579,
-    "HRpct": 0.010526315789473684,
-    "Purepct": 0.4483695652173913,
-    "Ballpct": 0.391304347826087,
-    "CMD": 0.057065217391304324,
-    "ModelWHIP": 1.5833894736842107,
-    "ActualWHIP": 1.2676056338028168,
-    "BABIP": 0.24242424242424243,
+    "H": 24,
+    "BF": 118,
+    "balls": 182,
+    "pure": 203,
+    "inplay": 73,
+    "total_pitches": 458,
+    "Kpct": 0.15254237288135594,
+    "BBpct": 0.13559322033898305,
+    "HRpct": 0.00847457627118644,
+    "Purepct": 0.4432314410480349,
+    "Ballpct": 0.39737991266375544,
+    "CMD": 0.04585152838427947,
+    "ModelWHIP": 1.5819830508474575,
+    "ActualWHIP": 1.4285714285714286,
+    "BABIP": 0.27710843373493976,
     "team_id": "11",
     "name": "Andrew Abbott",
     "ScoreAbsolute": 0.0949367088607595,
@@ -3135,7 +3136,7 @@
     "BABIP": 0.2222222222222222,
     "team_id": "3",
     "name": "George Kirby",
-    "ScoreAbsolute": 0.36075949367088606,
+    "ScoreAbsolute": 0.3670886075949367,
     "AbsRank": 81,
     "AbsRankStr": "81 of 159"
   },
@@ -3164,9 +3165,9 @@
     "team_id": "2",
     "name": "Kyle Leahy",
     "ScoreAbsolute": 0.8417721518987342,
-    "AbsRank": 18,
-    "AbsRankStr": "18 of 159",
-    "ScoreRelative": 0.8888888888888888
+    "AbsRank": 17,
+    "AbsRankStr": "17 of 159",
+    "ScoreRelative": 1.0
   },
   "Jose Soriano": {
     "Starts": 4,
@@ -3192,9 +3193,9 @@
     "BABIP": 0.25,
     "team_id": "10",
     "name": "Jose Soriano",
-    "ScoreAbsolute": 0.4620253164556962,
-    "AbsRank": 64,
-    "AbsRankStr": "64 of 159"
+    "ScoreAbsolute": 0.4430379746835443,
+    "AbsRank": 70,
+    "AbsRankStr": "70 of 159"
   },
   "Justin Wrobleski": {
     "Starts": 4,
@@ -3220,9 +3221,9 @@
     "BABIP": 0.2962962962962963,
     "team_id": "10",
     "name": "Justin Wrobleski",
-    "ScoreAbsolute": 0.17721518987341772,
-    "AbsRank": 118,
-    "AbsRankStr": "118 of 159"
+    "ScoreAbsolute": 0.17088607594936708,
+    "AbsRank": 119,
+    "AbsRankStr": "119 of 159"
   },
   "Zack Wheeler": {
     "Starts": 5,
@@ -3248,37 +3249,37 @@
     "BABIP": 0.38181818181818183,
     "team_id": "14",
     "name": "Zack Wheeler",
-    "ScoreAbsolute": 0.6392405063291139,
-    "AbsRank": 39,
-    "AbsRankStr": "39 of 159"
+    "ScoreAbsolute": 0.6518987341772152,
+    "AbsRank": 37,
+    "AbsRankStr": "37 of 159"
   },
   "Parker Messick": {
-    "Starts": 4,
-    "IP": 24.7,
-    "ER": 5,
-    "BB": 2,
-    "K": 26,
-    "HR": 3,
-    "H": 20,
-    "BF": 94,
-    "balls": 119,
-    "pure": 178,
-    "inplay": 60,
-    "total_pitches": 357,
-    "Kpct": 0.2765957446808511,
-    "BBpct": 0.02127659574468085,
-    "HRpct": 0.031914893617021274,
-    "Purepct": 0.49859943977591037,
-    "Ballpct": 0.3333333333333333,
-    "CMD": 0.16526610644257705,
-    "ModelWHIP": 0.893127659574468,
-    "ActualWHIP": 0.8918918918918919,
-    "BABIP": 0.2698412698412698,
+    "Starts": 5,
+    "IP": 30.3,
+    "ER": 7,
+    "BB": 4,
+    "K": 32,
+    "HR": 4,
+    "H": 23,
+    "BF": 117,
+    "balls": 161,
+    "pure": 222,
+    "inplay": 74,
+    "total_pitches": 457,
+    "Kpct": 0.27350427350427353,
+    "BBpct": 0.03418803418803419,
+    "HRpct": 0.03418803418803419,
+    "Purepct": 0.48577680525164113,
+    "Ballpct": 0.3522975929978118,
+    "CMD": 0.1334792122538293,
+    "ModelWHIP": 0.9653504273504272,
+    "ActualWHIP": 0.8901098901098902,
+    "BABIP": 0.24675324675324675,
     "team_id": "15",
     "name": "Parker Messick",
-    "ScoreAbsolute": 0.8924050632911392,
-    "AbsRank": 13,
-    "AbsRankStr": "13 of 159"
+    "ScoreAbsolute": 0.7531645569620253,
+    "AbsRank": 26,
+    "AbsRankStr": "26 of 159"
   },
   "Drew Rasmussen": {
     "Starts": 5,
@@ -3305,36 +3306,36 @@
     "team_id": "16",
     "name": "Drew Rasmussen",
     "ScoreAbsolute": 0.930379746835443,
-    "AbsRank": 7,
-    "AbsRankStr": "7 of 159"
+    "AbsRank": 8,
+    "AbsRankStr": "8 of 159"
   },
   "Kevin Gausman": {
-    "Starts": 4,
-    "IP": 22.0,
-    "ER": 10,
-    "BB": 5,
-    "K": 15,
-    "HR": 1,
-    "H": 27,
-    "BF": 94,
-    "balls": 123,
-    "pure": 177,
-    "inplay": 71,
-    "total_pitches": 371,
-    "Kpct": 0.1595744680851064,
-    "BBpct": 0.05319148936170213,
-    "HRpct": 0.010638297872340425,
-    "Purepct": 0.477088948787062,
-    "Ballpct": 0.33153638814016173,
-    "CMD": 0.14555256064690025,
-    "ModelWHIP": 1.2118723404255318,
-    "ActualWHIP": 1.4545454545454546,
-    "BABIP": 0.3561643835616438,
+    "Starts": 5,
+    "IP": 26.7,
+    "ER": 16,
+    "BB": 6,
+    "K": 22,
+    "HR": 2,
+    "H": 34,
+    "BF": 115,
+    "balls": 152,
+    "pure": 226,
+    "inplay": 84,
+    "total_pitches": 462,
+    "Kpct": 0.19130434782608696,
+    "BBpct": 0.05217391304347826,
+    "HRpct": 0.017391304347826087,
+    "Purepct": 0.48917748917748916,
+    "Ballpct": 0.329004329004329,
+    "CMD": 0.16017316017316013,
+    "ModelWHIP": 1.1627652173913041,
+    "ActualWHIP": 1.5,
+    "BABIP": 0.3764705882352941,
     "team_id": "14",
     "name": "Kevin Gausman",
-    "ScoreAbsolute": 0.689873417721519,
-    "AbsRank": 34,
-    "AbsRankStr": "34 of 159"
+    "ScoreAbsolute": 0.759493670886076,
+    "AbsRank": 25,
+    "AbsRankStr": "25 of 159"
   },
   "Walker Buehler": {
     "Starts": 5,
@@ -3414,11 +3415,11 @@
     "ModelWHIP": 1.440019230769231,
     "ActualWHIP": 1.2142857142857142,
     "BABIP": 0.2911392405063291,
-    "team_id": "3",
+    "team_id": null,
     "name": "Zac Thornton",
     "ScoreAbsolute": 0.17088607594936708,
-    "AbsRank": 119,
-    "AbsRankStr": "119 of 159"
+    "AbsRank": 120,
+    "AbsRankStr": "120 of 159"
   },
   "Brandon Sproat": {
     "Starts": 3,
@@ -3472,9 +3473,9 @@
     "BABIP": 0.25757575757575757,
     "team_id": "3",
     "name": "Tyler Mahle",
-    "ScoreAbsolute": 0.4177215189873418,
-    "AbsRank": 72,
-    "AbsRankStr": "72 of 159"
+    "ScoreAbsolute": 0.43670886075949367,
+    "AbsRank": 71,
+    "AbsRankStr": "71 of 159"
   },
   "Luinder Avila": {
     "Starts": 3,
@@ -3501,8 +3502,8 @@
     "team_id": null,
     "name": "Luinder Avila",
     "ScoreAbsolute": 0.13924050632911392,
-    "AbsRank": 124,
-    "AbsRankStr": "124 of 159"
+    "AbsRank": 125,
+    "AbsRankStr": "125 of 159"
   },
   "Noah Schultz": {
     "Starts": 3,
@@ -3528,9 +3529,9 @@
     "BABIP": 0.5,
     "team_id": null,
     "name": "Noah Schultz",
-    "ScoreAbsolute": 0.6962025316455697,
-    "AbsRank": 33,
-    "AbsRankStr": "33 of 159"
+    "ScoreAbsolute": 0.7088607594936709,
+    "AbsRank": 32,
+    "AbsRankStr": "32 of 159"
   },
   "Kumar Rocker": {
     "Starts": 4,
@@ -3556,9 +3557,9 @@
     "BABIP": 0.32727272727272727,
     "team_id": "10",
     "name": "Kumar Rocker",
-    "ScoreAbsolute": 0.5063291139240507,
-    "AbsRank": 57,
-    "AbsRankStr": "57 of 159"
+    "ScoreAbsolute": 0.4873417721518987,
+    "AbsRank": 62,
+    "AbsRankStr": "62 of 159"
   },
   "Framber Valdez": {
     "Starts": 5,
@@ -3585,8 +3586,8 @@
     "team_id": "14",
     "name": "Framber Valdez",
     "ScoreAbsolute": 0.14556962025316456,
-    "AbsRank": 123,
-    "AbsRankStr": "123 of 159"
+    "AbsRank": 124,
+    "AbsRankStr": "124 of 159"
   },
   "David Peterson": {
     "Starts": 5,
@@ -3613,36 +3614,36 @@
     "team_id": null,
     "name": "David Peterson",
     "ScoreAbsolute": 0.3291139240506329,
-    "AbsRank": 92,
-    "AbsRankStr": "92 of 159"
+    "AbsRank": 93,
+    "AbsRankStr": "93 of 159"
   },
   "Tyler Phillips": {
-    "Starts": 4,
-    "IP": 18.3,
-    "ER": 7,
-    "BB": 4,
-    "K": 14,
-    "HR": 4,
-    "H": 19,
-    "BF": 75,
-    "balls": 86,
-    "pure": 121,
-    "inplay": 55,
-    "total_pitches": 262,
-    "Kpct": 0.18666666666666668,
-    "BBpct": 0.05333333333333334,
-    "HRpct": 0.05333333333333334,
-    "Purepct": 0.4618320610687023,
-    "Ballpct": 0.3282442748091603,
-    "CMD": 0.13358778625954199,
-    "ModelWHIP": 1.3134666666666666,
-    "ActualWHIP": 1.2545454545454546,
-    "BABIP": 0.2830188679245283,
+    "Starts": 5,
+    "IP": 23.7,
+    "ER": 11,
+    "BB": 5,
+    "K": 20,
+    "HR": 5,
+    "H": 25,
+    "BF": 98,
+    "balls": 114,
+    "pure": 168,
+    "inplay": 71,
+    "total_pitches": 353,
+    "Kpct": 0.20408163265306123,
+    "BBpct": 0.05102040816326531,
+    "HRpct": 0.05102040816326531,
+    "Purepct": 0.47592067988668557,
+    "Ballpct": 0.32294617563739375,
+    "CMD": 0.15297450424929182,
+    "ModelWHIP": 1.256122448979592,
+    "ActualWHIP": 1.2676056338028168,
+    "BABIP": 0.29411764705882354,
     "team_id": null,
     "name": "Tyler Phillips",
-    "ScoreAbsolute": 0.4430379746835443,
-    "AbsRank": 68,
-    "AbsRankStr": "68 of 159"
+    "ScoreAbsolute": 0.569620253164557,
+    "AbsRank": 48,
+    "AbsRankStr": "48 of 159"
   },
   "Michael Lorenzen": {
     "Starts": 4,
@@ -3694,40 +3695,41 @@
     "ModelWHIP": 1.2157011494252872,
     "ActualWHIP": 1.7,
     "BABIP": 0.43636363636363634,
-    "team_id": null,
+    "team_id": "2",
     "name": "Matthew Liberatore",
-    "ScoreAbsolute": 0.6708860759493671,
+    "ScoreAbsolute": 0.6645569620253164,
     "AbsRank": 36,
-    "AbsRankStr": "36 of 159"
+    "AbsRankStr": "36 of 159",
+    "ScoreRelative": 0.6363636363636364
   },
   "Walbert Urena": {
-    "Starts": 4,
-    "IP": 20.3,
+    "Starts": 5,
+    "IP": 26.3,
     "ER": 6,
-    "BB": 9,
-    "K": 19,
+    "BB": 11,
+    "K": 24,
     "HR": 1,
-    "H": 15,
-    "BF": 83,
-    "balls": 112,
-    "pure": 161,
-    "inplay": 49,
-    "total_pitches": 322,
-    "Kpct": 0.2289156626506024,
-    "BBpct": 0.10843373493975904,
-    "HRpct": 0.012048192771084338,
-    "Purepct": 0.5,
-    "Ballpct": 0.34782608695652173,
-    "CMD": 0.15217391304347827,
-    "ModelWHIP": 1.3072530120481927,
-    "ActualWHIP": 1.180327868852459,
-    "BABIP": 0.25925925925925924,
+    "H": 17,
+    "BF": 105,
+    "balls": 147,
+    "pure": 208,
+    "inplay": 63,
+    "total_pitches": 418,
+    "Kpct": 0.22857142857142856,
+    "BBpct": 0.10476190476190476,
+    "HRpct": 0.009523809523809525,
+    "Purepct": 0.49760765550239233,
+    "Ballpct": 0.35167464114832536,
+    "CMD": 0.14593301435406697,
+    "ModelWHIP": 1.2823428571428572,
+    "ActualWHIP": 1.0632911392405064,
+    "BABIP": 0.2318840579710145,
     "team_id": "2",
     "name": "Walbert Urena",
-    "ScoreAbsolute": 0.45569620253164556,
-    "AbsRank": 65,
-    "AbsRankStr": "65 of 159",
-    "ScoreRelative": 0.3333333333333333
+    "ScoreAbsolute": 0.5,
+    "AbsRank": 60,
+    "AbsRankStr": "60 of 159",
+    "ScoreRelative": 0.36363636363636365
   },
   "Jack Perkins": {
     "Starts": 5,
@@ -3753,9 +3755,9 @@
     "BABIP": 0.36619718309859156,
     "team_id": null,
     "name": "Jack Perkins",
-    "ScoreAbsolute": 0.2468354430379747,
-    "AbsRank": 107,
-    "AbsRankStr": "107 of 159"
+    "ScoreAbsolute": 0.25949367088607594,
+    "AbsRank": 103,
+    "AbsRankStr": "103 of 159"
   },
   "Kohl Drake": {
     "Starts": 4,
@@ -3810,8 +3812,8 @@
     "team_id": "10",
     "name": "Chase Burns",
     "ScoreAbsolute": 0.7658227848101266,
-    "AbsRank": 25,
-    "AbsRankStr": "25 of 159"
+    "AbsRank": 24,
+    "AbsRankStr": "24 of 159"
   },
   "Luis Castillo": {
     "Starts": 4,
@@ -3837,7 +3839,7 @@
     "BABIP": 0.2833333333333333,
     "team_id": "12",
     "name": "Luis Castillo",
-    "ScoreAbsolute": 0.2911392405063291,
+    "ScoreAbsolute": 0.2848101265822785,
     "AbsRank": 100,
     "AbsRankStr": "100 of 159"
   },
@@ -3893,37 +3895,37 @@
     "BABIP": 0.26229508196721313,
     "team_id": "11",
     "name": "Bubba Chandler",
-    "ScoreAbsolute": 0.5886075949367089,
+    "ScoreAbsolute": 0.5949367088607594,
     "AbsRank": 45,
     "AbsRankStr": "45 of 159"
   },
   "Max Fried": {
-    "Starts": 4,
-    "IP": 19.7,
-    "ER": 4,
-    "BB": 6,
-    "K": 25,
-    "HR": 0,
-    "H": 11,
-    "BF": 65,
-    "balls": 100,
-    "pure": 142,
-    "inplay": 36,
-    "total_pitches": 278,
-    "Kpct": 0.38461538461538464,
-    "BBpct": 0.09230769230769231,
-    "HRpct": 0.0,
-    "Purepct": 0.5107913669064749,
-    "Ballpct": 0.3597122302158273,
-    "CMD": 0.15107913669064754,
-    "ModelWHIP": 0.8471076923076923,
-    "ActualWHIP": 0.8644067796610169,
-    "BABIP": 0.3235294117647059,
+    "Starts": 5,
+    "IP": 24.7,
+    "ER": 5,
+    "BB": 8,
+    "K": 29,
+    "HR": 1,
+    "H": 16,
+    "BF": 85,
+    "balls": 133,
+    "pure": 183,
+    "inplay": 50,
+    "total_pitches": 366,
+    "Kpct": 0.3411764705882353,
+    "BBpct": 0.09411764705882353,
+    "HRpct": 0.011764705882352941,
+    "Purepct": 0.5,
+    "Ballpct": 0.3633879781420765,
+    "CMD": 0.13661202185792348,
+    "ModelWHIP": 0.9952941176470588,
+    "ActualWHIP": 0.9729729729729729,
+    "BABIP": 0.3191489361702128,
     "team_id": "15",
     "name": "Max Fried",
-    "ScoreAbsolute": 0.8291139240506329,
-    "AbsRank": 19,
-    "AbsRankStr": "19 of 159"
+    "ScoreAbsolute": 0.7848101265822784,
+    "AbsRank": 22,
+    "AbsRankStr": "22 of 159"
   },
   "Kyle Bradish": {
     "Starts": 4,
@@ -3949,9 +3951,9 @@
     "BABIP": 0.35714285714285715,
     "team_id": "13",
     "name": "Kyle Bradish",
-    "ScoreAbsolute": 0.5443037974683544,
-    "AbsRank": 52,
-    "AbsRankStr": "52 of 159"
+    "ScoreAbsolute": 0.5632911392405063,
+    "AbsRank": 51,
+    "AbsRankStr": "51 of 159"
   },
   "Emerson Hancock": {
     "Starts": 4,
@@ -3977,9 +3979,9 @@
     "BABIP": 0.38028169014084506,
     "team_id": "4",
     "name": "Emerson Hancock",
-    "ScoreAbsolute": 0.6075949367088608,
-    "AbsRank": 43,
-    "AbsRankStr": "43 of 159"
+    "ScoreAbsolute": 0.6012658227848101,
+    "AbsRank": 44,
+    "AbsRankStr": "44 of 159"
   },
   "Hunter Dobbins": {
     "Starts": 3,
@@ -4003,11 +4005,11 @@
     "ModelWHIP": 1.3019420289855075,
     "ActualWHIP": 1.153846153846154,
     "BABIP": 0.2608695652173913,
-    "team_id": "15",
+    "team_id": null,
     "name": "Hunter Dobbins",
-    "ScoreAbsolute": 0.310126582278481,
-    "AbsRank": 96,
-    "AbsRankStr": "96 of 159"
+    "ScoreAbsolute": 0.3037974683544304,
+    "AbsRank": 97,
+    "AbsRankStr": "97 of 159"
   },
   "Eric Lauer": {
     "Starts": 4,
@@ -4033,9 +4035,9 @@
     "BABIP": 0.24242424242424243,
     "team_id": null,
     "name": "Eric Lauer",
-    "ScoreAbsolute": 0.5632911392405063,
-    "AbsRank": 49,
-    "AbsRankStr": "49 of 159"
+    "ScoreAbsolute": 0.5569620253164557,
+    "AbsRank": 52,
+    "AbsRankStr": "52 of 159"
   },
   "Slade Cecconi": {
     "Starts": 2,
@@ -4094,32 +4096,32 @@
     "AbsRankStr": "138 of 159"
   },
   "Keider Montero": {
-    "Starts": 4,
-    "IP": 21.7,
+    "Starts": 5,
+    "IP": 28.0,
     "ER": 10,
-    "BB": 6,
+    "BB": 7,
     "K": 16,
     "HR": 4,
-    "H": 19,
-    "BF": 89,
-    "balls": 110,
-    "pure": 145,
-    "inplay": 58,
-    "total_pitches": 313,
-    "Kpct": 0.1797752808988764,
-    "BBpct": 0.06741573033707865,
-    "HRpct": 0.0449438202247191,
-    "Purepct": 0.46325878594249204,
-    "Ballpct": 0.3514376996805112,
-    "CMD": 0.11182108626198084,
-    "ModelWHIP": 1.3590786516853934,
-    "ActualWHIP": 1.1538461538461537,
-    "BABIP": 0.23809523809523808,
+    "H": 22,
+    "BF": 112,
+    "balls": 147,
+    "pure": 174,
+    "inplay": 79,
+    "total_pitches": 400,
+    "Kpct": 0.14285714285714285,
+    "BBpct": 0.0625,
+    "HRpct": 0.03571428571428571,
+    "Purepct": 0.435,
+    "Ballpct": 0.3675,
+    "CMD": 0.0675,
+    "ModelWHIP": 1.3841964285714288,
+    "ActualWHIP": 1.0357142857142858,
+    "BABIP": 0.21176470588235294,
     "team_id": "9",
     "name": "Keider Montero",
-    "ScoreAbsolute": 0.35443037974683544,
-    "AbsRank": 84,
-    "AbsRankStr": "84 of 159"
+    "ScoreAbsolute": 0.2974683544303797,
+    "AbsRank": 99,
+    "AbsRankStr": "99 of 159"
   },
   "Randy Vasquez": {
     "Starts": 3,
@@ -4201,9 +4203,9 @@
     "BABIP": 0.38095238095238093,
     "team_id": "16",
     "name": "Ranger Suarez",
-    "ScoreAbsolute": 0.3924050632911392,
-    "AbsRank": 77,
-    "AbsRankStr": "77 of 159"
+    "ScoreAbsolute": 0.4050632911392405,
+    "AbsRank": 76,
+    "AbsRankStr": "76 of 159"
   },
   "Connor Prielipp": {
     "Starts": 3,
@@ -4229,9 +4231,9 @@
     "BABIP": 0.23529411764705882,
     "team_id": null,
     "name": "Connor Prielipp",
-    "ScoreAbsolute": 0.34177215189873417,
-    "AbsRank": 87,
-    "AbsRankStr": "87 of 159"
+    "ScoreAbsolute": 0.35443037974683544,
+    "AbsRank": 85,
+    "AbsRankStr": "85 of 159"
   },
   "Carson Whisenhunt": {
     "Starts": 4,
@@ -4341,9 +4343,9 @@
     "BABIP": 0.2641509433962264,
     "team_id": "2",
     "name": "Hayden Wesneski",
-    "ScoreAbsolute": 0.2088607594936709,
-    "AbsRank": 112,
-    "AbsRankStr": "112 of 159",
+    "ScoreAbsolute": 0.21518987341772153,
+    "AbsRank": 111,
+    "AbsRankStr": "111 of 159",
     "ScoreRelative": 0.0
   },
   "Javier Assad": {
@@ -4370,9 +4372,9 @@
     "BABIP": 0.3333333333333333,
     "team_id": null,
     "name": "Javier Assad",
-    "ScoreAbsolute": 0.4240506329113924,
-    "AbsRank": 71,
-    "AbsRankStr": "71 of 159"
+    "ScoreAbsolute": 0.4177215189873418,
+    "AbsRank": 73,
+    "AbsRankStr": "73 of 159"
   },
   "Jake Irvin": {
     "Starts": 3,
@@ -4455,8 +4457,8 @@
     "team_id": "9",
     "name": "Andrew Painter",
     "ScoreAbsolute": 0.36075949367088606,
-    "AbsRank": 82,
-    "AbsRankStr": "82 of 159"
+    "AbsRank": 83,
+    "AbsRankStr": "83 of 159"
   },
   "Quinn Mathews": {
     "Starts": 1,
@@ -4538,9 +4540,9 @@
     "BABIP": 0.4230769230769231,
     "team_id": null,
     "name": "Robert Stock",
-    "ScoreAbsolute": 0.17088607594936708,
-    "AbsRank": 120,
-    "AbsRankStr": "120 of 159"
+    "ScoreAbsolute": 0.16455696202531644,
+    "AbsRank": 122,
+    "AbsRankStr": "122 of 159"
   },
   "Cade Povich": {
     "Starts": 2,
@@ -4567,8 +4569,8 @@
     "team_id": null,
     "name": "Cade Povich",
     "ScoreAbsolute": 0.34177215189873417,
-    "AbsRank": 88,
-    "AbsRankStr": "88 of 159"
+    "AbsRank": 89,
+    "AbsRankStr": "89 of 159"
   },
   "Blade Tidwell": {
     "Starts": 2,
@@ -4594,9 +4596,9 @@
     "BABIP": 0.3225806451612903,
     "team_id": null,
     "name": "Blade Tidwell",
-    "ScoreAbsolute": 0.5506329113924051,
-    "AbsRank": 51,
-    "AbsRankStr": "51 of 159"
+    "ScoreAbsolute": 0.569620253164557,
+    "AbsRank": 49,
+    "AbsRankStr": "49 of 159"
   },
   "Cody Bradford": {
     "Starts": 2,
@@ -4622,10 +4624,10 @@
     "BABIP": 0.2777777777777778,
     "team_id": "2",
     "name": "Cody Bradford",
-    "ScoreAbsolute": 0.4873417721518987,
-    "AbsRank": 60,
-    "AbsRankStr": "60 of 159",
-    "ScoreRelative": 0.4444444444444444
+    "ScoreAbsolute": 0.46835443037974683,
+    "AbsRank": 65,
+    "AbsRankStr": "65 of 159",
+    "ScoreRelative": 0.2727272727272727
   },
   "Kyle Harrison": {
     "Starts": 2,
@@ -4651,9 +4653,9 @@
     "BABIP": 0.42105263157894735,
     "team_id": "3",
     "name": "Kyle Harrison",
-    "ScoreAbsolute": 0.4810126582278481,
-    "AbsRank": 62,
-    "AbsRankStr": "62 of 159"
+    "ScoreAbsolute": 0.4620253164556962,
+    "AbsRank": 66,
+    "AbsRankStr": "66 of 159"
   },
   "Carmen Mlodzinski": {
     "Starts": 2,
@@ -4738,7 +4740,7 @@
     "ScoreAbsolute": null,
     "AbsRank": null,
     "AbsRankStr": null,
-    "ScoreRelative": 0.7777777777777778
+    "ScoreRelative": 0.8181818181818182
   },
   "Michael Soroka": {
     "Starts": 1,
