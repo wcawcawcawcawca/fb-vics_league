@@ -402,6 +402,16 @@ def main(json_path, roster_path='current_roster.json', probables=None):
     kondor_names = [pl['name'] for pl in roster['2']['pitchers']]
     no_data_kondor = [n for n in kondor_names if n not in pool]
 
+    # Scope the grid down to (a) Kondor's rostered pitchers and (b) the
+    # qualifying FA pool -- nothing else. build_by_date_rows() has no pool
+    # check of its own: it renders a dashed 'nodata' row for every key it's
+    # handed, so an unfiltered `probables` (every starter in the FanGraphs
+    # grid, ~160+ pitchers) silently pulls in every other team's starters
+    # too. This filter is what actually enforces the scope this module's
+    # docstring has always claimed.
+    in_scope_names = set(kondor_names) | set(fa_pool.keys())
+    probables = {name: starts for name, starts in probables.items() if name in in_scope_names}
+
     by_date = build_by_date_rows(probables, scored, roster, no_data_kondor, data, coefs)
 
     for key in sorted(by_date.keys(), key=lambda k: k[0]):
