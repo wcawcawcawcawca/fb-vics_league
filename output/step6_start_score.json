@@ -1,667 +1,676 @@
 {
   "coefficients": {
-    "const": 1.154652238247094,
-    "cmd_pct": -0.011008725323826837,
-    "model_whip": 0.07667079940302056,
-    "opp_trailing_ops": 0.3184587033959122
+    "const": 1.1532655957344133,
+    "cmd_pct": -0.01078671861998454,
+    "model_whip": 0.07219585226811547,
+    "opp_trailing_ops": 0.3237980396667446
   },
   "fit_diagnostics": {
-    "n_fit_rows": 3126,
-    "n_total_rows": 3166,
-    "r_squared": 0.0189032133861895,
-    "correlation": 0.13748895732454133,
+    "n_fit_rows": 3152,
+    "n_total_rows": 3193,
+    "r_squared": 0.017981990330956044,
+    "correlation": 0.13409694377932752,
     "min_ip_for_fit": 2.0
   },
   "quintile_backtest": [
     {
       "quintile": "Q1 (best predicted)",
-      "n": 625,
-      "mean_predicted": 1.2356445064954718,
-      "mean_actual": 1.2240038740625518,
+      "n": 630,
+      "mean_predicted": 1.237890574401117,
+      "mean_actual": 1.2270500419177577,
       "median_actual": 1.125
     },
     {
       "quintile": "Q2",
-      "n": 625,
-      "mean_predicted": 1.3215774989881046,
-      "mean_actual": 1.3181601345776153,
+      "n": 630,
+      "mean_predicted": 1.3218324336600842,
+      "mean_actual": 1.3153450932482116,
       "median_actual": 1.2
     },
     {
       "quintile": "Q3",
-      "n": 625,
-      "mean_predicted": 1.3688811148113835,
-      "mean_actual": 1.3645904852972954,
-      "median_actual": 1.25
+      "n": 630,
+      "mean_predicted": 1.3676116509760823,
+      "mean_actual": 1.376536521463912,
+      "median_actual": 1.2631578947368423
     },
     {
       "quintile": "Q4",
-      "n": 625,
-      "mean_predicted": 1.4145469915724935,
-      "mean_actual": 1.4512788909237655,
+      "n": 630,
+      "mean_predicted": 1.412200179712209,
+      "mean_actual": 1.4368630595312943,
       "median_actual": 1.3333333333333333
     },
     {
       "quintile": "Q5 (worst predicted)",
-      "n": 626,
-      "mean_predicted": 1.4940558230942043,
-      "mean_actual": 1.4767003189071293,
+      "n": 632,
+      "mean_predicted": 1.4898552445602746,
+      "mean_actual": 1.4736468224568446,
       "median_actual": 1.4
     }
   ],
-  "league_avg_trailing_ops": 0.683007658545594,
+  "league_avg_trailing_ops": 0.6872728302467442,
   "current_scores": {
     "Aaron Nola": {
       "cmd_pct": 5.054151624548736,
       "model_whip": 1.4628714285714286,
-      "score_relative": 0.32727272727272727,
-      "score_absolute": 0.18354430379746836,
-      "predicted_whip_neutral_opp": 1.4286817264697818,
+      "score_relative": 0.3559322033898305,
+      "score_absolute": 0.18125,
+      "predicted_whip_neutral_opp": 1.4268987289921695,
       "is_kondor": false,
-      "start_score": 0.2537313432835821
+      "start_score": 0.3088235294117647
+    },
+    "Jake Bennett": {
+      "cmd_pct": 10.212765957446807,
+      "model_whip": 1.24155223880597,
+      "score_relative": 0.7288135593220338,
+      "score_absolute": 0.55625,
+      "predicted_whip_neutral_opp": 1.3552758801857725,
+      "is_kondor": false,
+      "start_score": 0.75
     },
     "Mason Englert": {
       "cmd_pct": 21.176470588235297,
       "model_whip": 1.5886086956521739,
-      "score_relative": 0.23636363636363636,
+      "score_relative": 0.23728813559322035,
       "score_absolute": null,
-      "predicted_whip_neutral_opp": 1.2608359221972638,
+      "predicted_whip_neutral_opp": 1.2620695199879999,
       "is_kondor": false,
-      "start_score": 0.9850746268656716
+      "start_score": 0.9852941176470589
+    },
+    "Anthony Kay": {
+      "cmd_pct": 11.352657004830919,
+      "model_whip": 1.2515315315315316,
+      "score_relative": 0.7796610169491526,
+      "score_absolute": 0.5875,
+      "predicted_whip_neutral_opp": 1.3437006597435557,
+      "is_kondor": false,
+      "start_score": 0.7794117647058824
     },
     "Cal Quantrill": {
       "cmd_pct": 9.779179810725552,
       "model_whip": 1.2158620689655173,
-      "score_relative": 0.6909090909090909,
-      "score_absolute": 0.5189873417721519,
-      "predicted_whip_neutral_opp": 1.3577267839598082,
+      "score_relative": 0.6610169491525424,
+      "score_absolute": 0.5125,
+      "predicted_whip_neutral_opp": 1.358098128241434,
       "is_kondor": false,
-      "start_score": 0.7014925373134329
+      "start_score": 0.7205882352941176
     },
     "Colin Rea": {
       "cmd_pct": 11.781609195402298,
       "model_whip": 1.2112666666666667,
-      "score_relative": 0.8,
-      "score_absolute": 0.6139240506329114,
-      "predicted_whip_neutral_opp": 1.335330255715711,
+      "score_relative": 0.7966101694915254,
+      "score_absolute": 0.60625,
+      "predicted_whip_neutral_opp": 1.3361667169270568,
       "is_kondor": false,
-      "start_score": 0.7611940298507462
+      "start_score": 0.8088235294117647
     },
     "Dean Kremer": {
       "cmd_pct": 8.915662650602412,
       "model_whip": 1.3335961538461538,
-      "score_relative": 0.6,
-      "score_absolute": 0.4050632911392405,
-      "predicted_whip_neutral_opp": 1.3762597735927962,
+      "score_relative": 0.6101694915254238,
+      "score_absolute": 0.4125,
+      "predicted_whip_neutral_opp": 1.3759125574701747,
       "is_kondor": false,
-      "start_score": 0.5522388059701493
+      "start_score": 0.5735294117647058
     },
-    "Brady Singer": {
-      "cmd_pct": 7.515657620041755,
-      "model_whip": 1.2428870967741936,
-      "score_relative": 0.5272727272727272,
-      "score_absolute": 0.34810126582278483,
-      "predicted_whip_neutral_opp": 1.384717308507413,
+    "Seth Lugo": {
+      "cmd_pct": 6.165703275529866,
+      "model_whip": 1.3484963503649634,
+      "score_relative": 0.423728813559322,
+      "score_absolute": 0.25625,
+      "predicted_whip_neutral_opp": 1.4066513278521084,
       "is_kondor": false,
-      "start_score": 0.5223880597014925
+      "start_score": 0.4264705882352941
     },
-    "Gabriel Hughes": {
-      "cmd_pct": 9.595959595959597,
-      "model_whip": 1.254372549019608,
-      "score_relative": 0.6545454545454545,
-      "score_absolute": 0.5,
-      "predicted_whip_neutral_opp": 1.3626964342690804,
+    "Gage Jump": {
+      "cmd_pct": 7.6923076923076925,
+      "model_whip": 1.5224,
+      "score_relative": 0.3220338983050847,
+      "score_absolute": 0.15,
+      "predicted_whip_neutral_opp": 1.402739397762238,
       "is_kondor": false,
-      "start_score": 0.6567164179104478
+      "start_score": 0.4411764705882353
+    },
+    "Landen Roupp": {
+      "cmd_pct": 5.374280230326295,
+      "model_whip": 1.5810232558139534,
+      "score_relative": 0.2542372881355932,
+      "score_absolute": 0.09375,
+      "predicted_whip_neutral_opp": 1.4319756636642482,
+      "is_kondor": false,
+      "start_score": 0.25
     },
     "Tomoyuki Sugano": {
       "cmd_pct": 3.0878859857482177,
       "model_whip": 1.321217391304348,
-      "score_relative": 0.14545454545454545,
-      "score_absolute": 0.08227848101265822,
-      "predicted_whip_neutral_opp": 1.4394670765250832,
+      "score_relative": 0.1694915254237288,
+      "score_absolute": 0.0875,
+      "predicted_whip_neutral_opp": 1.4378814492223386,
       "is_kondor": false,
-      "start_score": 0.16417910447761194
+      "start_score": 0.20588235294117646
     },
     "Patrick Sandoval": {
       "cmd_pct": 6.112469437652813,
       "model_whip": 1.3867826086956523,
-      "score_relative": 0.38181818181818183,
-      "score_absolute": 0.2468354430379747,
-      "predicted_whip_neutral_opp": 1.4111972057144977,
+      "score_relative": 0.4067796610169492,
+      "score_absolute": 0.25,
+      "predicted_whip_neutral_opp": 1.4099896553326916,
       "is_kondor": false,
-      "start_score": 0.34328358208955223
+      "start_score": 0.38235294117647056
     },
     "Spencer Arrighetti": {
       "cmd_pct": -5.405405405405405,
       "model_whip": 1.7775555555555556,
       "score_relative": 0.0,
       "score_absolute": 0.0,
-      "predicted_whip_neutral_opp": 1.5679552003967636,
+      "predicted_whip_neutral_opp": 1.562441916306833,
       "is_kondor": false,
       "start_score": 0.0
     },
     "Shane Drohan": {
       "cmd_pct": 7.092198581560282,
       "model_whip": 1.2113693693693695,
-      "score_relative": 0.4727272727272727,
-      "score_absolute": 0.3227848101265823,
-      "predicted_whip_neutral_opp": 1.386962563392453,
+      "score_relative": 0.4915254237288136,
+      "score_absolute": 0.325,
+      "predicted_whip_neutral_opp": 1.3867574844212915,
       "is_kondor": false,
-      "start_score": 0.5074626865671642
+      "start_score": 0.5441176470588235
     },
     "Zack Littell": {
       "cmd_pct": 4.705882352941177,
       "model_whip": 1.79196,
-      "score_relative": 0.03636363636363636,
-      "score_absolute": 0.012658227848101266,
-      "predicted_whip_neutral_opp": 1.4577472110654655,
+      "score_relative": 0.03389830508474576,
+      "score_absolute": 0.0125,
+      "predicted_whip_neutral_opp": 1.4544142415149695,
       "is_kondor": false,
-      "start_score": 0.11940298507462686
+      "start_score": 0.14705882352941177
     },
     "Grayson Rodriguez": {
-      "cmd_pct": 14.385150812064968,
-      "model_whip": 1.342326923076923,
-      "score_relative": 0.6363636363636364,
-      "score_absolute": 0.3987341772151899,
-      "predicted_whip_neutral_opp": 1.3167170758176587,
+      "cmd_pct": 13.102119460500965,
+      "model_whip": 1.347619834710744,
+      "score_relative": 0.6271186440677966,
+      "score_absolute": 0.39375,
+      "predicted_whip_neutral_opp": 1.331766877439036,
       "is_kondor": false,
-      "start_score": 0.8955223880597015
+      "start_score": 0.8382352941176471
     },
     "Trey Yesavage": {
       "cmd_pct": 16.5016501650165,
       "model_whip": 1.197657142857143,
-      "score_relative": 0.9272727272727272,
-      "score_absolute": 0.7025316455696202,
-      "predicted_whip_neutral_opp": 1.2823251680940482,
+      "score_relative": 0.9152542372881356,
+      "score_absolute": 0.6875,
+      "predicted_whip_neutral_opp": 1.2842704119426378,
       "is_kondor": false,
-      "start_score": 0.9552238805970149
+      "start_score": 0.9558823529411765
     },
     "Nathan Eovaldi": {
       "cmd_pct": 9.649122807017541,
       "model_whip": 1.375622222222222,
-      "score_relative": 0.5818181818181818,
-      "score_absolute": 0.34177215189873417,
-      "predicted_whip_neutral_opp": 1.3714074844530102,
+      "score_relative": 0.5932203389830508,
+      "score_absolute": 0.35625,
+      "predicted_whip_neutral_opp": 1.371035036967843,
       "is_kondor": false,
-      "start_score": 0.582089552238806
+      "start_score": 0.5882352941176471
     },
-    "Grant Holmes": {
-      "cmd_pct": 6.182795698924731,
-      "model_whip": 1.3953962264150943,
-      "score_relative": 0.4,
-      "score_absolute": 0.25316455696202533,
-      "predicted_whip_neutral_opp": 1.4110834161774053,
+    "Robert Gasser": {
+      "cmd_pct": 13.033175355450233,
+      "model_whip": 1.0872962962962962,
+      "score_relative": 0.8813559322033898,
+      "score_absolute": 0.7375,
+      "predicted_whip_neutral_opp": 1.3137162783794425,
       "is_kondor": false,
-      "start_score": 0.3582089552238806
+      "start_score": 0.9117647058823529
     },
     "German Marquez": {
       "cmd_pct": 4.4444444444444455,
       "model_whip": 1.4135199999999999,
-      "score_relative": 0.23636363636363636,
-      "score_absolute": 0.12025316455696203,
-      "predicted_whip_neutral_opp": 1.4316100118632626,
+      "score_relative": 0.288135593220339,
+      "score_absolute": 0.1375,
+      "predicted_whip_neutral_opp": 1.4299125003381754,
       "is_kondor": false,
-      "start_score": 0.23880597014925373
+      "start_score": 0.27941176470588236
     },
     "Zebby Matthews": {
       "cmd_pct": 8.256880733944955,
       "model_whip": 1.4513584905660377,
-      "score_relative": 0.41818181818181815,
-      "score_absolute": 0.2088607594936709,
-      "predicted_whip_neutral_opp": 1.3925410552574635,
+      "score_relative": 0.423728813559322,
+      "score_absolute": 0.2125,
+      "predicted_whip_neutral_opp": 1.3915206049016697,
       "is_kondor": false,
-      "start_score": 0.4626865671641791
+      "start_score": 0.5
     },
     "Hunter Greene": {
       "cmd_pct": 13.513513513513514,
       "model_whip": 1.2625205479452055,
-      "score_relative": 0.7272727272727273,
-      "score_absolute": 0.5443037974683544,
-      "predicted_whip_neutral_opp": 1.320193872840608,
+      "score_relative": 0.7288135593220338,
+      "score_absolute": 0.5375,
+      "predicted_whip_neutral_opp": 1.3211854700118077,
       "is_kondor": false,
-      "start_score": 0.8805970149253731
+      "start_score": 0.8970588235294118
     },
     "Ryan Johnson": {
       "cmd_pct": -0.7556675062972307,
       "model_whip": 1.7054489795918366,
-      "score_relative": 0.09090909090909091,
-      "score_absolute": 0.0379746835443038,
-      "predicted_whip_neutral_opp": 1.5112390442163413,
+      "score_relative": 0.1016949152542373,
+      "score_absolute": 0.0375,
+      "predicted_whip_neutral_opp": 1.5070807062266385,
       "is_kondor": false,
-      "start_score": 0.05970149253731343
+      "start_score": 0.058823529411764705
     },
     "Emmet Sheehan": {
       "cmd_pct": 9.821428571428575,
       "model_whip": 1.3453,
-      "score_relative": 0.6181818181818182,
-      "score_absolute": 0.3860759493670886,
-      "predicted_whip_neutral_opp": 1.3671857886034433,
+      "score_relative": 0.6440677966101694,
+      "score_absolute": 0.4,
+      "predicted_whip_neutral_opp": 1.3669872844945434,
       "is_kondor": false,
-      "start_score": 0.6268656716417911
+      "start_score": 0.6176470588235294
     },
     "Erick Fedde": {
       "cmd_pct": 4.629629629629628,
       "model_whip": 1.1364,
-      "score_relative": 0.2727272727272727,
-      "score_absolute": 0.14556962025316456,
-      "predicted_whip_neutral_opp": 1.4083243470949516,
+      "score_relative": 0.3050847457627119,
+      "score_absolute": 0.15,
+      "predicted_whip_neutral_opp": 1.4079080452724528,
       "is_kondor": false,
-      "start_score": 0.3880597014925373
+      "start_score": 0.4117647058823529
     },
     "Ronel Blanco": {
       "cmd_pct": 12.383900928792569,
       "model_whip": 1.7248311688311688,
-      "score_relative": 0.07272727272727272,
-      "score_absolute": 0.03164556962025317,
-      "predicted_whip_neutral_opp": 1.3680751923839727,
+      "score_relative": 0.06779661016949153,
+      "score_absolute": 0.03125,
+      "predicted_whip_neutral_opp": 1.3667471924002499,
       "is_kondor": false,
-      "start_score": 0.6119402985074627
+      "start_score": 0.6470588235294118
     },
     "Andrew Alvarez": {
-      "cmd_pct": 4.524886877828055,
-      "model_whip": 1.4609687500000001,
-      "score_relative": 0.2545454545454545,
-      "score_absolute": 0.12658227848101267,
-      "predicted_whip_neutral_opp": 1.434362376802936,
+      "cmd_pct": 4.123711340206188,
+      "model_whip": 1.4109176470588236,
+      "score_relative": 0.23728813559322035,
+      "score_absolute": 0.11875,
+      "predicted_whip_neutral_opp": 1.4331842789972171,
       "is_kondor": false,
-      "start_score": 0.19402985074626866
+      "start_score": 0.23529411764705882
     },
     "Kyle Freeland": {
-      "cmd_pct": 9.49868073878628,
-      "model_whip": 1.3788910891089108,
-      "score_relative": 0.5636363636363636,
-      "score_absolute": 0.3291139240506329,
-      "predicted_whip_neutral_opp": 1.373314286496661,
+      "cmd_pct": 10.169491525423723,
+      "model_whip": 1.3910317460317463,
+      "score_relative": 0.559322033898305,
+      "score_absolute": 0.31875,
+      "predicted_whip_neutral_opp": 1.3665344697282282,
       "is_kondor": false,
-      "start_score": 0.5671641791044776
+      "start_score": 0.6617647058823529
     },
     "Jeffrey Springs": {
       "cmd_pct": -2.030456852791879,
       "model_whip": 1.8923265306122448,
       "score_relative": 0.0,
       "score_absolute": 0.0,
-      "predicted_whip_neutral_opp": 1.5396009012048548,
+      "predicted_whip_neutral_opp": 1.534323284272727,
       "is_kondor": false,
-      "start_score": 0.014925373134328358
+      "start_score": 0.014705882352941176
     },
     "Mitch Bratt": {
       "cmd_pct": 9.068627450980394,
       "model_whip": 1.5479449541284402,
-      "score_relative": 0.2909090909090909,
-      "score_absolute": 0.13291139240506328,
-      "predicted_whip_neutral_opp": 1.3910101199899425,
+      "score_relative": 0.288135593220339,
+      "score_absolute": 0.13125,
+      "predicted_whip_neutral_opp": 1.3897376635287628,
       "is_kondor": false,
-      "start_score": 0.47761194029850745
+      "start_score": 0.5147058823529411
     },
     "Walker Buehler": {
       "cmd_pct": 4.275534441805229,
       "model_whip": 1.462,
-      "score_relative": 0.2,
-      "score_absolute": 0.10759493670886076,
-      "predicted_whip_neutral_opp": 1.437186496041823,
+      "score_relative": 0.2542372881355932,
+      "score_absolute": 0.125,
+      "predicted_whip_neutral_opp": 1.4352345399267037,
       "is_kondor": false,
-      "start_score": 0.1791044776119403
+      "start_score": 0.22058823529411764
     },
     "Reynaldo Lopez": {
       "cmd_pct": 4.046242774566472,
       "model_whip": 1.2605217391304349,
-      "score_relative": 0.18181818181818182,
-      "score_absolute": 0.10126582278481013,
-      "predicted_whip_neutral_opp": 1.4242632057022968,
+      "score_relative": 0.22033898305084745,
+      "score_absolute": 0.1125,
+      "predicted_whip_neutral_opp": 1.4231619498661392,
       "is_kondor": false,
-      "start_score": 0.29850746268656714
+      "start_score": 0.3382352941176471
     },
     "Zac Thornton": {
       "cmd_pct": 4.922279792746115,
       "model_whip": 1.440019230769231,
-      "score_relative": 0.3090909090909091,
-      "score_absolute": 0.17088607594936708,
-      "predicted_whip_neutral_opp": 1.4283813709704363,
+      "score_relative": 0.3389830508474576,
+      "score_absolute": 0.175,
+      "predicted_whip_neutral_opp": 1.4266713594391969,
       "is_kondor": false,
-      "start_score": 0.26865671641791045
+      "start_score": 0.3235294117647059
     },
     "Brandon Sproat": {
       "cmd_pct": 4.31372549019608,
       "model_whip": 1.57821875,
-      "score_relative": 0.21818181818181817,
-      "score_absolute": 0.10759493670886076,
-      "predicted_whip_neutral_opp": 1.4456766457483787,
+      "score_relative": 0.2711864406779661,
+      "score_absolute": 0.10625,
+      "predicted_whip_neutral_opp": 1.4432130955396945,
       "is_kondor": false,
-      "start_score": 0.13432835820895522
+      "start_score": 0.16176470588235295
     },
     "Luinder Avila": {
       "cmd_pct": 5.263157894736842,
       "model_whip": 1.5349,
-      "score_relative": 0.3090909090909091,
-      "score_absolute": 0.13924050632911392,
-      "predicted_whip_neutral_opp": 1.4319033220016095,
+      "score_relative": 0.3050847457627119,
+      "score_absolute": 0.1375,
+      "predicted_whip_neutral_opp": 1.4298444012677785,
       "is_kondor": false,
-      "start_score": 0.22388059701492538
+      "start_score": 0.29411764705882354
     },
     "Noah Schultz": {
       "cmd_pct": 12.790697674418606,
       "model_whip": 1.1657560975609758,
-      "score_relative": 0.8545454545454545,
-      "score_absolute": 0.7088607594936709,
-      "predicted_whip_neutral_opp": 1.3207321461081625,
+      "score_relative": 0.864406779661017,
+      "score_absolute": 0.7125,
+      "predicted_whip_neutral_opp": 1.3219962891174475,
       "is_kondor": false,
-      "start_score": 0.8656716417910447
+      "start_score": 0.8823529411764706
+    },
+    "Kumar Rocker": {
+      "cmd_pct": 3.6855036855036882,
+      "model_whip": 1.4194086956521739,
+      "score_relative": 0.2033898305084746,
+      "score_absolute": 0.10625,
+      "predicted_whip_neutral_opp": 1.438524120155463,
+      "is_kondor": false,
+      "start_score": 0.19117647058823528
     },
     "David Peterson": {
       "cmd_pct": 7.2072072072072055,
       "model_whip": 1.2400683760683762,
-      "score_relative": 0.4909090909090909,
-      "score_absolute": 0.3291139240506329,
-      "predicted_whip_neutral_opp": 1.3878968408085206,
+      "score_relative": 0.5084745762711864,
+      "score_absolute": 0.33125,
+      "predicted_whip_neutral_opp": 1.3875888679854502,
       "is_kondor": false,
-      "start_score": 0.4925373134328358
+      "start_score": 0.5294117647058824
     },
     "Tyler Phillips": {
       "cmd_pct": 15.297450424929181,
       "model_whip": 1.256122448979592,
-      "score_relative": 0.7818181818181819,
-      "score_absolute": 0.569620253164557,
-      "predicted_whip_neutral_opp": 1.3000644540254436,
+      "score_relative": 0.7796610169491526,
+      "score_absolute": 0.5625,
+      "predicted_whip_neutral_opp": 1.3014807283048446,
       "is_kondor": false,
-      "start_score": 0.9253731343283582
+      "start_score": 0.9411764705882353
     },
     "Michael Lorenzen": {
       "cmd_pct": 6.287425149700598,
       "model_whip": 1.7081538461538461,
-      "score_relative": 0.10909090909090909,
-      "score_absolute": 0.04430379746835443,
-      "predicted_whip_neutral_opp": 1.433910956017787,
+      "score_relative": 0.1016949152542373,
+      "score_absolute": 0.04375,
+      "predicted_whip_neutral_opp": 1.4313041276786265,
       "is_kondor": false,
-      "start_score": 0.208955223880597
+      "start_score": 0.2647058823529412
+    },
+    "Matthew Liberatore": {
+      "cmd_pct": 12.17798594847775,
+      "model_whip": 1.145566037735849,
+      "score_relative": 0.8305084745762712,
+      "score_absolute": 0.65625,
+      "predicted_whip_neutral_opp": 1.3271477995239171,
+      "is_kondor": false,
+      "start_score": 0.8529411764705882
     },
     "Jack Perkins": {
       "cmd_pct": 7.673267326732675,
       "model_whip": 1.4162777777777777,
-      "score_relative": 0.4727272727272727,
-      "score_absolute": 0.25949367088607594,
-      "predicted_whip_neutral_opp": 1.3962762286596626,
+      "score_relative": 0.4915254237288136,
+      "score_absolute": 0.26875,
+      "predicted_whip_neutral_opp": 1.3952831965501975,
       "is_kondor": false,
-      "start_score": 0.44776119402985076
+      "start_score": 0.4852941176470588
     },
     "Kohl Drake": {
       "cmd_pct": -0.9615384615384581,
       "model_whip": 1.4133698630136988,
-      "score_relative": 0.05454545454545454,
-      "score_absolute": 0.02531645569620253,
-      "predicted_whip_neutral_opp": 1.491111481657772,
+      "score_relative": 0.06779661016949153,
+      "score_absolute": 0.025,
+      "predicted_whip_neutral_opp": 1.4882144775417763,
       "is_kondor": false,
-      "start_score": 0.08955223880597014
+      "start_score": 0.10294117647058823
     },
     "Mitch Keller": {
       "cmd_pct": -0.9090909090909038,
       "model_whip": 1.4943103448275863,
-      "score_relative": 0.07272727272727272,
-      "score_absolute": 0.03164556962025317,
-      "predicted_whip_neutral_opp": 1.4967398724037062,
+      "score_relative": 0.0847457627118644,
+      "score_absolute": 0.03125,
+      "predicted_whip_neutral_opp": 1.4934923076187632,
       "is_kondor": false,
-      "start_score": 0.07462686567164178
+      "start_score": 0.08823529411764706
     },
     "Hunter Dobbins": {
       "cmd_pct": 6.8181818181818175,
       "model_whip": 1.3019420289855075,
-      "score_relative": 0.43636363636363634,
-      "score_absolute": 0.3037974683544304,
-      "predicted_whip_neutral_opp": 1.3969234168914375,
+      "score_relative": 0.4576271186440678,
+      "score_absolute": 0.30625,
+      "predicted_whip_neutral_opp": 1.3962521964981909,
       "is_kondor": false,
-      "start_score": 0.43283582089552236
+      "start_score": 0.47058823529411764
     },
     "Eric Lauer": {
       "cmd_pct": 13.172043010752688,
       "model_whip": 1.260488888888889,
-      "score_relative": 0.7636363636363637,
-      "score_absolute": 0.5569620253164557,
-      "predicted_whip_neutral_opp": 1.3237972588877287,
+      "score_relative": 0.7627118644067796,
+      "score_absolute": 0.55,
+      "predicted_whip_neutral_opp": 1.3247221388850245,
       "is_kondor": false,
-      "start_score": 0.835820895522388
+      "start_score": 0.8676470588235294
     },
     "Slade Cecconi": {
       "cmd_pct": 11.309523809523814,
       "model_whip": 1.5956818181818182,
-      "score_relative": 0.18181818181818182,
-      "score_absolute": 0.0759493670886076,
-      "predicted_whip_neutral_opp": 1.37000073102754,
+      "score_relative": 0.1694915254237288,
+      "score_absolute": 0.075,
+      "predicted_whip_neutral_opp": 1.369012148637548,
       "is_kondor": false,
-      "start_score": 0.5970149253731343
+      "start_score": 0.6029411764705882
     },
     "Martin Perez": {
       "cmd_pct": 3.438395415472778,
       "model_whip": 1.4196250000000001,
-      "score_relative": 0.16363636363636364,
-      "score_absolute": 0.08860759493670886,
-      "predicted_whip_neutral_opp": 1.4431534045158698,
+      "score_relative": 0.1864406779661017,
+      "score_absolute": 0.09375,
+      "predicted_whip_neutral_opp": 1.4412052238096982,
       "is_kondor": false,
-      "start_score": 0.14925373134328357
-    },
-    "Randy Vasquez": {
-      "cmd_pct": 5.780346820809251,
-      "model_whip": 1.5629565217391304,
-      "score_relative": 0.2727272727272727,
-      "score_absolute": 0.11392405063291139,
-      "predicted_whip_neutral_opp": 1.428360847124161,
-      "is_kondor": false,
-      "start_score": 0.2835820895522388
+      "start_score": 0.17647058823529413
     },
     "Miles Mikolas": {
       "cmd_pct": 1.2345679012345678,
       "model_whip": 1.589942857142857,
-      "score_relative": 0.12727272727272726,
-      "score_absolute": 0.0759493670886076,
-      "predicted_whip_neutral_opp": 1.4804731425409625,
+      "score_relative": 0.13559322033898305,
+      "score_absolute": 0.075,
+      "predicted_whip_neutral_opp": 1.4772735339456735,
       "is_kondor": false,
-      "start_score": 0.1044776119402985
-    },
-    "Connor Prielipp": {
-      "cmd_pct": 12.941176470588234,
-      "model_whip": 1.365016393442623,
-      "score_relative": 0.6,
-      "score_absolute": 0.35443037974683544,
-      "predicted_whip_neutral_opp": 1.3343530125485992,
-      "is_kondor": false,
-      "start_score": 0.7761194029850746
+      "start_score": 0.11764705882352941
     },
     "Carson Whisenhunt": {
       "cmd_pct": 6.907894736842107,
       "model_whip": 1.6369156626506025,
-      "score_relative": 0.16363636363636364,
-      "score_absolute": 0.06962025316455696,
-      "predicted_whip_neutral_opp": 1.4216184882839449,
+      "score_relative": 0.15254237288135594,
+      "score_absolute": 0.06875,
+      "predicted_whip_neutral_opp": 1.4194681954578239,
       "is_kondor": false,
-      "start_score": 0.31343283582089554
+      "start_score": 0.35294117647058826
     },
     "Javier Assad": {
       "cmd_pct": 9.941520467836257,
       "model_whip": 1.3266341463414635,
-      "score_relative": 0.6727272727272727,
-      "score_absolute": 0.4177215189873418,
-      "predicted_whip_neutral_opp": 1.3644326039807337,
+      "score_relative": 0.6779661016949152,
+      "score_absolute": 0.43125,
+      "predicted_whip_neutral_opp": 1.3643442897862634,
       "is_kondor": false,
-      "start_score": 0.6417910447761194
+      "start_score": 0.6911764705882353
     },
     "Jake Irvin": {
       "cmd_pct": 8.482142857142854,
       "model_whip": 1.7152142857142858,
-      "score_relative": 0.09090909090909091,
-      "score_absolute": 0.0379746835443038,
-      "predicted_whip_neutral_opp": 1.4102912411584516,
+      "score_relative": 0.0847457627118644,
+      "score_absolute": 0.0375,
+      "predicted_whip_neutral_opp": 1.4081400597696025,
       "is_kondor": false,
-      "start_score": 0.373134328358209
+      "start_score": 0.39705882352941174
     },
     "Mason Barnett": {
       "cmd_pct": -3.2710280373831777,
       "model_whip": 1.6950163934426228,
-      "score_relative": 0.01818181818181818,
-      "score_absolute": 0.012658227848101266,
-      "predicted_whip_neutral_opp": 1.5381300826735604,
+      "score_relative": 0.01694915254237288,
+      "score_absolute": 0.0125,
+      "predicted_whip_neutral_opp": 1.5334600030548746,
       "is_kondor": false,
-      "start_score": 0.029850746268656716
+      "start_score": 0.029411764705882353
     },
     "Quinn Mathews": {
       "cmd_pct": 11.956521739130437,
       "model_whip": 1.5891818181818183,
-      "score_relative": 0.21818181818181817,
+      "score_relative": 0.22033898305084745,
       "score_absolute": null,
-      "predicted_whip_neutral_opp": 1.3623797483392963,
+      "predicted_whip_neutral_opp": 1.361563890983426,
       "is_kondor": false,
-      "start_score": 0.6716417910447762
+      "start_score": 0.7058823529411765
     },
     "Robert Stock": {
-      "cmd_pct": 11.64383561643836,
-      "model_whip": 1.4928,
-      "score_relative": 0.34545454545454546,
-      "score_absolute": 0.16455696202531644,
-      "predicted_whip_neutral_opp": 1.358432352928669,
+      "cmd_pct": 10.619469026548673,
+      "model_whip": 1.4613,
+      "score_relative": 0.4067796610169492,
+      "score_absolute": 0.2,
+      "predicted_whip_neutral_opp": 1.3667537655208999,
       "is_kondor": false,
-      "start_score": 0.6865671641791045
+      "start_score": 0.6323529411764706
     },
     "Cade Povich": {
       "cmd_pct": 7.4829931972789145,
       "model_whip": 1.2094444444444443,
-      "score_relative": 0.509090909090909,
-      "score_absolute": 0.34177215189873417,
-      "predicted_whip_neutral_opp": 1.3825128272771912,
+      "score_relative": 0.5254237288135594,
+      "score_absolute": 0.34375,
+      "predicted_whip_neutral_opp": 1.3824031212678225,
       "is_kondor": false,
-      "start_score": 0.5373134328358209
-    },
-    "Blade Tidwell": {
-      "cmd_pct": 11.11111111111111,
-      "model_whip": 1.0264761904761905,
-      "score_relative": 0.7454545454545455,
-      "score_absolute": 0.569620253164557,
-      "predicted_whip_neutral_opp": 1.328543551424236,
-      "is_kondor": false,
-      "start_score": 0.8059701492537313
+      "start_score": 0.5588235294117647
     },
     "Carmen Mlodzinski": {
       "cmd_pct": 0.0,
       "model_whip": 1.8552666666666666,
-      "score_relative": 0.01818181818181818,
-      "score_absolute": 0.006329113924050633,
-      "predicted_whip_neutral_opp": 1.5144067500361125,
+      "score_relative": 0.01694915254237288,
+      "score_absolute": 0.00625,
+      "predicted_whip_neutral_opp": 1.5097457490691502,
       "is_kondor": false,
-      "start_score": 0.04477611940298507
+      "start_score": 0.04411764705882353
+    },
+    "Clay Holmes": {
+      "cmd_pct": 2.73972602739726,
+      "model_whip": 1.498717948717949,
+      "score_relative": 0.15254237288135594,
+      "score_absolute": 0.08125,
+      "predicted_whip_neutral_opp": 1.4544517567483564,
+      "is_kondor": false,
+      "start_score": 0.1323529411764706
     },
     "Adrian Houser": {
       "cmd_pct": 19.999999999999996,
       "model_whip": 0.8995294117647058,
-      "score_relative": 0.9818181818181818,
+      "score_relative": 0.9830508474576272,
       "score_absolute": null,
-      "predicted_whip_neutral_opp": 1.2209551042069942,
+      "predicted_whip_neutral_opp": 1.2250111110074233,
       "is_kondor": false,
       "start_score": 1.0
+    },
+    "Chris Bassitt": {
+      "cmd_pct": -1.204819277108432,
+      "model_whip": 1.5891818181818183,
+      "score_relative": 0.05084745762711865,
+      "score_absolute": null,
+      "predicted_whip_neutral_opp": 1.503531573187256,
+      "is_kondor": false,
+      "start_score": 0.07352941176470588
+    },
+    "Brandon Pfaadt": {
+      "cmd_pct": 10.15037593984962,
+      "model_whip": 1.1650140845070422,
+      "score_relative": 0.5,
+      "score_absolute": 0.54375,
+      "predicted_whip_neutral_opp": 1.3504231264696496,
+      "is_kondor": true,
+      "start_score": 0.7647058823529411
+    },
+    "Jackson Jobe": {
+      "cmd_pct": 9.420289855072461,
+      "model_whip": 1.253111111111111,
+      "score_relative": 0.25,
+      "score_absolute": 0.4875,
+      "predicted_whip_neutral_opp": 1.3646585995524747,
+      "is_kondor": true,
+      "start_score": 0.6764705882352942
     },
     "Walbert Urena": {
       "cmd_pct": 14.593301435406698,
       "model_whip": 1.2823428571428572,
-      "score_relative": 0.36363636363636365,
-      "score_absolute": 0.5,
-      "predicted_whip_neutral_opp": 1.309826576492698,
+      "score_relative": 0.5,
+      "score_absolute": 0.50625,
+      "predicted_whip_neutral_opp": 1.3109691900355347,
       "is_kondor": true,
-      "start_score": 0.9104477611940298
-    },
-    "Brandon Pfaadt": {
-      "cmd_pct": 6.50224215246637,
-      "model_whip": 1.2707394957983194,
-      "score_relative": 0.09090909090909091,
-      "score_absolute": 0.2721518987341772,
-      "predicted_whip_neutral_opp": 1.3980091867273394,
-      "is_kondor": true,
-      "start_score": 0.417910447761194
+      "start_score": 0.9264705882352942
     },
     "Michael Soroka": {
       "cmd_pct": 7.9999999999999964,
       "model_whip": 1.533,
       "score_relative": 0.0,
       "score_absolute": null,
-      "predicted_whip_neutral_opp": 1.4016285044912178,
+      "predicted_whip_neutral_opp": 1.4001856834516693,
       "is_kondor": true,
-      "start_score": 0.40298507462686567
-    },
-    "Jackson Jobe": {
-      "cmd_pct": 14.49275362318841,
-      "model_whip": 0.9946666666666667,
-      "score_relative": 0.8181818181818182,
-      "score_absolute": null,
-      "predicted_whip_neutral_opp": 1.2888771162462958,
-      "is_kondor": true,
-      "start_score": 0.9402985074626866
+      "start_score": 0.45588235294117646
     },
     "Rhett Lowder": {
       "cmd_pct": 10.101010101010106,
       "model_whip": 1.2287047619047617,
-      "score_relative": 0.2727272727272727,
-      "score_absolute": 0.5443037974683544,
-      "predicted_whip_neutral_opp": 1.3551685022273174,
+      "score_relative": 0.375,
+      "score_absolute": 0.53125,
+      "predicted_whip_neutral_opp": 1.3555538246189132,
       "is_kondor": true,
-      "start_score": 0.7164179104477612
+      "start_score": 0.7352941176470589
     },
     "Kyle Leahy": {
       "cmd_pct": 15.17857142857143,
       "model_whip": 0.8667155963302752,
       "score_relative": 1.0,
-      "score_absolute": 0.8417721518987342,
-      "predicted_whip_neutral_opp": 1.271517025557481,
+      "score_absolute": 0.84375,
+      "predicted_whip_neutral_opp": 1.2746494829823198,
       "is_kondor": true,
-      "start_score": 0.9701492537313433
-    },
-    "Anthony Kay": {
-      "cmd_pct": 11.352657004830919,
-      "model_whip": 1.2515315315315316,
-      "score_relative": 0.36363636363636365,
-      "score_absolute": 0.5886075949367089,
-      "predicted_whip_neutral_opp": 1.3431396119358088,
-      "is_kondor": true,
-      "start_score": 0.7313432835820896
+      "start_score": 0.9705882352941176
     },
     "Hayden Wesneski": {
       "cmd_pct": 5.508474576271189,
       "model_whip": 1.3920273972602741,
       "score_relative": 0.0,
-      "score_absolute": 0.21518987341772153,
-      "predicted_whip_neutral_opp": 1.4182485413724004,
+      "score_absolute": 0.21875,
+      "predicted_whip_neutral_opp": 1.4168834299307207,
       "is_kondor": true,
-      "start_score": 0.3283582089552239
+      "start_score": 0.36764705882352944
     },
     "Janson Junk": {
       "cmd_pct": 12.968299711815561,
       "model_whip": 1.3614105263157894,
-      "score_relative": 0.18181818181818182,
-      "score_absolute": 0.36075949367088606,
-      "predicted_whip_neutral_opp": 1.3337779555208802,
+      "score_relative": 0.25,
+      "score_absolute": 0.36875,
+      "predicted_whip_neutral_opp": 1.3342059841476954,
       "is_kondor": true,
-      "start_score": 0.7910447761194029
+      "start_score": 0.8235294117647058
     },
     "Cody Bradford": {
       "cmd_pct": 12.142857142857139,
       "model_whip": 1.2890666666666668,
-      "score_relative": 0.2727272727272727,
-      "score_absolute": 0.46835443037974683,
-      "predicted_whip_neutral_opp": 1.3373183644819393,
+      "score_relative": 0.375,
+      "score_absolute": 0.48125,
+      "predicted_whip_neutral_opp": 1.337886874272274,
       "is_kondor": true,
-      "start_score": 0.746268656716418
-    },
-    "Robert Gasser": {
-      "cmd_pct": 11.526479750778817,
-      "model_whip": 1.0603749999999998,
-      "score_relative": 0.45454545454545453,
-      "score_absolute": 0.6012658227848101,
-      "predicted_whip_neutral_opp": 1.3265699209870039,
-      "is_kondor": true,
-      "start_score": 0.8208955223880597
-    },
-    "Matthew Liberatore": {
-      "cmd_pct": 12.91291291291291,
-      "model_whip": 1.2157011494252872,
-      "score_relative": 0.6363636363636364,
-      "score_absolute": 0.6645569620253164,
-      "predicted_whip_neutral_opp": 1.3232160391698546,
-      "is_kondor": true,
-      "start_score": 0.8507462686567164
+      "start_score": 0.7941176470588235
     }
   }
 }
