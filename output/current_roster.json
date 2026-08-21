@@ -80,16 +80,16 @@
       },
       {
         "slot": "UTIL",
-        "name": "A.J. Ewing",
-        "team": "NYM",
-        "pos": "OF",
+        "name": "Bryce Eldridge",
+        "team": "SF",
+        "pos": "DH, 1B",
         "active": true
       },
       {
         "slot": "Bench",
-        "name": "Bryce Eldridge",
-        "team": "SF",
-        "pos": "DH, 1B",
+        "name": "A.J. Ewing",
+        "team": "NYM",
+        "pos": "OF",
         "active": false
       },
       {
@@ -126,15 +126,6 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
-      },
-      {
-        "slot": "P",
-        "name": "Payton Tolle",
-        "team": "BOS",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
         "SVHD": 0
       },
       {
@@ -144,13 +135,13 @@
         "pos": "RP, SP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
-        "name": "Christian Scott",
-        "team": "NYM",
-        "pos": "SP",
+        "name": "Ian Seymour",
+        "team": "TB",
+        "pos": "RP, SP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -179,7 +170,25 @@
         "team": "PIT",
         "pos": "RP, SP",
         "active": true,
-        "W": 1,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Shane Drohan",
+        "team": "MIL",
+        "pos": "SP, RP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Payton Tolle",
+        "team": "BOS",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
         "SVHD": 0
       },
       {
@@ -193,9 +202,9 @@
       },
       {
         "slot": "Bench",
-        "name": "Ian Seymour",
-        "team": "TB",
-        "pos": "RP, SP",
+        "name": "Christian Scott",
+        "team": "NYM",
+        "pos": "SP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -213,15 +222,6 @@
         "slot": "Bench",
         "name": "Sean Manaea",
         "team": "NYM",
-        "pos": "SP, RP",
-        "active": false,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Shane Drohan",
-        "team": "MIL",
         "pos": "SP, RP",
         "active": false,
         "W": 0,
@@ -312,6 +312,13 @@
       },
       {
         "slot": "UTIL",
+        "name": "Cooper Pratt",
+        "team": "MIL",
+        "pos": "SS",
+        "active": true
+      },
+      {
+        "slot": "UTIL",
         "name": "Charles McAdoo",
         "team": "TOR",
         "pos": "3B",
@@ -320,13 +327,6 @@
       {
         "slot": "Bench",
         "name": "Jesus Made",
-        "team": "MIL",
-        "pos": "SS",
-        "active": false
-      },
-      {
-        "slot": "Bench",
-        "name": "Cooper Pratt",
         "team": "MIL",
         "pos": "SS",
         "active": false
@@ -348,51 +348,6 @@
     ],
     "pitchers": [
       {
-        "slot": "P",
-        "name": "Brandon Pfaadt",
-        "team": "ARI",
-        "pos": "SP, RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Walbert Urena",
-        "team": "LAA",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Jackson Jobe",
-        "team": "DET",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Adrian Houser",
-        "team": "SF",
-        "pos": "SP, RP",
-        "active": true,
-        "W": 1,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Matthew Liberatore",
-        "team": "STL",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
         "slot": "Bench",
         "name": "Kade Anderson",
         "team": "SEA",
@@ -403,8 +358,35 @@
       },
       {
         "slot": "Bench",
+        "name": "Brandon Pfaadt",
+        "team": "ARI",
+        "pos": "SP, RP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Walbert Urena",
+        "team": "LAA",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
         "name": "Michael Soroka",
         "team": "ARI",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Jackson Jobe",
+        "team": "DET",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -430,6 +412,24 @@
       },
       {
         "slot": "Bench",
+        "name": "Adrian Houser",
+        "team": "SF",
+        "pos": "SP, RP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Matthew Liberatore",
+        "team": "STL",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
         "name": "Eric Lauer",
         "team": "LAD",
         "pos": "SP, RP",
@@ -442,6 +442,33 @@
         "name": "Cal Quantrill",
         "team": "TEX",
         "pos": "SP, RP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Tanner Bibee",
+        "team": "CLE",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Jacob Lopez",
+        "team": "ATH",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Cody Bradford",
+        "team": "TEX",
+        "pos": "SP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -459,37 +486,44 @@
       },
       {
         "slot": "1B",
-        "name": "Miguel Vargas",
-        "team": "CHW",
-        "pos": "3B, 1B",
+        "name": "Yandy Diaz",
+        "team": "TB",
+        "pos": "DH, 1B",
         "active": true
       },
       {
         "slot": "2B",
-        "name": "Bryson Stott",
-        "team": "PHI",
-        "pos": "2B, 3B",
-        "active": true
-      },
-      {
-        "slot": "3B",
         "name": "Sam Antonacci",
         "team": "CHW",
         "pos": "2B, 3B, OF",
         "active": true
       },
       {
+        "slot": "3B",
+        "name": "Miguel Vargas",
+        "team": "CHW",
+        "pos": "3B, 1B",
+        "active": true
+      },
+      {
         "slot": "SS",
-        "name": "Xavier Edwards",
-        "team": "MIA",
-        "pos": "2B, SS",
+        "name": "Gunnar Henderson",
+        "team": "BAL",
+        "pos": "SS",
         "active": true
       },
       {
         "slot": "IF",
-        "name": "Yandy Diaz",
+        "name": "Jonathan Aranda",
         "team": "TB",
-        "pos": "DH, 1B",
+        "pos": "1B",
+        "active": true
+      },
+      {
+        "slot": "OF",
+        "name": "Mickey Moniak",
+        "team": "COL",
+        "pos": "OF, DH",
         "active": true
       },
       {
@@ -508,13 +542,6 @@
       },
       {
         "slot": "OF",
-        "name": "Cole Carrigg",
-        "team": "COL",
-        "pos": "OF",
-        "active": true
-      },
-      {
-        "slot": "OF",
         "name": "Abimelec Ortiz",
         "team": "WSH",
         "pos": "1B, OF, DH",
@@ -522,23 +549,23 @@
       },
       {
         "slot": "UTIL",
-        "name": "Jonathan Aranda",
-        "team": "TB",
-        "pos": "1B",
+        "name": "Xavier Edwards",
+        "team": "MIA",
+        "pos": "2B, SS",
         "active": true
       },
       {
         "slot": "UTIL",
-        "name": "Gunnar Henderson",
-        "team": "BAL",
-        "pos": "SS",
+        "name": "Bryson Stott",
+        "team": "PHI",
+        "pos": "2B, 3B",
         "active": true
       },
       {
         "slot": "Bench",
-        "name": "Mickey Moniak",
+        "name": "Cole Carrigg",
         "team": "COL",
-        "pos": "OF, DH",
+        "pos": "OF",
         "active": false
       },
       {
@@ -552,9 +579,9 @@
     "pitchers": [
       {
         "slot": "P",
-        "name": "Joey Cantillo",
-        "team": "CLE",
-        "pos": "RP, SP",
+        "name": "George Kirby",
+        "team": "SEA",
+        "pos": "SP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -588,24 +615,6 @@
       },
       {
         "slot": "P",
-        "name": "Luke Weaver",
-        "team": "PIT",
-        "pos": "RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Pete Fairbanks",
-        "team": "MIA",
-        "pos": "RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
         "name": "Dylan Dodd",
         "team": "ATL",
         "pos": "RP",
@@ -620,13 +629,31 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
         "name": "Gage Jump",
         "team": "ATH",
         "pos": "SP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Andrew Alvarez",
+        "team": "WSH",
+        "pos": "SP, RP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Andrew Kittredge",
+        "team": "BAL",
+        "pos": "RP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -651,9 +678,9 @@
       },
       {
         "slot": "Bench",
-        "name": "George Kirby",
-        "team": "SEA",
-        "pos": "SP",
+        "name": "Joey Cantillo",
+        "team": "CLE",
+        "pos": "RP, SP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -747,8 +774,8 @@
       },
       {
         "slot": "OF",
-        "name": "Dylan Crews",
-        "team": "WSH",
+        "name": "Daulton Varsho",
+        "team": "HOU",
         "pos": "OF",
         "active": true
       },
@@ -775,23 +802,23 @@
       },
       {
         "slot": "Bench",
-        "name": "Daulton Varsho",
-        "team": "HOU",
+        "name": "Oneil Cruz",
+        "team": "PIT",
         "pos": "OF",
         "active": false
       },
       {
         "slot": "Bench",
-        "name": "Dansby Swanson",
-        "team": "CHC",
-        "pos": "SS",
+        "name": "Dylan Crews",
+        "team": "WSH",
+        "pos": "OF",
         "active": false
       },
       {
         "slot": "IL",
-        "name": "Oneil Cruz",
-        "team": "PIT",
-        "pos": "OF",
+        "name": "Dansby Swanson",
+        "team": "CHC",
+        "pos": "SS",
         "active": false
       }
     ],
@@ -803,7 +830,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
@@ -857,7 +884,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
@@ -874,15 +901,6 @@
         "team": "SD",
         "pos": "SP",
         "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Edwin Diaz",
-        "team": "LAD",
-        "pos": "RP",
-        "active": false,
         "W": 0,
         "SVHD": 0
       },
@@ -912,11 +930,27 @@
         "active": false,
         "W": 0,
         "SVHD": 0
+      },
+      {
+        "slot": "IL",
+        "name": "Edwin Diaz",
+        "team": "LAD",
+        "pos": "RP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
       }
     ]
   },
   "9": {
     "batters": [
+      {
+        "slot": "C",
+        "name": "Samuel Basallo",
+        "team": "BAL",
+        "pos": "C, DH",
+        "active": true
+      },
       {
         "slot": "1B",
         "name": "Pete Alonso",
@@ -926,9 +960,9 @@
       },
       {
         "slot": "2B",
-        "name": "Luke Keaschall",
-        "team": "MIN",
-        "pos": "2B, OF",
+        "name": "Jose Altuve",
+        "team": "HOU",
+        "pos": "2B, OF, DH",
         "active": true
       },
       {
@@ -989,17 +1023,10 @@
       },
       {
         "slot": "UTIL",
-        "name": "Jose Altuve",
-        "team": "HOU",
-        "pos": "2B, OF, DH",
+        "name": "Luke Keaschall",
+        "team": "MIN",
+        "pos": "2B, OF",
         "active": true
-      },
-      {
-        "slot": "IL",
-        "name": "Samuel Basallo",
-        "team": "BAL",
-        "pos": "C, DH",
-        "active": false
       }
     ],
     "pitchers": [
@@ -1014,12 +1041,30 @@
       },
       {
         "slot": "P",
+        "name": "Jacob Misiorowski",
+        "team": "MIL",
+        "pos": "SP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Shane McClanahan",
+        "team": "TB",
+        "pos": "SP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
         "name": "Didier Fuentes",
         "team": "ATL",
         "pos": "SP, RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -1037,30 +1082,12 @@
         "pos": "RP, SP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
         "name": "Clayton Beeter",
         "team": "WSH",
-        "pos": "RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Roki Sasaki",
-        "team": "LAD",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Brandyn Garcia",
-        "team": "ARI",
         "pos": "RP",
         "active": true,
         "W": 0,
@@ -1077,35 +1104,17 @@
       },
       {
         "slot": "P",
-        "name": "Aaron Nola",
-        "team": "PHI",
+        "name": "Robert Gasser",
+        "team": "MIL",
         "pos": "SP",
         "active": true,
-        "W": 1,
+        "W": 0,
         "SVHD": 0
       },
       {
         "slot": "Bench",
         "name": "Nolan McLean",
         "team": "NYM",
-        "pos": "SP",
-        "active": false,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Jacob Misiorowski",
-        "team": "MIL",
-        "pos": "SP",
-        "active": false,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Shane McClanahan",
-        "team": "TB",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -1122,6 +1131,15 @@
       },
       {
         "slot": "Bench",
+        "name": "Roki Sasaki",
+        "team": "LAD",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
         "name": "Jared Jones",
         "team": "PIT",
         "pos": "SP",
@@ -1131,7 +1149,16 @@
       },
       {
         "slot": "Bench",
-        "name": "Andrew Painter",
+        "name": "Brandyn Garcia",
+        "team": "ARI",
+        "pos": "RP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Aaron Nola",
         "team": "PHI",
         "pos": "SP",
         "active": false,
@@ -1160,9 +1187,9 @@
       },
       {
         "slot": "1B",
-        "name": "Spencer Torkelson",
-        "team": "DET",
-        "pos": "1B",
+        "name": "Sal Stewart",
+        "team": "CIN",
+        "pos": "1B, 3B, DH",
         "active": true
       },
       {
@@ -1174,29 +1201,36 @@
       },
       {
         "slot": "3B",
+        "name": "Austin Riley",
+        "team": "ATL",
+        "pos": "3B",
+        "active": true
+      },
+      {
+        "slot": "SS",
+        "name": "JJ Wetherholt",
+        "team": "STL",
+        "pos": "SS, 2B",
+        "active": true
+      },
+      {
+        "slot": "IF",
         "name": "Kevin McGonigle",
         "team": "DET",
         "pos": "SS, 3B",
         "active": true
       },
       {
-        "slot": "SS",
-        "name": "Geraldo Perdomo",
-        "team": "ARI",
-        "pos": "SS",
-        "active": true
-      },
-      {
-        "slot": "IF",
-        "name": "Sal Stewart",
-        "team": "CIN",
-        "pos": "1B, 3B, DH",
+        "slot": "OF",
+        "name": "Jackson Chourio",
+        "team": "MIL",
+        "pos": "OF",
         "active": true
       },
       {
         "slot": "OF",
-        "name": "Jackson Chourio",
-        "team": "MIL",
+        "name": "Cody Bellinger",
+        "team": "NYY",
         "pos": "OF",
         "active": true
       },
@@ -1215,31 +1249,24 @@
         "active": true
       },
       {
-        "slot": "OF",
+        "slot": "UTIL",
+        "name": "Geraldo Perdomo",
+        "team": "ARI",
+        "pos": "SS",
+        "active": true
+      },
+      {
+        "slot": "UTIL",
         "name": "Brandon Marsh",
         "team": "PHI",
         "pos": "OF",
         "active": true
       },
       {
-        "slot": "UTIL",
-        "name": "Austin Riley",
-        "team": "ATL",
-        "pos": "3B",
-        "active": true
-      },
-      {
-        "slot": "UTIL",
-        "name": "JJ Wetherholt",
-        "team": "STL",
-        "pos": "SS, 2B",
-        "active": true
-      },
-      {
         "slot": "Bench",
-        "name": "Cody Bellinger",
-        "team": "NYY",
-        "pos": "OF",
+        "name": "Spencer Torkelson",
+        "team": "DET",
+        "pos": "1B",
         "active": false
       },
       {
@@ -1260,30 +1287,12 @@
     "pitchers": [
       {
         "slot": "P",
-        "name": "Tarik Skubal",
-        "team": "LAD",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Jhoan Duran",
-        "team": "PHI",
-        "pos": "RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 1
-      },
-      {
-        "slot": "P",
         "name": "Raisel Iglesias",
         "team": "ATL",
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -1301,6 +1310,15 @@
         "pos": "SP",
         "active": true,
         "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Gerrit Cole",
+        "team": "NYY",
+        "pos": "SP",
+        "active": true,
+        "W": 1,
         "SVHD": 0
       },
       {
@@ -1327,7 +1345,7 @@
         "team": "ATL",
         "pos": "SP",
         "active": true,
-        "W": 0,
+        "W": 1,
         "SVHD": 0
       },
       {
@@ -1336,14 +1354,32 @@
         "team": "NYY",
         "pos": "RP",
         "active": true,
-        "W": 1,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Landen Roupp",
+        "team": "SF",
+        "pos": "SP",
+        "active": true,
+        "W": 0,
         "SVHD": 0
       },
       {
         "slot": "Bench",
-        "name": "Gerrit Cole",
-        "team": "NYY",
+        "name": "Tarik Skubal",
+        "team": "LAD",
         "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Jhoan Duran",
+        "team": "PHI",
+        "pos": "RP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -1353,15 +1389,6 @@
         "name": "Casey Mize",
         "team": "SD",
         "pos": "SP",
-        "active": false,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Justin Wrobleski",
-        "team": "LAD",
-        "pos": "RP, SP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -1492,6 +1519,15 @@
       },
       {
         "slot": "P",
+        "name": "Gavin Williams",
+        "team": "CLE",
+        "pos": "SP",
+        "active": true,
+        "W": 1,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
         "name": "Bubba Chandler",
         "team": "PIT",
         "pos": "SP",
@@ -1533,7 +1569,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
@@ -1546,28 +1582,10 @@
       },
       {
         "slot": "P",
-        "name": "Cade Cavalli",
-        "team": "WSH",
-        "pos": "SP",
-        "active": true,
-        "W": 1,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
         "name": "J.T. Ginn",
         "team": "ATH",
         "pos": "SP",
         "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Gavin Williams",
-        "team": "CLE",
-        "pos": "SP",
-        "active": false,
         "W": 0,
         "SVHD": 0
       },
@@ -1611,6 +1629,15 @@
         "slot": "Bench",
         "name": "Brandon Young",
         "team": "BAL",
+        "pos": "SP",
+        "active": false,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "Bench",
+        "name": "Cade Cavalli",
+        "team": "WSH",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -1772,7 +1799,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -1862,7 +1889,7 @@
         "pos": "RP",
         "active": false,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       }
     ]
   },
@@ -1877,9 +1904,9 @@
       },
       {
         "slot": "1B",
-        "name": "Michael Busch",
-        "team": "CHC",
-        "pos": "1B",
+        "name": "Vinnie Pasquantino",
+        "team": "KC",
+        "pos": "1B, DH",
         "active": true
       },
       {
@@ -1891,9 +1918,9 @@
       },
       {
         "slot": "3B",
-        "name": "Jazz Chisholm Jr.",
-        "team": "NYY",
-        "pos": "2B, 3B",
+        "name": "Christian Encarnacion-Strand",
+        "team": "BAL",
+        "pos": "1B, 3B",
         "active": true
       },
       {
@@ -1919,6 +1946,13 @@
       },
       {
         "slot": "OF",
+        "name": "JJ Bleday",
+        "team": "CIN",
+        "pos": "OF",
+        "active": true
+      },
+      {
+        "slot": "OF",
         "name": "Dominic Canzone",
         "team": "SEA",
         "pos": "OF, DH",
@@ -1932,10 +1966,10 @@
         "active": true
       },
       {
-        "slot": "OF",
-        "name": "Tommy Edman",
-        "team": "LAD",
-        "pos": "2B, OF",
+        "slot": "UTIL",
+        "name": "Jazz Chisholm Jr.",
+        "team": "NYY",
+        "pos": "2B, 3B",
         "active": true
       },
       {
@@ -1946,24 +1980,17 @@
         "active": true
       },
       {
-        "slot": "UTIL",
-        "name": "Jared Young",
-        "team": "NYM",
-        "pos": "DH, 1B",
-        "active": true
-      },
-      {
         "slot": "Bench",
-        "name": "JJ Bleday",
-        "team": "CIN",
-        "pos": "OF",
+        "name": "Michael Busch",
+        "team": "CHC",
+        "pos": "1B",
         "active": false
       },
       {
         "slot": "Bench",
-        "name": "Ketel Marte",
-        "team": "ARI",
-        "pos": "2B, DH",
+        "name": "Jared Young",
+        "team": "NYM",
+        "pos": "DH, 1B",
         "active": false
       },
       {
@@ -1971,6 +1998,13 @@
         "name": "Kyle Stowers",
         "team": "MIA",
         "pos": "OF, 1B",
+        "active": false
+      },
+      {
+        "slot": "IL",
+        "name": "Ketel Marte",
+        "team": "ARI",
+        "pos": "2B, DH",
         "active": false
       }
     ],
@@ -1981,7 +2015,7 @@
         "team": "SEA",
         "pos": "SP",
         "active": true,
-        "W": 1,
+        "W": 0,
         "SVHD": 0
       },
       {
@@ -1995,26 +2029,26 @@
       },
       {
         "slot": "P",
+        "name": "Kyle Bradish",
+        "team": "BAL",
+        "pos": "SP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
         "name": "Riley O'Brien",
         "team": "STL",
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
         "name": "Hunter Gaddis",
         "team": "CLE",
-        "pos": "RP",
-        "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Jeff Hoffman",
-        "team": "MIN",
         "pos": "RP",
         "active": true,
         "W": 0,
@@ -2067,8 +2101,8 @@
       },
       {
         "slot": "Bench",
-        "name": "Kyle Bradish",
-        "team": "BAL",
+        "name": "Sonny Gray",
+        "team": "BOS",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -2076,9 +2110,9 @@
       },
       {
         "slot": "Bench",
-        "name": "Sonny Gray",
-        "team": "BOS",
-        "pos": "SP",
+        "name": "Jeff Hoffman",
+        "team": "MIN",
+        "pos": "RP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -2098,16 +2132,16 @@
     "batters": [
       {
         "slot": "C",
-        "name": "Ben Rice",
-        "team": "NYY",
-        "pos": "1B, C, DH",
+        "name": "Cal Raleigh",
+        "team": "SEA",
+        "pos": "C, DH",
         "active": true
       },
       {
         "slot": "1B",
-        "name": "Jake Bauers",
-        "team": "MIL",
-        "pos": "1B, OF",
+        "name": "Ben Rice",
+        "team": "NYY",
+        "pos": "1B, C, DH",
         "active": true
       },
       {
@@ -2147,9 +2181,9 @@
       },
       {
         "slot": "OF",
-        "name": "Ian Happ",
-        "team": "CHC",
-        "pos": "OF",
+        "name": "Jake Bauers",
+        "team": "MIL",
+        "pos": "1B, OF",
         "active": true
       },
       {
@@ -2161,16 +2195,9 @@
       },
       {
         "slot": "OF",
-        "name": "Zac Veen",
-        "team": "COL",
-        "pos": "OF",
-        "active": true
-      },
-      {
-        "slot": "UTIL",
-        "name": "Cal Raleigh",
+        "name": "Taylor Ward",
         "team": "SEA",
-        "pos": "C, DH",
+        "pos": "OF, DH",
         "active": true
       },
       {
@@ -2181,10 +2208,17 @@
         "active": true
       },
       {
+        "slot": "UTIL",
+        "name": "Ian Happ",
+        "team": "CHC",
+        "pos": "OF",
+        "active": true
+      },
+      {
         "slot": "Bench",
-        "name": "Taylor Ward",
-        "team": "SEA",
-        "pos": "OF, DH",
+        "name": "Zac Veen",
+        "team": "COL",
+        "pos": "OF",
         "active": false
       },
       {
@@ -2207,17 +2241,17 @@
       },
       {
         "slot": "P",
-        "name": "Aroldis Chapman",
-        "team": "BOS",
-        "pos": "RP",
+        "name": "Zack Wheeler",
+        "team": "PHI",
+        "pos": "SP",
         "active": true,
         "W": 0,
         "SVHD": 0
       },
       {
         "slot": "P",
-        "name": "Zack Wheeler",
-        "team": "PHI",
+        "name": "Connelly Early",
+        "team": "WSH",
         "pos": "SP",
         "active": true,
         "W": 0,
@@ -2248,7 +2282,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -2257,12 +2291,12 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
-        "name": "Foster Griffin",
-        "team": "CLE",
+        "name": "Carlos Rodon",
+        "team": "NYY",
         "pos": "SP",
         "active": true,
         "W": 0,
@@ -2270,9 +2304,9 @@
       },
       {
         "slot": "P",
-        "name": "Alex Vesia",
-        "team": "LAD",
-        "pos": "RP",
+        "name": "Foster Griffin",
+        "team": "CLE",
+        "pos": "SP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -2297,9 +2331,9 @@
       },
       {
         "slot": "Bench",
-        "name": "Connelly Early",
-        "team": "WSH",
-        "pos": "SP",
+        "name": "Aroldis Chapman",
+        "team": "BOS",
+        "pos": "RP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -2315,9 +2349,9 @@
       },
       {
         "slot": "Bench",
-        "name": "Carlos Rodon",
-        "team": "NYY",
-        "pos": "SP",
+        "name": "Alex Vesia",
+        "team": "LAD",
+        "pos": "RP",
         "active": false,
         "W": 0,
         "SVHD": 0
@@ -2335,6 +2369,13 @@
   },
   "15": {
     "batters": [
+      {
+        "slot": "C",
+        "name": "Eduardo Valencia",
+        "team": "DET",
+        "pos": "1B, C, DH",
+        "active": true
+      },
       {
         "slot": "1B",
         "name": "Rafael Devers",
@@ -2379,13 +2420,6 @@
       },
       {
         "slot": "OF",
-        "name": "Esmerlyn Valdez",
-        "team": "PIT",
-        "pos": "OF, DH",
-        "active": true
-      },
-      {
-        "slot": "OF",
         "name": "Joshua Baez",
         "team": "STL",
         "pos": "OF",
@@ -2396,6 +2430,13 @@
         "name": "Willi Castro",
         "team": "COL",
         "pos": "OF, 1B, 2B, 3B, SS",
+        "active": true
+      },
+      {
+        "slot": "OF",
+        "name": "Max Clark",
+        "team": "DET",
+        "pos": "OF, DH",
         "active": true
       },
       {
@@ -2430,12 +2471,21 @@
     "pitchers": [
       {
         "slot": "P",
+        "name": "Jacob deGrom",
+        "team": "TEX",
+        "pos": "SP",
+        "active": true,
+        "W": 1,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
         "name": "David Bednar",
         "team": "NYY",
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
@@ -2444,7 +2494,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 1
+        "SVHD": 0
       },
       {
         "slot": "P",
@@ -2453,7 +2503,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -2466,20 +2516,11 @@
       },
       {
         "slot": "P",
-        "name": "Parker Messick",
-        "team": "CLE",
+        "name": "Shane Bieber",
+        "team": "TOR",
         "pos": "SP",
         "active": true,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Dustin May",
-        "team": "MIL",
-        "pos": "SP",
-        "active": true,
-        "W": 0,
+        "W": 1,
         "SVHD": 0
       },
       {
@@ -2502,8 +2543,8 @@
       },
       {
         "slot": "P",
-        "name": "Max Scherzer",
-        "team": "TOR",
+        "name": "Cristian Javier",
+        "team": "HOU",
         "pos": "SP",
         "active": true,
         "W": 0,
@@ -2511,8 +2552,8 @@
       },
       {
         "slot": "Bench",
-        "name": "Jacob deGrom",
-        "team": "TEX",
+        "name": "Parker Messick",
+        "team": "CLE",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -2520,8 +2561,8 @@
       },
       {
         "slot": "Bench",
-        "name": "Cole Ragans",
-        "team": "KC",
+        "name": "Dustin May",
+        "team": "MIL",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -2538,17 +2579,8 @@
       },
       {
         "slot": "Bench",
-        "name": "Shane Bieber",
-        "team": "TOR",
-        "pos": "SP",
-        "active": false,
-        "W": 0,
-        "SVHD": 0
-      },
-      {
-        "slot": "Bench",
-        "name": "Cristian Javier",
-        "team": "HOU",
+        "name": "Clay Holmes",
+        "team": "CHC",
         "pos": "SP",
         "active": false,
         "W": 0,
@@ -2680,15 +2712,6 @@
         "team": "TB",
         "pos": "SP",
         "active": true,
-        "W": 1,
-        "SVHD": 0
-      },
-      {
-        "slot": "P",
-        "name": "Dylan Cease",
-        "team": "TOR",
-        "pos": "SP",
-        "active": true,
         "W": 0,
         "SVHD": 0
       },
@@ -2699,7 +2722,7 @@
         "pos": "RP",
         "active": true,
         "W": 0,
-        "SVHD": 0
+        "SVHD": 1
       },
       {
         "slot": "P",
@@ -2739,9 +2762,9 @@
       },
       {
         "slot": "P",
-        "name": "Peyton Gray",
-        "team": "TEX",
-        "pos": "RP",
+        "name": "Michael McGreevy",
+        "team": "STL",
+        "pos": "SP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -2751,6 +2774,15 @@
         "name": "Randy Dobnak",
         "team": "KC",
         "pos": "SP, RP",
+        "active": true,
+        "W": 0,
+        "SVHD": 0
+      },
+      {
+        "slot": "P",
+        "name": "Daniel Duarte",
+        "team": "NYM",
+        "pos": "RP",
         "active": true,
         "W": 0,
         "SVHD": 0
@@ -2775,8 +2807,8 @@
       },
       {
         "slot": "Bench",
-        "name": "Michael McGreevy",
-        "team": "STL",
+        "name": "Dylan Cease",
+        "team": "TOR",
         "pos": "SP",
         "active": false,
         "W": 0,
